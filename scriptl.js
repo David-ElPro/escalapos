@@ -143,6 +143,36 @@ document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', 
     menu.classList.remove('is-active');
     menuLinks.classList.remove('active');
 }));
+// Asegúrate de que tu script.js incluya esta parte para la card de preselección:
+
+function updateSummary() {
+    const totalAddonsPrice = activeAddons.reduce((sum, addon) => sum + addon.price, 0);
+    const totalPrice = selectedPlanPrice + totalAddonsPrice;
+    const formattedPrice = `$${totalPrice.toFixed(2)}`;
+
+    // 1. ACTUALIZAR WIDGET LATERAL
+    document.getElementById('widget-plan-name').innerText = selectedPlanName;
+    document.getElementById('widget-addons-count').innerText = `${activeAddons.length} add-on(s)`;
+    document.getElementById('widget-total-price').innerText = formattedPrice;
+
+    // 2. ACTUALIZAR CARD DE PRESELECCIÓN (La que tiene la imagen al lado)
+    const prePlan = document.getElementById('pre-plan-base');
+    const preAddons = document.getElementById('pre-addons-text');
+    const prePrice = document.getElementById('pre-total-price');
+
+    if (prePlan) prePlan.innerText = selectedPlanName;
+    if (prePrice) prePrice.innerText = formattedPrice;
+    if (preAddons) {
+        preAddons.innerText = activeAddons.length > 0 
+            ? activeAddons.map(a => a.name).join(", ") 
+            : "Sin add-ons por ahora";
+    }
+
+    // Lógica para abrir widget automáticamente si se agrega algo
+    if(activeAddons.length > 0) {
+        openWidget();
+    }
+}
 
 // Inicializar al cargar la página
 document.addEventListener('DOMContentLoaded', updateSummary);

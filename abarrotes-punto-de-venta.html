@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punto de Venta para Abarrotes | EscalaPOS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="main-navbar">
+    <div class="container nav-container">
+        <a href="#" class="logo">Escala<span>POS</span></a>
+        
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <nav class="nav-menu">
+            <ul class="nav-list">
+                <li><a href="#pasos" class="nav-link">Cómo funciona</a></li>
+                <li><a href="#precios" class="nav-link">Planes</a></li>
+                <li><a href="#modulos" class="nav-link">Add-ons</a></li>
+                <li><a href="#soluciones" class="nav-link">Soluciones</a></li>
+                <li class="nav-btns">
+                    <a href="#" class="btn-login">Ya tengo cuenta</a>
+                    <a href="#" class="btn-trial-nav">Crear mi trial</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <section class="hero-extension">
+        <div class="container grid-hero">
+            <div class="hero-text">
+                <span class="badge-trial">SOLUCIÓN PARA TIENDAS</span>
+                <h1>El Punto de Venta que tu <strong>Tienda de Abarrotes</strong> necesita hoy.</h1>
+                <p>Administra miles de productos con código de barras, controla tus inventarios y atiende a tus clientes en segundos. EscalaPOS es la herramienta que pone orden a tu mostrador.</p>
+                
+                <ul class="hero-bullets">
+                    <li><i class="fa-solid fa-barcode"></i> Carga masiva de productos y códigos de barras.</li>
+                    <li><i class="fa-solid fa-boxes-stacked"></i> Alertas de stock bajo automáticas.</li>
+                    <li><i class="fa-solid fa-clock-rotate-left"></i> Cortes de caja rápidos por turno.</li>
+                </ul>
+            </div>
+
+            <div class="preselection-container">
+                <div class="preselection-flex">
+                    <div class="preselection-image">
+                        <img src="https://via.placeholder.com/500x400/f1f5f9/195ed7?text=Mockup+Abarrotes+POS" alt="EscalaPOS en Tienda">
+                    </div>
+                    <div class="preselection-card">
+                        <div class="pre-header">
+                            <h3>Preselección Sugerida</h3>
+                        </div>
+                        <div class="pre-body">
+                            <div class="pre-item">
+                                <span>Plan base:</span>
+                                <strong id="pre-plan-base">Comercial</strong>
+                            </div>
+                            <div class="pre-item">
+                                <span>Caja extra:</span>
+                                <strong>$99.00</strong>
+                            </div>
+                            <div class="pre-item">
+                                <span>Add-ons:</span>
+                                <span id="pre-addons-text" class="text-muted">Sin add-ons por ahora</span>
+                            </div>
+                            <div class="pre-total">
+                                <span>Total mensual estimado:</span>
+                                <span class="price-tag" id="pre-total-price">$299.00</span>
+                            </div>
+                        </div>
+                        <div class="pre-footer">
+                            <p><i class="fa-solid fa-paper-plane"></i> Empieza tu trial con esta configuración.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pos-importance" id="porque-usar">
+    <div class="container">
+        <div class="section-header text-center">
+            <span class="sub-title">EL SALTO DIGITAL</span>
+            <h2 class="section-title">¿Por qué tu tienda de abarrotes necesita un Punto de Venta?</h2>
+            <p class="section-desc">Llevar tu negocio en una libreta es heroico, pero llevarlo en EscalaPOS es inteligente. Transforma tu esfuerzo en ganancias reales.</p>
+        </div>
+
+        <div class="importance-grid">
+            <div class="importance-card">
+                <div class="card-icon-circle" style="background: #e0f2fe; color: #195ed7;">
+                    <i class="fa-solid fa-boxes-stacked"></i>
+                </div>
+                <h3>Tu dinero no es aire</h3>
+                <p>En los abarrotes, el dinero está en los estantes. Controla existencias con precisión para no comprar de más ni perder ventas por faltantes.</p>
+            </div>
+
+            <div class="importance-card">
+                <div class="card-icon-circle" style="background: #fee2e2; color: #fa441f;">
+                    <i class="fa-solid fa-shield-virus"></i>
+                </div>
+                <h3>Adiós al "Robo Hormiga"</h3>
+                <p>Protege tu inversión. Cada peso que entra debe corresponder a un producto que sale. El historial de ventas blinda tu caja 24/7.</p>
+            </div>
+
+            <div class="importance-card">
+                <div class="card-icon-circle" style="background: #dcfce7; color: #26c95e;">
+                    <i class="fa-solid fa-bolt-lightning"></i>
+                </div>
+                <h3>Cobro Veloz = Clientes Felices</h3>
+                <p>Escanea y cobra en segundos. Olvídate de sumar mentalmente o buscar precios. Evita filas y profesionaliza tu mostrador.</p>
+            </div>
+
+            <div class="importance-card">
+                <div class="card-icon-circle" style="background: #fef3c7; color: #d97706;">
+                    <i class="fa-solid fa-chart-pie"></i>
+                </div>
+                <h3>Conoce tu ganancia real</h3>
+                <p>Vender mucho no es lo mismo que ganar mucho. El sistema calcula tu utilidad neta descontando costos de proveedor automáticamente.</p>
+            </div>
+
+            <div class="importance-card">
+                <div class="card-icon-circle" style="background: #f3e5f5; color: #7b1fa2;">
+                    <i class="fa-solid fa-certificate"></i>
+                </div>
+                <h3>Confianza y Lealtad</h3>
+                <p>Dar un ticket y mostrar precios claros genera seguridad inmediata. Un cliente que confía en tu cobro es un cliente que regresa siempre.</p>
+            </div>
+        </div>
+
+        <div class="importance-footer">
+            <div class="footer-box">
+                <p><strong>¿Sabías que?</strong> Una tienda con punto de venta reduce hasta un <strong>15%</strong> sus pérdidas por merma y errores de cobro en el primer mes.</p>
+                <a href="#precios" class="btn-primary">¡Quiero empezar ya!</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="cash-control-section" id="control-caja">
+    <div class="container">
+        <div class="grid-control">
+            <div class="control-content">
+                <span class="sub-title">FINANZAS BAJO CONTROL</span>
+                <h2 class="section-title">Apertura y Cierre de Caja: El blindaje de tu dinero</h2>
+                <p class="section-desc">¿Alguna vez has sentido que las cuentas no cuadran al final del día? Con EscalaPOS, cada moneda tiene un rastro claro desde que abres tu tienda hasta que apagas la luz.</p>
+                
+                <div class="importance-list">
+                    <div class="importance-item">
+                        <div class="item-icon"><i class="fa-solid fa-vault"></i></div>
+                        <div class="item-text">
+                            <h4>Fondo de Caja (Sencillo)</h4>
+                            <p>Registra con cuánto dinero inicias el día para separar el cambio del resto de tus ventas.</p>
+                        </div>
+                    </div>
+                    <div class="importance-item">
+                        <div class="item-icon"><i class="fa-solid fa-user-check"></i></div>
+                        <div class="item-text">
+                            <h4>Responsabilidad por Turno</h4>
+                            <p>Si tienes empleados, cada uno es responsable de su propia caja. Sabrás exactamente quién operó cada venta.</p>
+                        </div>
+                    </div>
+                    <div class="importance-item">
+                        <div class="item-icon"><i class="fa-solid fa-calculator"></i></div>
+                        <div class="item-text">
+                            <h4>Detección de Descuadres</h4>
+                            <p>El sistema te dice cuánto "debería" haber. Si falta o sobra dinero, el reporte te lo señala al instante.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="control-visual">
+                <div class="report-card">
+                    <div class="report-header">
+                        <span><i class="fa-solid fa-file-lines"></i> Resumen de Corte</span>
+                        <span class="status-badge">Finalizado</span>
+                    </div>
+                    <div class="report-body">
+                        <div class="report-row">
+                            <span>Ventas en efectivo:</span>
+                            <strong>$4,250.00</strong>
+                        </div>
+                        <div class="report-row">
+                            <span>Ventas con tarjeta:</span>
+                            <strong>$1,120.00</strong>
+                        </div>
+                        <div class="report-row">
+                            <span>Fondo inicial:</span>
+                            <strong>$500.00</strong>
+                        </div>
+                        <div class="report-divider"></div>
+                        <div class="report-row total">
+                            <span>Total en Caja:</span>
+                            <span class="total-amount">$5,870.00</span>
+                        </div>
+                    </div>
+                    <div class="report-footer">
+                        <p><i class="fa-solid fa-circle-check"></i> Caja cuadrada con éxito</p>
+                    </div>
+                </div>
+                <div class="decoration-blob"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="pos-history-section" id="historial">
+    <div class="container">
+        <div class="grid-history">
+            
+            <div class="history-visual">
+                <div class="history-ui-card">
+                    <div class="ui-search-bar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <span>Buscar venta por folio o fecha...</span>
+                    </div>
+                    <div class="ui-sales-list">
+                        <div class="ui-sale-row">
+                            <div class="sale-main">
+                                <span class="sale-id">#F-8592</span>
+                                <span class="sale-time">14:20 PM</span>
+                            </div>
+                            <div class="sale-details">3 productos • $156.00</div>
+                            <div class="sale-actions">
+                                <i class="fa-solid fa-print"></i>
+                                <i class="fa-solid fa-rotate-left"></i>
+                            </div>
+                        </div>
+                        <div class="ui-sale-row active">
+                            <div class="sale-main">
+                                <span class="sale-id">#F-8591</span>
+                                <span class="sale-time">14:15 PM</span>
+                            </div>
+                            <div class="sale-details">12 productos • $842.50</div>
+                            <div class="sale-actions">
+                                <i class="fa-solid fa-print"></i>
+                                <i class="fa-solid fa-rotate-left"></i>
+                            </div>
+                        </div>
+                        <div class="ui-sale-row">
+                            <div class="sale-main">
+                                <span class="sale-id">#F-8590</span>
+                                <span class="sale-time">14:02 PM</span>
+                            </div>
+                            <div class="sale-details">1 producto • $25.00</div>
+                            <div class="sale-actions">
+                                <i class="fa-solid fa-print"></i>
+                                <i class="fa-solid fa-rotate-left"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="history-content">
+                <span class="sub-title">MEMORIA INFINITA</span>
+                <h2 class="section-title">Historial POS: Nada se olvida, todo se audita</h2>
+                <p class="section-desc">¿Un cliente regresó por un cambio? ¿Olvidaste imprimir un ticket? El historial de EscalaPOS te permite viajar en el tiempo para resolver problemas en segundos.</p>
+                
+                <div class="benefits-grid">
+                    <div class="benefit-box">
+                        <i class="fa-solid fa-receipt"></i>
+                        <h4>Re-impresión de Tickets</h4>
+                        <p>Si la impresora se trabó o el cliente pide una copia, busca la venta y re-imprime al instante.</p>
+                    </div>
+                    <div class="benefit-box">
+                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                        <h4>Control de Devoluciones</h4>
+                        <p>Valida que el producto realmente se compró en tu tienda y a qué precio antes de devolver dinero.</p>
+                    </div>
+                    <div class="benefit-box">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <h4>Aclaración de Errores</h4>
+                        <p>¿Dudas sobre un cobro? Revisa el detalle exacto: hora, artículos y método de pago utilizado.</p>
+                    </div>
+                    <div class="benefit-box">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                        <h4>Rastro de Auditoría</h4>
+                        <p>Identifica patrones de venta o comportamientos inusuales en turnos específicos de empleados.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="catalog-section" id="catalogos">
+    <div class="container">
+        <div class="grid-catalog">
+            
+            <div class="catalog-content">
+                <span class="sub-title">ORDEN TOTAL</span>
+                <h2 class="section-title">Catálogos Inteligentes: Tu tienda, perfectamente organizada</h2>
+                <p class="section-desc">Deja de adivinar precios. Con EscalaPOS, creas un inventario robusto que te permite encontrar cualquier artículo en milisegundos y vender con precisión quirúrgica.</p>
+                
+                <div class="catalog-features">
+                    <div class="feat-item">
+                        <div class="feat-icon"><i class="fa-solid fa-tags"></i></div>
+                        <div class="feat-txt">
+                            <h4>Gestión de Productos</h4>
+                            <p>Carga masiva por Excel o registro individual. Añade códigos de barras, descripciones y precios de costo para medir tu utilidad.</p>
+                        </div>
+                    </div>
+                    <div class="feat-item">
+                        <div class="feat-icon"><i class="fa-solid fa-layer-group"></i></div>
+                        <div class="feat-txt">
+                            <h4>Categorías por Pasillo</h4>
+                            <p>Organiza por lácteos, limpieza, botanas o marcas. Genera reportes de ventas específicos para saber qué pasillo te deja más dinero.</p>
+                        </div>
+                    </div>
+                    <div class="feat-item">
+                        <div class="feat-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+                        <div class="feat-txt">
+                            <h4>Unidades de Medida Pro</h4>
+                            <p>Vende por kilo, pieza, litro, caja o gramo. El sistema ajusta el precio automáticamente según la cantidad que peses o cuentes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="catalog-visual">
+                <div class="product-window">
+                    <div class="window-header">
+                        <span><i class="fa-solid fa-plus-circle"></i> Nuevo Producto</span>
+                        <div class="window-controls"><span></span><span></span><span></span></div>
+                    </div>
+                    <div class="window-body">
+                        <div class="product-preview-card">
+                            <div class="product-img-slot">
+                                <i class="fa-solid fa-image"></i>
+                                <span>Subir foto</span>
+                            </div>
+                            <div class="product-form-mock">
+                                <div class="mock-input"><span>Nombre:</span> <strong>Leche Entera 1L</strong></div>
+                                <div class="mock-input"><span>Categoría:</span> <strong class="cat-tag">Lácteos</strong></div>
+                                <div class="mock-input"><span>Unidad:</span> <strong>Litro (L)</strong></div>
+                                <div class="mock-input price"><span>Precio Venta:</span> <strong>$26.50</strong></div>
+                            </div>
+                        </div>
+                        <div class="barcode-preview">
+                            <i class="fa-solid fa-barcode"></i>
+                            <span>750102058492</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+    <div class="summary-widget" id="summaryWidget">
+        <button class="widget-toggle" id="toggleWidget">
+            <i class="fa-solid fa-chevron-left"></i>
+            <span class="toggle-text">Guardar</span>
+        </button>
+        <div class="widget-content">
+            <div class="widget-header">
+                <span class="label">MI CONFIGURACIÓN</span>
+                <h3 id="widget-plan-name">Comercial</h3>
+                <p id="widget-addons-count">0 add-ons</p>
+            </div>
+            <div class="widget-body">
+                <div class="widget-addons-list" id="widget-addons-list">
+                    <p class="empty-msg">No has agregado complementos</p>
+                </div>
+            </div>
+            <div class="widget-footer">
+                <div class="widget-total">
+                    <span>Total:</span>
+                    <h2 id="widget-total-price">$299.00</h2>
+                </div>
+                <button class="btn-primary-widget">Crear mi trial</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-seo">
+    <div class="container grid-footer">
+        <div class="footer-col brand-col">
+            <a href="#" class="logo">Escala<span>POS</span></a>
+            <p>El punto de venta modular que se adapta al ritmo de tu negocio. Sin contratos forzosos ni datos fiscales al iniciar.</p>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h4>Soluciones POS</h4>
+            <ul>
+                <li><a href="#">Punto de venta para Abarrotes</a></li>
+                <li><a href="#">Sistema para Carnicerías</a></li>
+                <li><a href="#">Software para Farmacias</a></li>
+                <li><a href="#">Control de Ferreterías</a></li>
+                <li><a href="#">POS para Papelerías</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Módulos Escala</h4>
+            <ul>
+                <li><a href="#">Facturación Electrónica 4.0</a></li>
+                <li><a href="#">CRM y Cobranza</a></li>
+                <li><a href="#">Monedero y Lealtad</a></li>
+                <li><a href="#">Control de Inventarios</a></li>
+                <li><a href="#">Analítica Gerencial</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>EscalaPOS México</h4>
+            <p><i class="fa-solid fa-location-dot"></i> Disponible en CDMX, Querétaro, Monterrey y todo México.</p>
+            <p><i class="fa-solid fa-phone"></i> +52 777 123 4567</p>
+            <p><i class="fa-solid fa-envelope"></i> ventas@escalapos.mx</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container bottom-flex">
+            <p>&copy; 2026 EscalaPOS. Todos los derechos reservados.</p>
+            <div class="legal-links">
+                <a href="#">Aviso de Privacidad</a>
+                <a href="#">Términos y Condiciones</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="scriptl.js"></script>
+</body>
+</html>

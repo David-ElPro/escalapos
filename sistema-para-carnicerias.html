@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punto de Venta para Carnicerías | EscalaPOS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="main-navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Escala<span>POS</span></a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </div>
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#beneficios" class="nav-link">Beneficios</a></li>
+                    <li><a href="#basculas" class="nav-link">Básculas</a></li>
+                    <li><a href="#precios" class="nav-link">Planes</a></li>
+                    <li class="nav-btns">
+                        <a href="#" class="btn-login">Ingresar</a>
+                        <a href="#" class="btn-trial-nav">Probar Gratis</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-extension">
+        <div class="container grid-hero">
+            <div class="hero-text">
+                <span class="badge-trial" style="background: #fee2e2; color: #fa441f;">SOLUCIÓN PARA CARNICERÍAS</span>
+                <h1>El sistema que pesa y cobra con <strong>precisión quirúrgica</strong>.</h1>
+                <p>En una carnicería, cada gramo cuenta. Controla tus cortes, integra tu báscula y protege tu margen de ganancia con la herramienta más robusta del mercado.</p>
+                
+                <ul class="hero-bullets">
+                    <li><i class="fa-solid fa-weight-scale" style="color: #fa441f;"></i> Integración directa con básculas comerciales.</li>
+                    <li><i class="fa-solid fa-drumstick-bite" style="color: #fa441f;"></i> Control de mermas y rendimiento por canal.</li>
+                    <li><i class="fa-solid fa-bolt-lightning" style="color: #fa441f;"></i> Cobro veloz para evitar filas en el mostrador.</li>
+                </ul>
+            </div>
+
+            <div class="preselection-container">
+                <div class="preselection-flex">
+                    <div class="preselection-image">
+                        <img src="https://via.placeholder.com/500x400/fff1f0/fa441f?text=EscalaPOS+Carnicerías" alt="EscalaPOS en Carnicería">
+                    </div>
+                    <div class="preselection-card" style="border-color: #fecaca;">
+                        <div class="pre-header">
+                            <h3>Configuración Sugerida</h3>
+                        </div>
+                        <div class="pre-body">
+                            <div class="pre-item">
+                                <span>Plan base:</span>
+                                <strong id="pre-plan-base">Comercial</strong>
+                            </div>
+                            <div class="pre-item">
+                                <span>Caja extra:</span>
+                                <strong>$99.00</strong>
+                            </div>
+                            <div class="pre-item">
+                                <span>Add-ons:</span>
+                                <span id="pre-addons-text" class="text-muted">Incluye: Analítica Avanzada</span>
+                            </div>
+                            <div class="pre-total">
+                                <span>Total mensual estimado:</span>
+                                <span class="price-tag" id="pre-total-price" style="color: #fa441f;">$418.00</span>
+                            </div>
+                        </div>
+                        <div class="pre-footer">
+                            <p><i class="fa-solid fa-paper-plane"></i> Optimiza tu carnicería hoy mismo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cash-control-section" id="motor-operativo">
+    <div class="container">
+        <div class="grid-control">
+            <div class="control-content">
+                <span class="sub-title" style="color: #fa441f;">PRECISIÓN Y CONTROL TOTAL</span>
+                <h2 class="section-title">La precisión que exigen tu mostrador y tu cámara frigorífica</h2>
+                <p class="section-desc">En este giro no vendes cajas empaquetadas, cobras por peso exacto. Un sistema genérico te hará perder dinero si no habla el mismo idioma que tu equipo. <strong>Linnegocios</strong> es el motor diseñado para el ritmo de una carnicería real.</p>
+                
+                <div class="importance-list">
+                    <div class="importance-item">
+                        <div class="item-icon" style="color: #fa441f;"><i class="fa-solid fa-weight-scale"></i></div>
+                        <div class="item-text">
+                            <h4>Pesaje Directo sin Errores</h4>
+                            <p>Conecta tu báscula digital al sistema para que los kilos y gramos pasen a la pantalla al instante, erradicando las fugas de dinero por "errores de dedo" al cobrar.</p>
+                        </div>
+                    </div>
+                    <div class="importance-item">
+                        <div class="item-icon" style="color: #fa441f;"><i class="fa-solid fa-calendar-check"></i></div>
+                        <div class="item-text">
+                            <h4>Control de Lotes y Frescura</h4>
+                            <p>Blindamos tu inventario asegurando que vendas primero la carne que ingresó antes. Controla caducidades desde que el canal entra a la cámara de frío.</p>
+                        </div>
+                    </div>
+                    <div class="importance-item">
+                        <div class="item-icon" style="color: #fa441f;"><i class="fa-solid fa-people-arrows"></i></div>
+                        <div class="item-text">
+                            <h4>Ventas en Espera y Traspasos</h4>
+                            <p>Agiliza la fila en horas pico poniendo tickets en espera, y gestiona tu expansión enviando cortes exactos entre tus sucursales con el módulo de almacén.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="control-visual">
+                <div class="report-card" style="border-left: 6px solid #fa441f;">
+                    <div class="report-header">
+                        <span><i class="fa-solid fa-snowflake"></i> Alerta de Cámara Frigorífica</span>
+                        <span class="status-badge" style="background: #fee2e2; color: #fa441f;">Prioridad PEPS</span>
+                    </div>
+                    <div class="report-body">
+                        <div class="report-row">
+                            <span>Lote activo:</span>
+                            <strong>#L-789 (Res)</strong>
+                        </div>
+                        <div class="report-row">
+                            <span>Ingreso a almacén:</span>
+                            <strong>Hace 2 días</strong>
+                        </div>
+                        <div class="report-row">
+                            <span>Estado:</span>
+                            <strong style="color: #fa441f;">Sugerido para venta hoy</strong>
+                        </div>
+                        <div class="report-divider"></div>
+                        <div class="report-row total">
+                            <span>Stock disponible:</span>
+                            <span class="total-amount" style="color: #1e293b;">45.500 kg</span>
+                        </div>
+                        <div class="report-row">
+                            <span>Acción rápida:</span>
+                            <span style="color: #195ed7; cursor: pointer;"><i class="fa-solid fa-truck-fast"></i> Traspasar a Sucursal Centro</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="key-features-section" id="funciones-clave">
+    <div class="container">
+        <div class="section-header text-center">
+            <span class="sub-title" style="color: #fa441f;">RENTABILIDAD AL MÁXIMO</span>
+            <h2 class="section-title">Funciones clave para proteger tus ganancias</h2>
+            <p class="section-desc">En una carnicería el dinero se escapa en gramos, mermas y clientes mal atendidos. Linnegocios cierra esas fugas con estas herramientas.</p>
+        </div>
+
+        <div class="features-4-grid">
+            
+            <div class="importance-card">
+                <div class="card-icon-circle" style="background: #fff1f0; color: #fa441f;">
+                    <i class="fa-solid fa-truck-ramp-box"></i>
+                </div>
+                <h3>Traspasos y Almacén</h3>
+                <p>Mueve cajas de pollo o canales de res desde tu cámara principal hacia otras sucursales. Mantén un registro blindado de salidas y entradas para que no se "pierda" ni un gramo de mercancía.</p>
+            </div>
+
+            <div class="importance-card">
+                <div class="card-icon-circle" style="background: #fff1f0; color: #fa441f;">
+                    <i class="fa-solid fa-user-clock"></i>
+                </div>
+                <h3>Ventas en Espera</h3>
+                <p>¿El cliente olvidó la cartera o fue por refrescos? Pausa su cuenta, atiende al siguiente en la fila y recupera el ticket inicial al instante, sin tener que volver a pesar los cortes que ya le habías preparado.</p>
+            </div>
+
+            <div class="importance-card">
+                <div class="card-icon-circle" style="background: #fff1f0; color: #fa441f;">
+                    <i class="fa-solid fa-handshake-angle"></i>
+                </div>
+                <h3>Fidelización (Mayoristas)</h3>
+                <p>Lleva un registro de tus clientes fuertes, como taqueros y restauranteros. Asígnales un monedero electrónico para que acumulen saldo por volumen y asegures que siempre te compren a ti.</p>
+            </div>
+
+            <div class="importance-card">
+                <div class="card-icon-circle" style="background: #fff1f0; color: #fa441f;">
+                    <i class="fa-solid fa-clipboard-check"></i>
+                </div>
+                <h3>Lotes y Caducidades</h3>
+                <p>Deja que el sistema sea tu auditor. Registra cada ingreso con su fecha para asegurar la correcta rotación de la carne (regla PEPS) y evita a toda costa que el producto se eche a perder.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+    <section class="pos-importance" id="beneficios">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-title" style="color: #fa441f;">PROTEGE TU INVERSIÓN</span>
+                <h2 class="section-title">¿Por qué usar un POS en tu carnicería?</h2>
+                <p class="section-desc">El manejo de productos perecederos y el pesaje manual son los puntos donde más dinero se pierde. EscalaPOS elimina el error humano.</p>
+            </div>
+
+            <div class="importance-grid">
+                <div class="importance-card">
+                    <div class="card-icon-circle" style="background: #fff1f0; color: #fa441f;">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                    </div>
+                    <h3>Precisión en el Pesaje</h3>
+                    <p>Evita pérdidas por redondeos o errores de lectura. La integración con básculas asegura que cobres exactamente lo que el cliente se lleva.</p>
+                </div>
+                <div class="importance-card">
+                    <div class="card-icon-circle" style="background: #f0fdf4; color: #26c95e;">
+                        <i class="fa-solid fa-temperature-arrow-down"></i>
+                    </div>
+                    <h3>Control de Mermas</h3>
+                    <p>Monitorea el rendimiento de tus cortes. Identifica cuánto desperdicio generas y ajusta tus precios para mantener la rentabilidad.</p>
+                </div>
+                <div class="importance-card">
+                    <div class="card-icon-circle" style="background: #eff6ff; color: #195ed7;">
+                        <i class="fa-solid fa-calculator"></i>
+                    </div>
+                    <h3>Cuentas Claras</h3>
+                    <p>Registra ventas mixtas (por kilo y por pieza). El sistema desglosa cada concepto en el ticket para total transparencia con tu cliente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cash-control-section" id="basculas">
+        <div class="container">
+            <div class="grid-control">
+                <div class="control-content">
+                    <span class="sub-title">TECNOLOGÍA DIRECTA</span>
+                    <h2 class="section-title">Conexión directa con tu Báscula</h2>
+                    <p class="section-desc">Olvídate de teclear el peso manualmente. EscalaPOS lee la información de tu báscula en tiempo real, agilizando el servicio y eliminando errores de cobro.</p>
+                    
+                    <div class="importance-list">
+                        <div class="importance-item">
+                            <div class="item-icon"><i class="fa-solid fa-plug-circle-check"></i></div>
+                            <div class="item-text">
+                                <h4>Plug & Play</h4>
+                                <p>Compatible con las principales marcas de básculas comerciales del mercado mexicano.</p>
+                            </div>
+                        </div>
+                        <div class="importance-item">
+                            <div class="item-icon"><i class="fa-solid fa-microchip"></i></div>
+                            <div class="item-text">
+                                <h4>Sincronización Total</h4>
+                                <p>El peso se refleja instantáneamente en la pantalla de cobro al colocar el producto en el plato.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="control-visual">
+                    <div class="report-card" style="border-left: 6px solid #fa441f;">
+                        <div class="report-header">
+                            <span><i class="fa-solid fa-weight-hanging"></i> Lectura de Peso</span>
+                            <span class="status-badge" style="background: #fee2e2; color: #fa441f;">Conectado</span>
+                        </div>
+                        <div class="report-body">
+                            <div class="report-row">
+                                <span>Producto:</span>
+                                <strong>Bistec de Res</strong>
+                            </div>
+                            <div class="report-row">
+                                <span>Precio x Kilo:</span>
+                                <strong>$185.00</strong>
+                            </div>
+                            <div class="report-divider"></div>
+                            <div class="report-row total">
+                                <span>Peso (Kg):</span>
+                                <span class="total-amount" style="color: #fa441f;">1.250 kg</span>
+                            </div>
+                            <div class="report-row total">
+                                <span>Subtotal:</span>
+                                <span class="total-amount" style="color: #1e293b;">$231.25</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ <section class="pos-importance" id="beneficios-escalapos">
+    <div class="container">
+        <div class="section-header text-center">
+            <span class="sub-title" style="color: #fa441f;">CRECIMIENTO SEGURO</span>
+            <h2 class="section-title">Ventajas de potenciar tu carnicería con EscalaPOS</h2>
+            <p class="section-desc">Diseñado para que dejes de preocuparte por los gramos perdidos y te enfoques en hacer crecer tus sucursales.</p>
+        </div>
+
+        <div class="importance-grid">
+            <div class="importance-card">
+                <div class="card-icon-circle" style="background: #fff1f0; color: #fa441f;">
+                    <i class="fa-solid fa-stopwatch-20"></i>
+                </div>
+                <h3>Agilidad en el Mostrador</h3>
+                <p>Conectando tu báscula y aprovechando los tickets "en espera", acabarás con las largas filas y lograrás que tu equipo despache a más personas en tiempo récord.</p>
+            </div>
+
+            <div class="importance-card">
+                <div class="card-icon-circle" style="background: #fff1f0; color: #fa441f;">
+                    <i class="fa-solid fa-boxes-packing"></i>
+                </div>
+                <h3>Cero Desperdicios</h3>
+                <p>Llevando un registro riguroso de lotes y fechas de caducidad, garantizarás la rotación ideal de la carne (PEPS) para venderla siempre fresca y proteger tus utilidades.</p>
+            </div>
+
+            <div class="importance-card">
+                <div class="card-icon-circle" style="background: #fff1f0; color: #fa441f;">
+                    <i class="fa-solid fa-dolly"></i>
+                </div>
+                <h3>Stock Siempre Exacto</h3>
+                <p>Gestiona el envío de mercancía a otras de tus tiendas de manera totalmente digital, eliminando los errores o mercancía "extraviada" al momento de cargar la camioneta de reparto.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="catalog-setup-section" id="alta-productos">
+    <div class="container grid-control">
+        
+        <div class="control-content">
+            <span class="sub-title" style="color: #fa441f;">CONFIGURACIÓN VELOZ</span>
+            <h2 class="section-title">Da de alta tus cortes y abarrotes en minutos</h2>
+            <p class="section-desc">Sube todo tu inventario de res, cerdo, pollo y embutidos, además de artículos complementarios como carbón o desechables, utilizando nuestras herramientas de carga masiva.</p>
+            
+            <div class="importance-list">
+                <div class="importance-item">
+                    <div class="item-icon" style="color: #fa441f;"><i class="fa-solid fa-file-excel"></i></div>
+                    <div class="item-text">
+                        <h4>Sincronización Masiva con Excel</h4>
+                        <p>Importa tus listados de precios en un instante. Define fácilmente si vendes por unidad (como refrescos) o por peso (como cortes finos).</p>
+                    </div>
+                </div>
+
+                <div class="importance-item">
+                    <div class="item-icon" style="color: #fa441f;"><i class="fa-solid fa-scale-unbalanced-flip"></i></div>
+                    <div class="item-text">
+                        <h4>Ventas a Granel Inteligentes</h4>
+                        <p>Programa avisos específicos para productos pesables, garantizando que tu personal siempre utilice la información exacta de la báscula.</p>
+                    </div>
+                </div>
+
+                <div class="importance-item">
+                    <div class="item-icon" style="color: #fa441f;"><i class="fa-solid fa-copy"></i></div>
+                    <div class="item-text">
+                        <h4>Actualización en Red de Tiendas</h4>
+                        <p>Ajusta los costos de la carne en tu sucursal matriz y propaga los cambios a todas tus otras carnicerías de manera automática e inmediata.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="control-visual">
+            <div class="image-placeholder-butcher">
+                <img src="assets/img/catalogo-carniceria-escalapos.png" alt="Gestión de catálogo EscalaPOS">
+                <div class="floating-badge-red">
+                    <i class="fa-solid fa-bolt"></i>
+                    <span>Carga en segundos</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section class="pos-importance" id="clasificacion-productos" style="background-color: #f8fafc;">
+    <div class="container">
+        <div class="section-header text-center">
+            <span class="sub-title" style="color: #fa441f;">ORDEN ESTRATÉGICO</span>
+            <h2 class="section-title">Clasifica tus cortes y productos extra</h2>
+            <p class="section-desc">La organización es la clave maestra para despachar a gran velocidad y descubrir con exactitud qué área de tu local te genera mayores utilidades.</p>
+        </div>
+
+        <div class="importance-grid">
+            
+            <div class="importance-card">
+                <div class="card-icon-circle" style="background: #fff1f0; color: #fa441f;">
+                    <i class="fa-solid fa-drumstick-bite"></i>
+                </div>
+                <h3>Carnes y Cortes Finos</h3>
+                <p>Divide tu mostrador de res, cerdo y pollo con facilidad. Controla y ajusta los precios a granel que se comunican automáticamente con tu báscula comercial al momento de cobrar.</p>
+            </div>
+
+            <div class="importance-card">
+                <div class="card-icon-circle" style="background: #fff1f0; color: #fa441f;">
+                    <i class="fa-solid fa-cheese"></i>
+                </div>
+                <h3>Salchichonería y Lácteos</h3>
+                <p>Mantén bajo la lupa los departamentos de alta rotación. Activa el monitoreo estricto de frescura para vigilar la mercancía de vitrina y evitar cualquier pérdida por caducidad.</p>
+            </div>
+
+            <div class="importance-card">
+                <div class="card-icon-circle" style="background: #fff1f0; color: #fa441f;">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                </div>
+                <h3>Complementos de Parrillada</h3>
+                <p>¡No dejes ir la venta cruzada! Suma carbón, salsas picantes, tortillas y artículos desechables al mismo ticket para que tu cliente se lleve la carne asada completa en un solo cobro.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Dudas comunes en Carnicerías</h2>
+            </div>
+            <div class="faq-grid">
+                <details class="faq-item">
+                    <summary><span>¿El sistema soporta venta a granel y por pieza?</span> <i class="fa-solid fa-plus"></i></summary>
+                    <div class="faq-answer"><p>Sí, puedes configurar productos para venderse por peso (Kg/gramos) o por unidad (paquetes, piezas únicas), todo en la misma cuenta.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary><span>¿Cómo registro la merma de la carne?</span> <i class="fa-solid fa-plus"></i></summary>
+                    <div class="faq-answer"><p>EscalaPOS incluye un módulo de ajustes de inventario donde puedes registrar mermas por limpieza, hueso o caducidad para mantener tu utilidad real.</p></div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <div class="summary-widget" id="summaryWidget">
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
