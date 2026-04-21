@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punto de Venta para Ferreterías | EscalaPOS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="main-navbar">
+    <div class="container nav-container">
+        <a href="#" class="logo">Escala<span>POS</span></a>
+        
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <nav class="nav-menu">
+            <ul class="nav-list">
+                <li><a href="#pasos" class="nav-link">Cómo funciona</a></li>
+                <li><a href="#precios" class="nav-link">Planes</a></li>
+                <li><a href="#modulos" class="nav-link">Add-ons</a></li>
+                <li><a href="#soluciones" class="nav-link">Soluciones</a></li>
+                <li class="nav-btns">
+                    <a href="#" class="btn-login">Ya tengo cuenta</a>
+                    <a href="#" class="btn-trial-nav">Crear mi trial</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <section class="hero-extension">
+        <div class="container grid-hero">
+            <div class="hero-text">
+                <span class="badge-trial">SOLUCIÓN PARA FERRETERÍAS</span>
+                <h1>El sistema que controla cada <strong>clavo, metro y herramienta</strong>.</h1>
+                <p>Gestiona un inventario masivo sin volverte loco. Vende a granel, por metro o por pieza, y genera cotizaciones al instante para tus clientes contratistas. EscalaPOS es el motor de tu mostrador ferretero.</p>
+                
+                <ul class="hero-bullets">
+                    <li><i class="fa-solid fa-boxes-stacked"></i> Control absoluto de miles de códigos y variantes.</li>
+                    <li><i class="fa-solid fa-ruler-combined"></i> Ventas fraccionadas (metros, kilos, litros).</li>
+                    <li><i class="fa-solid fa-file-invoice"></i> Cotizaciones y apartados rápidos para proyectos.</li>
+                </ul>
+            </div>
+
+            <div class="preselection-container">
+                <div class="preselection-flex">
+                    <div class="preselection-image">
+                        <img src="https://via.placeholder.com/500x400/e8f0fe/195ed7?text=EscalaPOS+Ferreterias" alt="Software para Ferreterías EscalaPOS">
+                    </div>
+                    <div class="preselection-card">
+                        <div class="pre-header">
+                            <h3>Preselección Sugerida</h3>
+                        </div>
+                        <div class="pre-body">
+                            <div class="pre-item">
+                                <span>Plan base:</span>
+                                <strong id="pre-plan-base">Comercial</strong>
+                            </div>
+                            <div class="pre-item">
+                                <span>Caja extra:</span>
+                                <strong>$99.00</strong>
+                            </div>
+                            <div class="pre-item">
+                                <span>Add-ons:</span>
+                                <span id="pre-addons-text" class="text-muted">Incluye: Cotizaciones Avanzadas</span>
+                            </div>
+                            <div class="pre-total">
+                                <span>Total mensual estimado:</span>
+                                <span class="price-tag" id="pre-total-price">$299.00</span>
+                            </div>
+                        </div>
+                        <div class="pre-footer">
+                            <p><i class="fa-solid fa-toolbox"></i> Pon en orden tu ferretería hoy mismo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cash-control-section" id="necesidades-ferreteras">
+    <div class="container">
+        <div class="grid-control">
+            <div class="control-content">
+                <span class="sub-title" style="color: #195ed7;">SOLUCIÓN ESPECIALIZADA</span>
+                <h2 class="section-title">¿Qué exige realmente el control de una ferretería?</h2>
+                <p class="section-desc">Administrar una tlapalería o ferretería no es una tarea genérica. Manejas desde artículos a granel hasta herramientas de alta gama y clientes que buscan precios por volumen. Tu punto de venta debe ser un motor industrial capaz de gestionar kits complejos y una base de datos de proveedores robusta.</p>
+                <p class="section-desc">Con <strong>EscalaPOS</strong>, transformas tu mostrador con herramientas de nivel profesional: genera tus propias etiquetas de códigos de barras para mercancía suelta y asegura la lealtad de tus contratistas mediante sistemas de monedero electrónico.</p>
+                
+                <div class="cta-wrapper" style="margin-top: 30px;">
+                    <a href="#precios" class="btn-primary">
+                        Iniciar prueba industrial sin costo
+                    </a>
+                </div>
+            </div>
+
+            <div class="control-visual">
+                <div class="report-card" style="border-left: 6px solid #195ed7;">
+                    <div class="report-header">
+                        <span><i class="fa-solid fa-barcode"></i> Generador de Etiquetas</span>
+                        <span class="status-badge" style="background: #e6f9ed; color: #26c95e;">Activo</span>
+                    </div>
+                    <div class="report-body">
+                        <div class="report-row"><span>Producto:</span> <strong>Tornillo pija 2"</strong></div>
+                        <div class="report-row"><span>Formato:</span> <strong>38mm x 25mm</strong></div>
+                        <div class="report-divider"></div>
+                        <div class="report-row" style="text-align: center; display: block;">
+                            <i class="fa-solid fa-barcode" style="font-size: 40px; display: block; margin-bottom: 5px;"></i>
+                            <span style="font-family: monospace; letter-spacing: 3px;">750123456789</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="challenges-section" id="retos-ferreteros" style="background-color: #f8fafc;">
+    <div class="container">
+        <div class="section-header text-center">
+            <span class="sub-title" style="color: #fa441f;">DIAGNÓSTICO OPERATIVO</span>
+            <h2 class="section-title">Desafíos que frenan tu productividad</h2>
+            <p class="section-desc">El día a día en una ferretería en México presenta obstáculos únicos que pueden derivar en fugas de dinero. ¿Identificas estos problemas en tu local?</p>
+        </div>
+
+        <div class="challenges-compact-grid">
+            <div class="challenge-row">
+                <div class="chal-icon" style="background: #fff1f0; color: #fa441f;">
+                    <i class="fa-solid fa-microchip"></i>
+                </div>
+                <div class="chal-text">
+                    <h4>Inventario de artículos mínimos</h4>
+                    <p>Contabilizar miles de tornillos, conexiones o clavos es ineficiente sin un sistema de cortes grupales y organizados.</p>
+                </div>
+            </div>
+
+            <div class="challenge-row">
+                <div class="chal-icon" style="background: #e8f0fe; color: #195ed7;">
+                    <i class="fa-solid fa-file-signature"></i>
+                </div>
+                <div class="chal-text">
+                    <h4>Presupuestos informales</h4>
+                    <p>Hacer cotizaciones manuales resta profesionalismo y provoca que los contratistas elijan opciones con procesos más formales.</p>
+                </div>
+            </div>
+
+            <div class="challenge-row">
+                <div class="chal-icon" style="background: #fff1f0; color: #fa441f;">
+                    <i class="fa-solid fa-barcode"></i>
+                </div>
+                <div class="chal-text">
+                    <h4>Mercancía sin identificación</h4>
+                    <p>Los productos sueltos sin código de fábrica retrasan el cobro y generan errores constantes en los precios finales.</p>
+                </div>
+            </div>
+
+            <div class="challenge-row">
+                <div class="chal-icon" style="background: #e8f0fe; color: #195ed7;">
+                    <i class="fa-solid fa-user-group"></i>
+                </div>
+                <div class="chal-text">
+                    <h4>Abandono de maestros de obra</h4>
+                    <p>Si tus clientes recurrentes no reciben incentivos como monederos electrónicos, terminarán comprando con la competencia.</p>
+                </div>
+            </div>
+
+            <div class="challenge-row chal-center">
+                <div class="chal-icon" style="background: #fff1f0; color: #fa441f;">
+                    <i class="fa-solid fa-cubes"></i>
+                </div>
+                <div class="chal-text">
+                    <h4>Desorden en Paquetes y Combos</h4>
+                    <p>Vender kits de baño o promociones de pintura sin un sistema que descuente automáticamente cada pieza individual descuadra tu stock.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="pos-importance" id="herramientas-industriales">
+    <div class="container">
+        <div class="section-header text-center">
+            <span class="sub-title" style="color: #195ed7;">POTENCIA TECNOLÓGICA</span>
+            <h2 class="section-title">El arsenal de herramientas para tu ferretería</h2>
+            <p class="section-desc"><strong>EscalaPOS</strong> integra funciones avanzadas diseñadas para blindar tu patrimonio y elevar tu servicio al nivel de las grandes cadenas ferreteras.</p>
+        </div>
+
+        <div class="importance-grid">
+            <div class="importance-card">
+                <div class="card-icon-circle" style="background: #d6e5fa; color: #195ed7;">
+                    <i class="fa-solid fa-print"></i>
+                </div>
+                <h3>Etiquetado Personalizado</h3>
+                <p>Crea e imprime tus propios códigos de barras para identificar cada artículo suelto en tu estantería y agilizar el escaneo en caja.</p>
+            </div>
+
+            <div class="importance-card">
+                <div class="card-icon-circle" style="background: #d6e5fa; color: #195ed7;">
+                    <i class="fa-solid fa-file-pdf"></i>
+                </div>
+                <h3>Cotizaciones Profesionales</h3>
+                <p>Genera presupuestos formales en PDF para tus clientes y contratistas, manteniendo un historial de seguimiento para concretar más ventas.</p>
+            </div>
+
+            <div class="importance-card">
+                <div class="card-icon-circle" style="background: #d6e5fa; color: #195ed7;">
+                    <i class="fa-solid fa-box-open"></i>
+                </div>
+                <h3>Gestión de Kits y Paquetes</h3>
+                <p>Configura combos que descuentan automáticamente cada componente del inventario físico al momento de realizar la venta.</p>
+            </div>
+
+            <div class="importance-card">
+                <div class="card-icon-circle" style="background: #d6e5fa; color: #195ed7;">
+                    <i class="fa-solid fa-users-gear"></i>
+                </div>
+                <h3>Auditoría Colaborativa</h3>
+                <p>Realiza cortes de inventario por zonas o familias de productos con monitoreo en tiempo real, permitiendo que varios empleados trabajen simultáneamente.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="challenges-section" id="funciones-ferreteria" style="background-color: #ffffff;">
+    <div class="container">
+        <div class="section-header text-center">
+            <span class="sub-title" style="color: #195ed7;">POTENCIA OPERATIVA</span>
+            <h2 class="section-title">Herramientas especializadas para el sector ferretero</h2>
+            <p class="section-desc">Tu inventario exige un sistema que entienda la diferencia entre un clavo suelto y un equipo industrial. EscalaPOS te da el control milimétrico que necesitas.</p>
+        </div>
+
+        <div class="challenges-compact-grid">
+            
+            <div class="challenge-row">
+                <div class="chal-icon" style="background: #d6e5fa; color: #195ed7;">
+                    <i class="fa-solid fa-boxes-packing"></i>
+                </div>
+                <div class="chal-text">
+                    <h4>Control de Kits y Ensambles</h4>
+                    <p>Configura "Kits de instalación" en el sistema. Al venderlos, el inventario descontará automáticamente cada tuerca, tubo o pieza individual que lo compone.</p>
+                </div>
+            </div>
+
+            <div class="challenge-row">
+                <div class="chal-icon" style="background: #e6f9ed; color: #26c95e;">
+                    <i class="fa-solid fa-file-signature"></i>
+                </div>
+                <div class="chal-text">
+                    <h4>Motor de Cotizaciones</h4>
+                    <p>Elabora y guarda presupuestos formales para contratistas. Cuando el cliente apruebe la obra, convierte esa cotización en una venta real con un solo clic.</p>
+                </div>
+            </div>
+
+            <div class="challenge-row">
+                <div class="chal-icon" style="background: #d6e5fa; color: #195ed7;">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                </div>
+                <div class="chal-text">
+                    <h4>Auditoría Multi-dispositivo</h4>
+                    <p>Optimiza el tiempo: tus almacenistas pueden realizar conteos de inventario desde su celular en bodega, mientras tú sigues cobrando en la computadora principal.</p>
+                </div>
+            </div>
+
+            <div class="challenge-row">
+                <div class="chal-icon" style="background: #fff1f0; color: #fa441f;">
+                    <i class="fa-solid fa-helmet-safety"></i>
+                </div>
+                <div class="chal-text">
+                    <h4>Gestión de Clientes Frecuentes</h4>
+                    <p>Construye perfiles para tus compradores más fuertes (arquitectos, albañiles) y asígnales listas de precios por volumen o límites de crédito preaprobados.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="pos-importance" id="beneficios-mostrador" style="background-color: #f8fafc;">
+    <div class="container">
+        <div class="section-header text-center">
+            <span class="sub-title" style="color: #fa441f;">RENTABILIDAD Y CONTROL</span>
+            <h2 class="section-title">Beneficios de elegir EscalaPOS para tu mostrador</h2>
+            <p class="section-desc">Eleva la imagen de tu ferretería, agiliza tus cobros y amarra proyectos grandes con total seguridad administrativa.</p>
+        </div>
+
+        <div class="importance-grid">
+            
+            <div class="importance-card">
+                <div class="card-icon-circle" style="background: #e8f0fe; color: #195ed7;">
+                    <i class="fa-solid fa-barcode"></i>
+                </div>
+                <h3>Etiquetado Profesional</h3>
+                <p>Termina con el caos de la tornillería y mangueras sueltas. Genera e imprime tus propios códigos de barras para que el cajero simplemente escanee y cobre al instante.</p>
+            </div>
+
+            <div class="importance-card">
+                <div class="card-icon-circle" style="background: #e6f9ed; color: #26c95e;">
+                    <i class="fa-solid fa-building-circle-check"></i>
+                </div>
+                <h3>Cierre de Obras Mayores</h3>
+                <p>Proyecta confianza y formalidad enviando cotizaciones en PDF por correo o impresas. Atrae a los profesionales de la construcción y asegura contratos lucrativos.</p>
+            </div>
+
+            <div class="importance-card">
+                <div class="card-icon-circle" style="background: #fff1f0; color: #fa441f;">
+                    <i class="fa-solid fa-user-shield"></i>
+                </div>
+                <h3>Delegación Segura</h3>
+                <p>Agrega a tus empleados como colaboradores con permisos limitados para hacer conteos en pasillo. Tú, como dueño, autorizas y revisas el corte final desde la tranquilidad de tu oficina.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="challenges-section" id="catalogo-masivo" style="background-color: #ffffff;">
+    <div class="container">
+        <div class="grid-control">
+            
+            <div class="control-content">
+                <span class="sub-title" style="color: #195ed7;">MIGRACIÓN ACELERADA</span>
+                <h2 class="section-title">Carga tu catálogo ferretero masivo en minutos</h2>
+                <p class="section-desc">Sabemos perfectamente que una ferretería puede superar los 10,000 artículos fácilmente. Hemos desarrollado herramientas de importación para que subir tu inventario completo, incluyendo herramientas con número de serie, sea un proceso ágil y sin fricciones.</p>
+                
+                <div class="importance-list">
+                    <div class="challenge-row" style="margin-bottom: 15px;">
+                        <div class="chal-icon" style="background: #d6e5fa; color: #195ed7;">
+                            <i class="fa-solid fa-file-excel"></i>
+                        </div>
+                        <div class="chal-text">
+                            <h4>Sincronización Masiva con Excel</h4>
+                            <p>Importa las enormes listas de precios de tus proveedores en cuestión de segundos, actualizando tus costos de venta al instante.</p>
+                        </div>
+                    </div>
+
+                    <div class="challenge-row" style="margin-bottom: 15px;">
+                        <div class="chal-icon" style="background: #d6e5fa; color: #195ed7;">
+                            <i class="fa-solid fa-toolbox"></i>
+                        </div>
+                        <div class="chal-text">
+                            <h4>Constructor de Combos</h4>
+                            <p>Agrupa artículos complementarios (ej. taladro + juego de brocas) bajo un nuevo código de barras y un precio promocional exclusivo.</p>
+                        </div>
+                    </div>
+
+                    <div class="challenge-row">
+                        <div class="chal-icon" style="background: #d6e5fa; color: #195ed7;">
+                            <i class="fa-solid fa-tags"></i>
+                        </div>
+                        <div class="chal-text">
+                            <h4>Generador Secuencial de Códigos</h4>
+                            <p>El sistema asigna automáticamente secuencias numéricas a todos aquellos productos sueltos que no incluyen código de fábrica.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="control-visual">
+                <div class="image-placeholder-pharmacy" style="position: relative; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.1); border: 1px solid #e2e8f0;">
+                    <img src="assets/img/catalogo-ferreteria-masivo.png" alt="Carga masiva de inventario ferretero EscalaPOS" style="width: 100%; display: block;">
+                    
+                    <div class="floating-badge" style="position: absolute; bottom: 20px; left: 20px; background: #26c95e; color: white; padding: 12px 20px; border-radius: 10px; font-weight: 700; display: flex; align-items: center; gap: 10px;">
+                        <i class="fa-solid fa-bolt"></i>
+                        <span>+10,000 artículos listos</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="cash-control-section" id="auditoria-grupal">
+    <div class="container">
+        <div class="grid-control">
+            <div class="control-content">
+                <span class="sub-title" style="color: #195ed7;">EFICIENCIA COLECTIVA</span>
+                <h2 class="section-title">Cortes de inventario grupales: El fin de la auditoría interminable</h2>
+                <p class="section-desc">Contar miles de artículos no tiene por qué ser una tarea solitaria y eterna. <strong>EscalaPOS</strong> transforma este proceso permitiéndote coordinar auditorías colaborativas: añade a varios empleados para que escaneen y cuenten diferentes pasillos de forma simultánea.</p>
+                <p class="section-desc">Como administrador, tienes el control total desde tu panel. Supervisa el avance de cada zona en tiempo real, detecta descuadres al instante y autoriza cierres con la certeza de que el stock físico coincide plenamente con tu sistema.</p>
+                
+                <div class="importance-list">
+                    <div class="challenge-row" style="border-left: 4px solid #195ed7;">
+                        <div class="chal-icon" style="background: #e8f0fe; color: #195ed7;">
+                            <i class="fa-solid fa-users-viewfinder"></i>
+                        </div>
+                        <div class="chal-text">
+                            <h4>Monitoreo de Progreso en Vivo</h4>
+                            <p>Visualiza qué pasillos ya fueron auditados y cuáles faltan por procesar sin moverte de tu oficina.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="control-visual">
+                <div class="report-card" style="border-left: 6px solid #26c95e;">
+                    <div class="report-header">
+                        <span><i class="fa-solid fa-chart-pie"></i> Estatus de Auditoría</span>
+                        <span class="status-badge" style="background: #e6f9ed; color: #26c95e;">85% Completado</span>
+                    </div>
+                    <div class="report-body">
+                        <div class="report-row"><span>Zona A (Tornillería):</span> <strong>Finalizado</strong></div>
+                        <div class="report-row"><span>Zona B (Plomería):</span> <strong style="color: #195ed7;">En proceso...</strong></div>
+                        <div class="report-divider"></div>
+                        <div class="report-row total">
+                            <span>Discrepancia detectada:</span>
+                            <span class="total-amount" style="color: #fa441f;">0.2%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="challenges-section" id="jerarquia-familias" style="background-color: #f8fafc;">
+    <div class="container">
+        <div class="section-header text-center">
+            <span class="sub-title" style="color: #195ed7;">ORDEN ESTRATÉGICO</span>
+            <h2 class="section-title">Jerarquiza tus departamentos y familias</h2>
+            <p class="section-desc">Clasificar tus artículos por categorías y subcategorías es fundamental para atender con rapidez y profesionalismo.</p>
+        </div>
+
+        <div class="challenges-compact-grid">
+            <div class="challenge-row">
+                <div class="chal-icon" style="background: #d6e5fa; color: #195ed7;">
+                    <i class="fa-solid fa-sitemap"></i>
+                </div>
+                <div class="chal-text">
+                    <h4>Estructura de Ventas Lógica</h4>
+                    <p>Organiza tu inventario con sentido común. Si un cliente solicita conexiones de PVC, localízalas de inmediato filtrando por la familia de Plomería.</p>
+                </div>
+            </div>
+
+            <div class="challenge-row">
+                <div class="chal-icon" style="background: #e6f9ed; color: #26c95e;">
+                    <i class="fa-solid fa-chart-simple"></i>
+                </div>
+                <div class="chal-text">
+                    <h4>Márgenes por Categoría</h4>
+                    <p>Analiza qué áreas son las más lucrativas. Compara el rendimiento financiero entre material eléctrico y herramientas manuales con reportes detallados.</p>
+                </div>
+            </div>
+
+            <div class="challenge-row chal-center">
+                <div class="chal-icon" style="background: #d6e5fa; color: #195ed7;">
+                    <i class="fa-solid fa-layer-group"></i>
+                </div>
+                <div class="chal-text">
+                    <h4>Agrupaciones de Venta Cruzada</h4>
+                    <p>Fomenta compras complementarias agrupando productos dentro de sus categorías, como rodillos y brochas asociados a la sección de pinturas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="challenges-section" id="analisis-marcas" style="background-color: #ffffff;">
+    <div class="container">
+        <div class="section-header text-center">
+            <span class="sub-title" style="color: #195ed7;">INTELIGENCIA DE COMPRA</span>
+            <h2 class="section-title">Mide el rendimiento de las marcas ferreteras</h2>
+            <p class="section-desc">Registrar el fabricante de cada herramienta te otorga el poder de auditar con precisión qué laboratorios o marcas generan mayor utilidad real.</p>
+        </div>
+
+        <div class="challenges-compact-grid">
+            <div class="challenge-row">
+                <div class="chal-icon" style="background: #e6f9ed; color: #26c95e;">
+                    <i class="fa-solid fa-handshake-simple"></i>
+                </div>
+                <div class="chal-text">
+                    <h4>Poder de Negociación</h4>
+                    <p>Utiliza tus datos de volumen de venta por marca para exigir mejores costos, bonificaciones o material de exhibición a tus proveedores mayoristas.</p>
+                </div>
+            </div>
+
+            <div class="challenge-row">
+                <div class="chal-icon" style="background: #d6e5fa; color: #195ed7;">
+                    <i class="fa-solid fa-arrows-spin"></i>
+                </div>
+                <div class="chal-text">
+                    <h4>Auditoría de Desplazamiento</h4>
+                    <p>Identifica patrones de consumo: ¿rotan más rápido tus discos de corte económicos o las líneas premium de marcas especializadas?</p>
+                </div>
+            </div>
+
+            <div class="challenge-row chal-center">
+                <div class="chal-icon" style="background: #d6e5fa; color: #195ed7;">
+                    <i class="fa-solid fa-box-archive"></i>
+                </div>
+                <div class="chal-text">
+                    <h4>Paquetes Multimarca Estratégicos</h4>
+                    <p>Diseña promociones inteligentes combinando herramientas de alto valor con consumibles de alta rotación de diferentes fabricantes.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="challenges-section" id="compatibilidad-hardware" style="background-color: #f8fafc;">
+    <div class="container">
+        <div class="grid-control">
+            
+            <div class="control-content">
+                <span class="sub-title" style="color: #195ed7;">CERO INVERSIÓN EXTRA</span>
+                <h2 class="section-title">Integración perfecta con tu hardware actual</h2>
+                <p class="section-desc">No necesitas gastar en dispositivos nuevos. <strong>EscalaPOS</strong> está diseñado para reconocer y sincronizarse con tus periféricos de forma nativa, dándole nueva vida al equipo que ya tienes en tu mostrador.</p>
+                
+                <div class="importance-list">
+                    <div class="challenge-row" style="margin-bottom: 15px;">
+                        <div class="chal-icon" style="background: #d6e5fa; color: #195ed7;">
+                            <i class="fa-solid fa-print"></i>
+                        </div>
+                        <div class="chal-text">
+                            <h4>Sincronización de Impresoras Térmicas</h4>
+                            <p>Conecta equipos Zebra o genéricos sin complicaciones. El sistema manda a imprimir automáticamente las etiquetas de códigos de barras que configures.</p>
+                        </div>
+                    </div>
+
+                    <div class="challenge-row" style="margin-bottom: 15px;">
+                        <div class="chal-icon" style="background: #d6e5fa; color: #195ed7;">
+                            <i class="fa-solid fa-receipt"></i>
+                        </div>
+                        <div class="chal-text">
+                            <h4>Diseño de Tickets Personalizado</h4>
+                            <p>Adapta tus comprobantes de venta (58mm u 80mm) y notas de remisión directamente desde la plataforma, proyectando formalidad a tus contratistas.</p>
+                        </div>
+                    </div>
+
+                    <div class="challenge-row" style="margin-bottom: 15px;">
+                        <div class="chal-icon" style="background: #e6f9ed; color: #26c95e;">
+                            <i class="fa-solid fa-scale-balanced"></i>
+                        </div>
+                        <div class="chal-text">
+                            <h4>Conexión Directa con Básculas</h4>
+                            <p>Integra tu báscula comercial para agilizar la venta a granel de clavos, alambre o cadena, transfiriendo el peso exacto directamente a la pantalla de cobro.</p>
+                        </div>
+                    </div>
+
+                    <div class="challenge-row">
+                        <div class="chal-icon" style="background: #fff1f0; color: #fa441f;">
+                            <i class="fa-solid fa-cash-register"></i>
+                        </div>
+                        <div class="chal-text">
+                            <h4>Control Central de Periféricos</h4>
+                            <p>Detecta lectores de código de uso rudo y configura aperturas de gaveta de dinero ligadas estrictamente a los permisos de seguridad de cada cajero.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="control-visual">
+                <div class="image-placeholder-ferreteria" style="position: relative; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.1); border: 1px solid #e2e8f0;">
+                    <img src="assets/img/hardware-ferreteria-escalapos.png" alt="Compatibilidad de hardware en ferreterías EscalaPOS" style="width: 100%; display: block;">
+                    
+                    <div class="floating-badge" style="position: absolute; top: 20px; right: 20px; background: #195ed7; color: white; padding: 10px 15px; border-radius: 8px; font-weight: 700; font-size: 13px; display: flex; align-items: center; gap: 8px;">
+                        <i class="fa-solid fa-plug-circle-check"></i>
+                        <span>Plug & Play</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="pos-importance" id="comparativa-ferretera" style="background-color: #ffffff;">
+    <div class="container">
+        <div class="section-header text-center">
+            <span class="sub-title" style="color: #fa441f;">LA EVOLUCIÓN DE TU NEGOCIO</span>
+            <h2 class="section-title">¿Por qué cambiar el viejo cuaderno por tecnología ferretera?</h2>
+            <p class="section-desc">Observa la diferencia entre la administración tradicional llena de fugas y la precisión milimétrica que te otorga EscalaPOS.</p>
+        </div>
+
+        <div class="table-responsive">
+            <table class="escala-table">
+                <thead>
+                    <tr>
+                        <th>Característica</th>
+                        <th>Libreta / Excel</th>
+                        <th>Sistemas Obsoletos</th>
+                        <th class="highlight-col">EscalaPOS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="feature-name"><i class="fa-solid fa-boxes-packing"></i> Cotizaciones y Kits</td>
+                        <td>Proceso manual, lento y propenso a errores de cálculo.</td>
+                        <td>Configuración rígida y muy compleja de enlazar.</td>
+                        <td class="highlight-col"><strong>Profesional, ágil y descuenta el stock de cada pieza automáticamente.</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name"><i class="fa-solid fa-clipboard-check"></i> Cortes de Inventario</td>
+                        <td>Obliga a cerrar la tienda por días enteros.</td>
+                        <td>Limitado a un solo usuario contando a la vez.</td>
+                        <td class="highlight-col"><strong>Grupales, multi-usuario desde el celular y con monitoreo de avance en vivo.</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name"><i class="fa-solid fa-handshake-simple"></i> Fidelización de Clientes</td>
+                        <td>Basada únicamente en la "confianza de palabra".</td>
+                        <td>Un simple directorio sin historial de compras.</td>
+                        <td class="highlight-col"><strong>Monederos electrónicos, historial de contratistas y listas de precios exclusivas.</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<section class="faq-section" id="faq-ferreterias">
+    <div class="container">
+        <div class="section-header text-center">
+            <span class="sub-title" style="color: #195ed7;">SOPORTE TÉCNICO Y DUDAS</span>
+            <h2 class="section-title">Preguntas Frecuentes del Sector Ferretero</h2>
+            <p class="section-desc">Resolvemos las inquietudes más comunes antes de que des el salto a la modernización de tu mostrador.</p>
+        </div>
+
+        <div class="faq-grid">
+            <details class="faq-item">
+                <summary>
+                    <span>¿El sistema permite vender cable por metro o clavos por kilo?</span>
+                    <i class="fa-solid fa-plus"></i>
+                </summary>
+                <div class="faq-answer">
+                    <p>Totalmente. EscalaPOS maneja unidades de medida fraccionadas. Puedes configurar productos para venderse a granel, y el sistema calculará el precio exacto basado en el peso de la báscula o la medida que ingreses, descontando la fracción correcta de tu inventario.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>
+                    <span>Tengo más de 15,000 artículos, ¿el sistema se volverá lento?</span>
+                    <i class="fa-solid fa-plus"></i>
+                </summary>
+                <div class="faq-answer">
+                    <p>No. Nuestra arquitectura está diseñada para bases de datos masivas. Puedes tener miles de tornillos, coples y herramientas en tu catálogo, y el buscador de la pantalla de cobro responderá en milisegundos.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>
+                    <span>¿Puedo imprimir etiquetas para productos que no traen código?</span>
+                    <i class="fa-solid fa-plus"></i>
+                </summary>
+                <div class="faq-answer">
+                    <p>Sí, EscalaPOS cuenta con un generador interno. Le asigna una secuencia numérica a tus productos sueltos y envía la orden a tu impresora térmica para que etiquetes tus cajoneras y agilices el cobro.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>
+                    <span>¿Mis empleados pueden ver cuánto dinero hay en la caja?</span>
+                    <i class="fa-solid fa-plus"></i>
+                </summary>
+                <div class="faq-answer">
+                    <p>Solo si tú se los permites. El módulo de seguridad te permite ocultar los cortes de caja, las utilidades y el valor del inventario a los perfiles de "Cajero", reservando esa información únicamente para el "Administrador".</p>
+                </div>
+            </details>
+        </div>
+    </div>
+</section>
+<footer class="footer-seo">
+    <div class="container grid-footer">
+        <div class="footer-col brand-col">
+            <a href="#" class="logo">Escala<span>POS</span></a>
+            <p>El punto de venta modular que se adapta al ritmo de tu negocio. Sin contratos forzosos ni datos fiscales al iniciar.</p>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h4>Soluciones POS</h4>
+            <ul>
+                <li><a href="#">Punto de venta para Abarrotes</a></li>
+                <li><a href="#">Sistema para Carnicerías</a></li>
+                <li><a href="#">Software para Farmacias</a></li>
+                <li><a href="#">Control de Ferreterías</a></li>
+                <li><a href="#">POS para Papelerías</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Módulos Escala</h4>
+            <ul>
+                <li><a href="#">Facturación Electrónica 4.0</a></li>
+                <li><a href="#">CRM y Cobranza</a></li>
+                <li><a href="#">Monedero y Lealtad</a></li>
+                <li><a href="#">Control de Inventarios</a></li>
+                <li><a href="#">Analítica Gerencial</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>EscalaPOS México</h4>
+            <p><i class="fa-solid fa-location-dot"></i> Disponible en CDMX, Querétaro, Monterrey y todo México.</p>
+            <p><i class="fa-solid fa-phone"></i> +52 777 123 4567</p>
+            <p><i class="fa-solid fa-envelope"></i> ventas@escalapos.mx</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container bottom-flex">
+            <p>&copy; 2026 EscalaPOS. Todos los derechos reservados.</p>
+            <div class="legal-links">
+                <a href="#">Aviso de Privacidad</a>
+                <a href="#">Términos y Condiciones</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="scriptl.js"></script>
+</body>
+</html>

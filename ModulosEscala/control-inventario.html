@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema para Manejar Inventarios y Control PEPS | EscalaPOS</title>
+    <meta name="description" content="Descubre cómo manejar el inventario de tu negocio con EscalaPOS. Control exacto de existencias, método PEPS (FIFO) y auditoría en tiempo real.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="main-navbar">
+    <div class="container nav-container">
+        <a href="#" class="logo">Escala<span>POS</span></a>
+        
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <nav class="nav-menu">
+            <ul class="nav-list">
+                <li><a href="#pasos" class="nav-link">Cómo funciona</a></li>
+                <li><a href="#precios" class="nav-link">Planes</a></li>
+                <li><a href="#modulos" class="nav-link">Add-ons</a></li>
+                <li><a href="#soluciones" class="nav-link">Soluciones</a></li>
+                <li class="nav-btns">
+                    <a href="#" class="btn-login">Ya tengo cuenta</a>
+                    <a href="#" class="btn-trial-nav">Crear mi trial</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <section class="hero-extension">
+        <div class="container grid-hero">
+            <div class="hero-text">
+                <span class="badge-trial" style="background-color: #d6e5fa; color: #195ed7;">MÓDULO CENTRAL</span>
+                <h1>El <strong>sistema para manejar inventarios</strong> que blinda tus ganancias.</h1>
+                <p>Tu mercancía es dinero estacionado en tus anaqueles. EscalaPOS te otorga el control absoluto de tus existencias, permitiéndote auditar cada entrada, salida y merma en tiempo real bajo los estándares más estrictos del comercio formal.</p>
+                
+                <ul class="hero-bullets">
+                    <li><i class="fa-solid fa-boxes-stacked"></i> Trazabilidad exacta de cada producto por sucursal.</li>
+                    <li><i class="fa-solid fa-arrow-right-arrow-left"></i> Rotación inteligente bajo el método PEPS (FIFO).</li>
+                    <li><i class="fa-solid fa-clipboard-check"></i> Registro auditable de ajustes positivos y negativos.</li>
+                </ul>
+            </div>
+
+            <div class="preselection-container">
+                <div class="preselection-flex">
+                    <div class="preselection-image">
+                        <img src="https://via.placeholder.com/500x400/e8f0fe/195ed7?text=EscalaPOS+Inventarios" alt="Control de Inventarios EscalaPOS">
+                    </div>
+                    <div class="preselection-card">
+                        <div class="pre-header">
+                            <h3>Auditoría de Almacén</h3>
+                        </div>
+                        <div class="pre-body">
+                            <div class="pre-item">
+                                <span>Multi-sucursal:</span>
+                                <strong>Sincronizado</strong>
+                            </div>
+                            <div class="pre-item">
+                                <span>Log de movimientos:</span>
+                                <strong>En tiempo real</strong>
+                            </div>
+                            <div class="pre-item">
+                                <span>Prevención de robo:</span>
+                                <span class="text-muted">Alta seguridad</span>
+                            </div>
+                        </div>
+                        <div class="pre-footer">
+                            <p><i class="fa-solid fa-lock"></i> Tu patrimonio bajo control total.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="challenges-section" id="conceptos-seo" style="background-color: #f8fafc;">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-title" style="color: #fa441f;">FUNDAMENTOS DEL COMERCIO</span>
+                <h2 class="section-title">La importancia del inventario en tu negocio</h2>
+                <p class="section-desc">Para saber cómo manejar mi inventario en mi negocio, primero debemos entender los conceptos que determinan el éxito o el fracaso de una tienda física.</p>
+            </div>
+
+            <div class="challenges-compact-grid">
+                <div class="challenge-row">
+                    <div class="chal-icon" style="background: #d6e5fa; color: #195ed7;">
+                        <i class="fa-solid fa-warehouse"></i>
+                    </div>
+                    <div class="chal-text">
+                        <h4>¿Qué es el inventario?</h4>
+                        <p>Es el registro detallado de todos los bienes tangibles que tu empresa posee con la intención de ser vendidos. No son solo cajas, es tu capital de trabajo convertido en productos. Si no lo mides, no lo controlas.</p>
+                    </div>
+                </div>
+
+                <div class="challenge-row">
+                    <div class="chal-icon" style="background: #e6f9ed; color: #26c95e;">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div class="chal-text">
+                        <h4>Importancia del inventario exacto</h4>
+                        <p>Un conteo preciso evita dos grandes catástrofes: el desabasto (que enoja a los clientes que buscan comprar) y el sobrestock (que inmoviliza tu dinero en mercancía que tarda meses en venderse).</p>
+                    </div>
+                </div>
+
+                <div class="challenge-row">
+                    <div class="chal-icon" style="background: #fff1f0; color: #fa441f;">
+                        <i class="fa-solid fa-laptop-file"></i>
+                    </div>
+                    <div class="chal-text">
+                        <h4>¿Cómo manejar mi inventario en mi negocio?</h4>
+                        <p>Olvidando el cuaderno. Implementar un software centralizado garantiza que cada venta descuente la mercancía correcta al instante, reduciendo el margen de error humano y el robo hormiga casi a cero.</p>
+                    </div>
+                </div>
+
+                <div class="challenge-row">
+                    <div class="chal-icon" style="background: #d6e5fa; color: #195ed7;">
+                        <i class="fa-solid fa-network-wired"></i>
+                    </div>
+                    <div class="chal-text">
+                        <h4>Visibilidad Global</h4>
+                        <p>EscalaPOS te permite filtrar existencias por sucursal. Si un cliente busca un producto agotado en tu matriz, puedes verificar inmediatamente si tienes stock en otra de tus tiendas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pos-importance" id="metodo-peps" style="background-color: #ffffff;">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-title" style="color: #195ed7;">LOGÍSTICA DE CLASE MUNDIAL</span>
+                <h2 class="section-title">Rotación Inteligente: El Método PEPS (FIFO)</h2>
+                <p class="section-desc">En negocios con productos perecederos, medicamentos o mercancía con fecha de caducidad, el orden de salida lo es todo. EscalaPOS está diseñado bajo la metodología internacional <strong>Primeras Entradas, Primeras Salidas</strong>.</p>
+            </div>
+
+            <div class="importance-grid">
+                
+                <div class="importance-card">
+                    <div class="card-icon-circle" style="background: #e8f0fe; color: #195ed7;">
+                        <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                    </div>
+                    <h3>¿Qué es el PEPS (FIFO)?</h3>
+                    <p>First In, First Out. Significa que los artículos que ingresaron primero a tu almacén (los más antiguos) deben ser los primeros en venderse y descontarse del sistema. Esto garantiza que tu mercancía nunca se quede rezagada.</p>
+                </div>
+
+                <div class="importance-card">
+                    <div class="card-icon-circle" style="background: #fff1f0; color: #fa441f;">
+                        <i class="fa-solid fa-calendar-xmark"></i>
+                    </div>
+                    <h3>Protección de Caducidades</h3>
+                    <p>Al aplicar este método, el software te ayuda a priorizar la venta de los lotes próximos a vencer. Previenes pérdidas gigantescas por producto caducado en vitrinas, manteniendo un almacén siempre sano.</p>
+                </div>
+
+                <div class="importance-card">
+                    <div class="card-icon-circle" style="background: #e6f9ed; color: #26c95e;">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3>Cálculo de Utilidad Exacto</h3>
+                    <p>Los precios de tus proveedores cambian. Al vender primero el inventario más viejo, EscalaPOS calcula tu margen de ganancia basándose en el costo real con el que adquiriste esa partida específica, no en promedios irreales.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="cash-control-section" id="ajustes-manuales" style="background-color: #f8fafc;">
+        <div class="container">
+            <div class="grid-control">
+                <div class="control-content">
+                    <span class="sub-title" style="color: #fa441f;">PANEL DE CONTROL TÁCTICO</span>
+                    <h2 class="section-title">Ajustes manuales y auditoría implacable</h2>
+                    <p class="section-desc">Un sistema robusto no permite que los números cambien por arte de magia. Nuestro panel de <strong>Ajuste manual de inventario</strong> obliga a tus gerentes a justificar documentalmente cualquier alteración en el stock.</p>
+                    
+                    <div class="importance-list">
+                        <div class="challenge-row" style="margin-bottom: 15px;">
+                            <div class="chal-icon" style="background: #d6e5fa; color: #195ed7;">
+                                <i class="fa-solid fa-calculator"></i>
+                            </div>
+                            <div class="chal-text">
+                                <h4>Agregar o Descontar Existencias</h4>
+                                <p>Configura el tipo de movimiento. Selecciona <strong>"Agregar existencia"</strong> para ingresar mercancía nueva, o <strong>"Descontar existencia"</strong> para retirar productos dañados o consumos internos.</p>
+                            </div>
+                        </div>
+
+                        <div class="challenge-row" style="margin-bottom: 15px;">
+                            <div class="chal-icon" style="background: #fff1f0; color: #fa441f;">
+                                <i class="fa-solid fa-triangle-exclamation"></i>
+                            </div>
+                            <div class="chal-text">
+                                <h4>Motivos y Referencias Obligatorias</h4>
+                                <p>Nadie altera el inventario sin dejar huella. El sistema exige capturar el <strong>Motivo</strong> (ej. carga inicial, merma, corrección) y una <strong>Referencia</strong> corta (número de ticket o folio) para respaldar la auditoría.</p>
+                            </div>
+                        </div>
+
+                        <div class="challenge-row">
+                            <div class="chal-icon" style="background: #e6f9ed; color: #26c95e;">
+                                <i class="fa-solid fa-clock-rotate-left"></i>
+                            </div>
+                            <div class="chal-text">
+                                <h4>Historial de Movimientos Recientes</h4>
+                                <p>Visualiza en la misma pantalla una bitácora exacta. Observa cómo una venta descuenta unidades (ej. <span style="color: #fa441f; font-weight: 700;">-2</span>) y un ajuste positivo suma mercancía (ej. <span style="color: #26c95e; font-weight: 700;">+25</span>) con fecha y hora precisa.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="control-visual">
+                    <div class="image-placeholder-pharmacy" style="position: relative; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.1); border: 1px solid #e2e8f0;">
+                        <img src="assets/img/interfaz-inventario-escalapos.png" alt="Dashboard de Inventario EscalaPOS" style="width: 100%; display: block;">
+                        
+                        <div class="floating-badge" style="position: absolute; top: 20px; right: 20px; background: #195ed7; color: white; padding: 10px 15px; border-radius: 8px; font-weight: 700; font-size: 13px; display: flex; align-items: center; gap: 8px;">
+                            <i class="fa-solid fa-shield"></i>
+                            <span>Auditoría Activa</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pos-importance" id="comparativa-inventario" style="background-color: #ffffff;">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-title" style="color: #195ed7;">LA DECISIÓN CORRECTA</span>
+                <h2 class="section-title">¿Por qué modernizar el control de tus anaqueles?</h2>
+            </div>
+
+            <div class="table-responsive">
+                <table class="escala-table">
+                    <thead>
+                        <tr>
+                            <th>Proceso Operativo</th>
+                            <th>Hojas de Cálculo / Cuaderno</th>
+                            <th class="highlight-col">Módulo EscalaPOS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="feature-name"><i class="fa-solid fa-cart-shopping"></i> Actualización tras Venta</td>
+                            <td>Se requiere borrar y reescribir manualmente cada día.</td>
+                            <td class="highlight-col"><strong>Automática. Cada ticket emitido descuenta el stock en tiempo real.</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name"><i class="fa-solid fa-clipboard-question"></i> Ajustes por Mermas</td>
+                            <td>Las cosas desaparecen y nadie sabe quién ni por qué.</td>
+                            <td class="highlight-col"><strong>Ajustes forzados a incluir un Motivo y Referencia trazable.</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name"><i class="fa-solid fa-layer-group"></i> Rotación de Producto</td>
+                            <td>Caótica. Los empleados sacan lo primero que ven a la mano.</td>
+                            <td class="highlight-col"><strong>Lógica PEPS. El sistema calcula y prioriza las existencias más antiguas.</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section class="cash-control-section" id="kardex-inventario" style="background-color: #ffffff;">
+    <div class="container">
+        <div class="grid-control">
+            <div class="control-content">
+                <span class="sub-title" style="color: #195ed7;">AUDITORÍA PROFESIONAL</span>
+                <h2 class="section-title">Kardex: La bitácora histórica de tu stock</h2>
+                <p class="section-desc">El <strong>Kardex de inventario</strong> es el registro cronológico que permite seguir el rastro de un producto desde que entra a tu almacén hasta que llega a las manos del cliente. Con <strong>EscalaPOS</strong>, obtienes transparencia absoluta sobre el flujo de tu capital.</p>
+                
+                <div class="importance-list">
+                    <div class="challenge-row" style="margin-bottom: 15px;">
+                        <div class="chal-icon" style="background: #e8f0fe; color: #195ed7;">
+                            <i class="fa-solid fa-calculator"></i>
+                        </div>
+                        <div class="chal-text">
+                            <h4>Control de Saldo Corrido</h4>
+                            <p>Visualiza el <strong>Saldo Inicial</strong>, el volumen de <strong>Entradas</strong> y <strong>Salidas</strong>, y el <strong>Saldo Final</strong> de cualquier periodo. Es la fórmula matemática que garantiza que tus cuentas siempre cuadren.</p>
+                        </div>
+                    </div>
+
+                    <div class="challenge-row" style="margin-bottom: 15px;">
+                        <div class="chal-icon" style="background: #e6f9ed; color: #26c95e;">
+                            <i class="fa-solid fa-file-invoice-dollar"></i>
+                        </div>
+                        <div class="chal-text">
+                            <h4>Valoración de Inventario en Tiempo Real</h4>
+                            <p>No solo rastreamos piezas, rastreamos dinero. El Kardex desglosa el <strong>Costo Unitario</strong> y el <strong>Costo Total</strong> de cada movimiento, permitiéndote conocer el valor real de tu inversión en bodega.</p>
+                        </div>
+                    </div>
+
+                    <div class="challenge-row">
+                        <div class="chal-icon" style="background: #d6e5fa; color: #195ed7;">
+                            <i class="fa-solid fa-filter"></i>
+                        </div>
+                        <div class="chal-text">
+                            <h4>Filtros Avanzados de Búsqueda</h4>
+                            <p>Analiza el comportamiento de un producto por <strong>Sucursal</strong> o rangos de fecha específicos. Ideal para auditorías rápidas durante cambios de turno o revisiones mensuales.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="control-visual">
+                <div class="report-card" style="border-left: 6px solid #195ed7;">
+                    <div class="report-header">
+                        <span><i class="fa-solid fa-list-check"></i> Movimientos de Producto</span>
+                        <span class="status-badge" style="background: #d6e5fa; color: #195ed7;">Reporte Activo</span>
+                    </div>
+                    <div class="report-body">
+                        <div class="report-row"><span>Saldo Inicial:</span> <strong>0</strong></div>
+                        <div class="report-row"><span>Entradas (+):</span> <strong style="color: #26c95e;">150</strong></div>
+                        <div class="report-row"><span>Salidas (-):</span> <strong style="color: #fa441f;">45</strong></div>
+                        <div class="report-divider"></div>
+                        <div class="report-row total">
+                            <span>Saldo Final:</span>
+                            <span class="total-amount" style="color: #195ed7;">105 pzas</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="info-badge-slim" style="margin-top: 20px; background: #f8fafc; border: 1px solid #d6e5fa; padding: 15px; border-radius: 10px;">
+                    <p style="font-size: 13px; color: #475569; margin: 0;">
+                        <i class="fa-solid fa-circle-info" style="color: #195ed7; margin-right: 8px;"></i>
+                        <strong>Dato SEO:</strong> Un <strong>sistema para manejar inventarios</strong> con Kardex integrado es la única forma de garantizar la trazabilidad total ante auditorías fiscales o internas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="challenges-section" id="lotes-caducidad" style="background-color: #f8fafc;">
+    <div class="container">
+        <div class="grid-control">
+            
+            <div class="control-visual">
+                <div class="report-card" style="border-left: 6px solid #fa441f;">
+                    <div class="report-header">
+                        <span><i class="fa-solid fa-hourglass-half"></i> Alerta de Caducidad</span>
+                        <span class="status-badge" style="background: #fff1f0; color: #fa441f;">Próximo a vencer</span>
+                    </div>
+                    <div class="report-body">
+                        <div class="report-row"><span>Producto:</span> <strong>Antibiótico Genérico</strong></div>
+                        <div class="report-row"><span>Lote:</span> <strong>LOTE-2026-001</strong></div>
+                        <div class="report-divider"></div>
+                        <div class="report-row">
+                            <span>Vence en:</span>
+                            <span style="color: #fa441f; font-weight: 700;">12 Días</span>
+                        </div>
+                        <div class="report-row"><span>Existencia:</span> <strong>24 pzas</strong></div>
+                    </div>
+                </div>
+
+                <div class="info-badge-slim" style="margin-top: 20px; background: #ffffff; border: 1px solid #fa441f; padding: 15px; border-radius: 10px;">
+                    <p style="font-size: 13px; color: #475569; margin: 0;">
+                        <i class="fa-solid fa-shield-virus" style="color: #fa441f; margin-right: 8px;"></i>
+                        <strong>Importancia del inventario:</strong> Un control de lotes reduce hasta en un 30% la merma por caducidad en farmacias y tiendas de abarrotes.
+                    </p>
+                </div>
+            </div>
+
+            <div class="control-content">
+                <span class="sub-title" style="color: #fa441f;">TRAZABILIDAD Y SEGURIDAD</span>
+                <h2 class="section-title">Control de Lotes: Tu escudo contra la caducidad</h2>
+                <p class="section-desc">Administrar la fecha de vencimiento es crítico para la salud de tu negocio. <strong>EscalaPOS</strong> te permite registrar cada entrada de mercancía vinculándola a un lote específico, garantizando una visibilidad operativa total sobre la vigencia de tu stock.</p>
+                
+                <div class="importance-list">
+                    <div class="challenge-row" style="margin-bottom: 15px;">
+                        <div class="chal-icon" style="background: #fff1f0; color: #fa441f;">
+                            <i class="fa-solid fa-barcode"></i>
+                        </div>
+                        <div class="chal-text">
+                            <h4>Registro de Lotes Nuevos</h4>
+                            <p>Asigna códigos de lote y fechas de caducidad al momento de recibir mercancía. El sistema genera automáticamente el seguimiento para que nada se pierda de vista.</p>
+                        </div>
+                    </div>
+
+                    <div class="challenge-row" style="margin-bottom: 15px;">
+                        <div class="chal-icon" style="background: #e8f0fe; color: #195ed7;">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <div class="chal-text">
+                            <h4>Visibilidad de Días Restantes</h4>
+                            <p>Nuestra tabla de <strong>Lotes registrados</strong> calcula automáticamente cuántos días le quedan a cada producto, permitiéndote tomar decisiones de remate o devolución a tiempo.</p>
+                        </div>
+                    </div>
+
+                    <div class="challenge-row">
+                        <div class="chal-icon" style="background: #e6f9ed; color: #26c95e;">
+                            <i class="fa-solid fa-vial-circle-check"></i>
+                        </div>
+                        <div class="chal-text">
+                            <h4>Filtros por Estatus y Producto</h4>
+                            <p>Filtra rápidamente por <strong>Estatus</strong> para identificar lotes vencidos, por vencer o sanos. La trazabilidad perfecta para cumplir con normas sanitarias.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="cash-control-section" id="traspasos-sucursales" style="background-color: #ffffff;">
+    <div class="container">
+        <div class="grid-control">
+            <div class="control-content">
+                <span class="sub-title" style="color: #195ed7;">LOGÍSTICA INTEGRADA</span>
+                <h2 class="section-title">Traspasos: Equilibra tu stock sin perder el control</h2>
+                <p class="section-desc">Mover inventario de una tienda a otra puede ser un caos si no se tiene la herramienta adecuada. <strong>EscalaPOS</strong> simplifica tu logística multi-sucursal, permitiendo transferencias de mercancía con trazabilidad total y afectación automática a tus existencias reales.</p>
+                
+                <div class="importance-list">
+                    <div class="challenge-row" style="margin-bottom: 15px;">
+                        <div class="chal-icon" style="background: #e6f9ed; color: #26c95e;">
+                            <i class="fa-solid fa-truck-arrow-right"></i>
+                        </div>
+                        <div class="chal-text">
+                            <h4>Afectación Directa al Stock</h4>
+                            <p>Olvida los ajustes manuales dobles. Al crear un traspaso, el sistema descuenta automáticamente las piezas de la <strong>Sucursal Origen</strong> y las suma a la <strong>Sucursal Destino</strong>, manteniendo tus niveles de inventario siempre al día.</p>
+                        </div>
+                    </div>
+
+                    <div class="challenge-row" style="margin-bottom: 15px;">
+                        <div class="chal-icon" style="background: #e8f0fe; color: #195ed7;">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                        </div>
+                        <div class="chal-text">
+                            <h4>Trazabilidad de Folios</h4>
+                            <p>Consulta el historial completo de traspasos registrados. Rastrea por número de folio el origen, el destino, el estatus del envío y la cantidad exacta de unidades transferidas.</p>
+                        </div>
+                    </div>
+
+                    <div class="challenge-row">
+                        <div class="chal-icon" style="background: #d6e5fa; color: #195ed7;">
+                            <i class="fa-solid fa-clipboard-list"></i>
+                        </div>
+                        <div class="chal-text">
+                            <h4>Justificación de Movimientos</h4>
+                            <p>Cada movimiento cuenta una historia. Agrega notas y motivos breves a tus traspasos para que el equipo administrativo comprenda el porqué de cada transferencia de mercancía.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="control-visual">
+                <div class="report-card" style="border-left: 6px solid #26c95e;">
+                    <div class="report-header">
+                        <span><i class="fa-solid fa-shuffle"></i> Nuevo Traspaso Activo</span>
+                        <span class="status-badge" style="background: #e6f9ed; color: #26c95e;">En Tránsito</span>
+                    </div>
+                    <div class="report-body">
+                        <div class="report-row"><span>Origen:</span> <strong>Bodega Central</strong></div>
+                        <div class="report-row"><span>Destino:</span> <strong>Sucursal Norte</strong></div>
+                        <div class="report-divider"></div>
+                        <div class="report-row"><span>Total Unidades:</span> <strong>150 pzas</strong></div>
+                        <div class="report-row"><span>Estatus:</span> <strong style="color: #195ed7;">Registrado</strong></div>
+                    </div>
+                </div>
+
+                <div class="info-badge-slim" style="margin-top: 20px; background: #f8fafc; border: 1px solid #d6e5fa; padding: 15px; border-radius: 10px;">
+                    <p style="font-size: 13px; color: #475569; margin: 0;">
+                        <i class="fa-solid fa-circle-nodes" style="color: #195ed7; margin-right: 8px;"></i>
+                        <strong>Sistema para manejar inventarios:</strong> La transferencia eficiente entre almacenes es la clave para no perder ventas por falta de stock en una zona teniendo excedentes en otra.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="challenges-section" id="cortes-inventario" style="background-color: #f8fafc;">
+    <div class="container">
+        <div class="grid-control">
+            
+            <div class="control-visual">
+                <div class="report-card" style="border-left: 6px solid #195ed7;">
+                    <div class="report-header">
+                        <span><i class="fa-solid fa-clipboard-check"></i> Auditoría de Diferencias</span>
+                        <span class="status-badge" style="background: #fff7ed; color: #c2410c;">Borrador</span>
+                    </div>
+                    <div class="report-body">
+                        <div class="report-row"><span>Sistema:</span> <strong>23 pzas</strong></div>
+                        <div class="report-row"><span>Físico (Contada):</span> <strong style="color: #195ed7;">21 pzas</strong></div>
+                        <div class="report-divider"></div>
+                        <div class="report-row">
+                            <span>Diferencia detectada:</span>
+                            <span style="color: #fa441f; font-weight: 700;">-2 pzas</span>
+                        </div>
+                        <div class="report-divider"></div>
+                        <div class="report-footer" style="padding-top: 10px; font-size: 12px; color: #64748b;">
+                            <i class="fa-solid fa-user-pen"></i> Responsable: Administrador David
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-badge-slim" style="margin-top: 20px; background: #ffffff; border: 1px solid #195ed7; padding: 15px; border-radius: 10px;">
+                    <p style="font-size: 13px; color: #475569; margin: 0;">
+                        <i class="fa-solid fa-magnifying-glass-chart" style="color: #195ed7; margin-right: 8px;"></i>
+                        <strong>Sistema para manejar inventarios:</strong> Un corte de inventario regular es la única forma de garantizar que tu utilidad neta sea real y no una estimación en papel.
+                    </p>
+                </div>
+            </div>
+
+            <div class="control-content">
+                <span class="sub-title" style="color: #195ed7;">EL MOMENTO DE LA VERDAD</span>
+                <h2 class="section-title">Cortes de Inventario: Conciliación física vs digital</h2>
+                <p class="section-desc">El éxito de tu negocio depende de que lo que dice el sistema sea exactamente lo que hay en el anaquel. <strong>EscalaPOS</strong> te ofrece una plataforma de auditoría quirúrgica para realizar conteos cíclicos o generales, identificando discrepancias de inmediato.</p>
+                
+                <div class="importance-list">
+                    <div class="challenge-row" style="margin-bottom: 15px;">
+                        <div class="chal-icon" style="background: #e8f0fe; color: #195ed7;">
+                            <i class="fa-solid fa-scale-balanced"></i>
+                        </div>
+                        <div class="chal-text">
+                            <h4>Cálculo de Diferencias en Tiempo Real</h4>
+                            <p>Captura tus conteos físicos y deja que el sistema haga el trabajo pesado. Compara la cantidad en <strong>Sistema</strong> contra la <strong>Contada</strong> y visualiza la <strong>Diferencia</strong> numérica y monetaria al instante.</p>
+                        </div>
+                    </div>
+
+                    <div class="challenge-row" style="margin-bottom: 15px;">
+                        <div class="chal-icon" style="background: #e6f9ed; color: #26c95e;">
+                            <i class="fa-solid fa-fingerprint"></i>
+                        </div>
+                        <div class="chal-text">
+                            <h4>Bitácora de Eventos por Usuario</h4>
+                            <p>Transparencia total en cada acción. Registra quién inició el corte, qué productos fueron reservados y qué usuario aplicó los ajustes finales, garantizando un rastro de auditoría inviolable.</p>
+                        </div>
+                    </div>
+
+                    <div class="challenge-row">
+                        <div class="chal-icon" style="background: #d6e5fa; color: #195ed7;">
+                            <i class="fa-solid fa-floppy-disk"></i>
+                        </div>
+                        <div class="chal-text">
+                            <h4>Guardado en Borrador</h4>
+                            <p>No detengas tu operación por un conteo largo. Guarda tus avances en estatus de <strong>Borrador</strong> y continúa la captura en diferentes momentos hasta que estés listo para cerrar el corte y aplicar las diferencias al stock.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <section class="faq-section" id="faq-inventarios-pro">
+    <div class="container">
+        <div class="section-header text-center">
+            <span class="sub-title" style="color: #195ed7;">RESOLVEMOS TUS DUDAS OPERATIVAS</span>
+            <h2 class="section-title">Preguntas Frecuentes sobre el Control de Stock</h2>
+            <p class="section-desc">Entendemos que el inventario es tu patrimonio. Aquí respondemos cómo EscalaPOS lo protege de forma técnica y sencilla.</p>
+        </div>
+
+        <div class="faq-grid">
+            <details class="faq-item">
+                <summary>
+                    <span>¿Cuál es la diferencia entre ver mis "Existencias" y ver el "Kardex"?</span>
+                    <i class="fa-solid fa-plus"></i>
+                </summary>
+                <div class="faq-answer">
+                    <p>Las <strong>Existencias</strong> te dicen cuánto tienes hoy. El <strong>Kardex</strong> te cuenta la historia completa: te muestra con fecha y hora quién compró, quién vendió y qué ajustes se hicieron. Es la herramienta que usas cuando algo no te cuadra y necesitas encontrar el error exacto.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>
+                    <span>¿Tengo que configurar algo especial para usar el método PEPS (FIFO)?</span>
+                    <i class="fa-solid fa-plus"></i>
+                </summary>
+                <div class="faq-answer">
+                    <p>No, el sistema ya viene programado con esa lógica de negocio. <strong>EscalaPOS</strong> prioriza automáticamente la salida de la mercancía que entró primero a tu almacén. Esto es vital para asegurar que tus costos y utilidades sean reales y que tu stock siempre esté fresco.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>
+                    <span>¿Debo cerrar mi tienda para hacer un Corte de Inventario?</span>
+                    <i class="fa-solid fa-plus"></i>
+                </summary>
+                <div class="faq-answer">
+                    <p>No es necesario. Gracias a la función de <strong>"Borrador"</strong>, puedes iniciar un conteo de una zona específica (por ejemplo, el pasillo de tornillería) mientras sigues vendiendo en caja. El sistema registrará los movimientos y te permitirá conciliar las diferencias al finalizar el conteo sin detener tu venta.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>
+                    <span>¿Qué pasa si un traspaso se pierde en el camino entre sucursales?</span>
+                    <i class="fa-solid fa-plus"></i>
+                </summary>
+                <div class="faq-answer">
+                    <p>Cada traspaso genera un <strong>Folio Único</strong> de seguimiento. El sistema marca el movimiento como "Registrado" en la salida y requiere una confirmación en la sucursal destino. Esto crea un rastro de auditoría donde puedes ver qué usuario envió y quién debería haber recibido, eliminando las pérdidas "misteriosas".</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>
+                    <span>¿Cómo me avisa el sistema si un lote está por vencer?</span>
+                    <i class="fa-solid fa-plus"></i>
+                </summary>
+                <div class="faq-answer">
+                    <p>En el módulo de <strong>Lotes con Vencimiento</strong>, el sistema organiza tus productos por "Días restantes". Podrás ver alertas visuales en color rojo para aquellos productos que caducan pronto, permitiéndote crear promociones de salida rápida antes de que se conviertan en merma.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>
+                    <span>¿Cualquier empleado puede "desaparecer" mercancía con ajustes manuales?</span>
+                    <i class="fa-solid fa-plus"></i>
+                </summary>
+                <div class="faq-answer">
+                    <p>Absolutamente no. Los <strong>Ajustes Manuales</strong> están protegidos por permisos de usuario. Además, el sistema obliga a capturar un "Motivo" y una "Referencia". Si un administrador intenta ajustar el stock, quedará grabado en la bitácora de eventos con su nombre, fecha y hora exacta.</p>
+                </div>
+            </details>
+        </div>
+    </div>
+</section>
+    <footer class="footer-seo">
+    <div class="container grid-footer">
+        <div class="footer-col brand-col">
+            <a href="#" class="logo">Escala<span>POS</span></a>
+            <p>El punto de venta modular que se adapta al ritmo de tu negocio. Sin contratos forzosos ni datos fiscales al iniciar.</p>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h4>Soluciones POS</h4>
+            <ul>
+                <li><a href="#">Punto de venta para Abarrotes</a></li>
+                <li><a href="#">Sistema para Carnicerías</a></li>
+                <li><a href="#">Software para Farmacias</a></li>
+                <li><a href="#">Control de Ferreterías</a></li>
+                <li><a href="#">POS para Papelerías</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Módulos Escala</h4>
+            <ul>
+                <li><a href="#">Facturación Electrónica 4.0</a></li>
+                <li><a href="#">CRM y Cobranza</a></li>
+                <li><a href="#">Monedero y Lealtad</a></li>
+                <li><a href="#">Control de Inventarios</a></li>
+                <li><a href="#">Analítica Gerencial</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>EscalaPOS México</h4>
+            <p><i class="fa-solid fa-location-dot"></i> Disponible en CDMX, Querétaro, Monterrey y todo México.</p>
+            <p><i class="fa-solid fa-phone"></i> +52 777 123 4567</p>
+            <p><i class="fa-solid fa-envelope"></i> ventas@escalapos.mx</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container bottom-flex">
+            <p>&copy; 2026 EscalaPOS. Todos los derechos reservados.</p>
+            <div class="legal-links">
+                <a href="#">Aviso de Privacidad</a>
+                <a href="#">Términos y Condiciones</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="scriptl.js"></script>
+
+</body>
+</html>

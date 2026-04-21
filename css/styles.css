@@ -1931,3 +1931,147 @@ body {
         margin-top: 40px;
     }
 }
+/* Sección de Retos Compacta */
+.challenges-section {
+    padding: 80px 0;
+    background-color: #f8fafc;
+}
+
+.challenges-compact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas */
+    gap: 20px;
+    max-width: 1000px;
+    margin: 40px auto 0;
+}
+
+/* El diseño de la fila delgada */
+.challenge-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    transition: all 0.2s ease;
+}
+
+.challenge-row:hover {
+    border-color: #195ed7;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+    transform: translateY(-2px);
+}
+
+/* Icono más pequeño y ajustado */
+.chal-icon {
+    min-width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+/* Texto ajustado */
+.chal-text h4 {
+    font-size: 15px;
+    color: #1e293b;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.chal-text p {
+    font-size: 13px;
+    color: #64748b;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Para que la 5ta tarjeta (impar) se centre o se expanda bonito */
+.chal-center {
+    grid-column: 1 / -1;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+/* Modo celular */
+@media (max-width: 768px) {
+    .challenges-compact-grid {
+        grid-template-columns: 1fr; /* Una sola columna en móviles */
+    }
+    .chal-center {
+        max-width: 100%;
+    }
+}
+/* --- ESTILOS TABLA COMPARATIVA --- */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 40px;
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+    border: 1px solid #e2e8f0;
+}
+
+.escala-table {
+    width: 100%;
+    min-width: 800px; /* Asegura que no se aplaste en móviles, forzando el scroll horizontal */
+    border-collapse: collapse;
+    background: #ffffff;
+    text-align: left;
+}
+
+.escala-table th, 
+.escala-table td {
+    padding: 20px;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 14px;
+    color: #475569;
+}
+
+.escala-table th {
+    background: #f8fafc;
+    font-weight: 700;
+    color: #1e293b;
+    font-size: 15px;
+    border-bottom: 2px solid #cbd5e1;
+}
+
+.feature-name {
+    font-weight: 600;
+    color: #1e293b;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.feature-name i {
+    color: #195ed7;
+    font-size: 16px;
+}
+
+/* Columna Destacada EscalaPOS */
+.escala-table .highlight-col {
+    background: #eff6ff; /* Fondo azul muy tenue */
+    color: #195ed7;
+    border-left: 2px solid #bfdbfe;
+    border-right: 2px solid #bfdbfe;
+}
+
+.escala-table th.highlight-col {
+    background: #195ed7;
+    color: #ffffff;
+    border: none;
+    font-size: 16px;
+    text-align: center;
+}
+
+.escala-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.escala-table tbody tr:hover td:not(.highlight-col) {
+    background-color: #f8fafc;
+}

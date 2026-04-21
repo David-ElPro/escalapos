@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punto de Venta para Papelerías | EscalaPOS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="main-navbar">
+    <div class="container nav-container">
+        <a href="#" class="logo">Escala<span>POS</span></a>
+        
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <nav class="nav-menu">
+            <ul class="nav-list">
+                <li><a href="#pasos" class="nav-link">Cómo funciona</a></li>
+                <li><a href="#precios" class="nav-link">Planes</a></li>
+                <li><a href="#modulos" class="nav-link">Add-ons</a></li>
+                <li><a href="#soluciones" class="nav-link">Soluciones</a></li>
+                <li class="nav-btns">
+                    <a href="#" class="btn-login">Ya tengo cuenta</a>
+                    <a href="#" class="btn-trial-nav">Crear mi trial</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <section class="hero-extension">
+        <div class="container grid-hero">
+            <div class="hero-text">
+                <span class="badge-trial">SOLUCIÓN PARA PAPELERÍAS</span>
+                <h1>El sistema que domina el <strong>Regreso a Clases</strong> sin errores.</h1>
+                <p>Administra miles de artículos de papelería, genera listas escolares en segundos y controla tus servicios de copiado. EscalaPOS es la herramienta que pone orden a tu mostrador.</p>
+                
+                <ul class="hero-bullets">
+                    <li><i class="fa-solid fa-pen-nib"></i> Búsqueda instantánea de miles de artículos pequeños.</li>
+                    <li><i class="fa-solid fa-list-check"></i> Carga y surtido rápido de listas escolares completas.</li>
+                    <li><i class="fa-solid fa-layer-group"></i> Precios automáticos por mayoreo y menudeo.</li>
+                </ul>
+            </div>
+
+            <div class="preselection-container">
+                <div class="preselection-flex">
+                    <div class="preselection-image">
+                        <img src="https://via.placeholder.com/500x400/e8f0fe/195ed7?text=EscalaPOS+Papelerias" alt="Software para Papelerías EscalaPOS">
+                    </div>
+                    <div class="preselection-card">
+                        <div class="pre-header">
+                            <h3>Preselección Sugerida</h3>
+                        </div>
+                        <div class="pre-body">
+                            <div class="pre-item">
+                                <span>Plan base:</span>
+                                <strong id="pre-plan-base">Comercial</strong>
+                            </div>
+                            <div class="pre-item">
+                                <span>Caja extra:</span>
+                                <strong>$99.00</strong>
+                            </div>
+                            <div class="pre-item">
+                                <span>Add-ons:</span>
+                                <span id="pre-addons-text" class="text-muted">Incluye: Paquetes y Kits</span>
+                            </div>
+                            <div class="pre-total">
+                                <span>Total mensual estimado:</span>
+                                <span class="price-tag" id="pre-total-price">$299.00</span>
+                            </div>
+                        </div>
+                        <div class="pre-footer">
+                            <p><i class="fa-solid fa-graduation-cap"></i> Prepárate para la temporada alta hoy.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="challenges-section" id="retos-papeleros" style="background-color: #f8fafc;">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-title">DIAGNÓSTICO DEL NEGOCIO</span>
+                <h2 class="section-title">¿Tu mostrador sobrevive al Regreso a Clases?</h2>
+                <p class="section-desc">Las papelerías enfrentan cuellos de botella únicos. Si no tienes control, las filas largas se traducen en clientes que se van con la competencia.</p>
+            </div>
+
+            <div class="challenges-compact-grid">
+                <div class="challenge-row">
+                    <div class="chal-icon" style="background: #e8f0fe; color: #195ed7;">
+                        <i class="fa-solid fa-eraser"></i>
+                    </div>
+                    <div class="chal-text">
+                        <h4>Descontrol en piezas sueltas</h4>
+                        <p>Vender gomas, lápices o monografías sin código de barras hace que el cobro sea lento y propenso a errores humanos.</p>
+                    </div>
+                </div>
+
+                <div class="challenge-row">
+                    <div class="chal-icon" style="background: #e8f0fe; color: #195ed7;">
+                        <i class="fa-solid fa-file-invoice"></i>
+                    </div>
+                    <div class="chal-text">
+                        <h4>Fuga de ingresos en Listas Escolares</h4>
+                        <p>Cotizar listas a mano toma demasiado tiempo. Perder la agilidad en temporada alta es perder la utilidad de todo el año.</p>
+                    </div>
+                </div>
+
+                <div class="challenge-row">
+                    <div class="chal-icon" style="background: #e8f0fe; color: #195ed7;">
+                        <i class="fa-solid fa-tags"></i>
+                    </div>
+                    <div class="chal-text">
+                        <h4>Confusión en Mayoreo y Menudeo</h4>
+                        <p>Gestionar precios diferentes por pieza, caja o paquete sin un sistema automático genera descuadres en tus ganancias.</p>
+                    </div>
+                </div>
+
+                <div class="challenge-row">
+                    <div class="chal-icon" style="background: #e8f0fe; color: #195ed7;">
+                        <i class="fa-solid fa-boxes-stacked"></i>
+                    </div>
+                    <div class="chal-text">
+                        <h4>Inventario ciego</h4>
+                        <p>No saber cuántos cuadernos de cada tipo te quedan te lleva a comprar de más o a quedarte sin stock cuando más lo necesitas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cash-control-section" id="centro-soluciones">
+    <div class="container">
+        <div class="grid-control">
+            <div class="control-content">
+                <span class="sub-title" style="color: #195ed7;">EVOLUCIÓN COMERCIAL</span>
+                <h2 class="section-title">Mucho más que solo vender cuadernos</h2>
+                <p class="section-desc">Una papelería moderna es un auténtico centro de soluciones. Además de útiles escolares, tus clientes buscan impresiones, engargolados y tiempo de internet. Los sistemas tradicionales se vuelven un caos al intentar cobrar servicios sin desajustar el inventario físico, pero <strong>EscalaPOS</strong> está diseñado para este reto.</p>
+                
+                <div class="importance-list">
+                    <div class="challenge-row" style="margin-bottom: 15px;">
+                        <div class="chal-icon" style="background: #d6e5fa; color: #195ed7;">
+                            <i class="fa-solid fa-print"></i>
+                        </div>
+                        <div class="chal-text">
+                            <h4>Cobro de Servicios sin Fricción</h4>
+                            <p>Cobra copias o enmicados en el mismo ticket que los útiles escolares, manteniendo tus ingresos claros y tu inventario de productos físicos intacto.</p>
+                        </div>
+                    </div>
+
+                    <div class="challenge-row">
+                        <div class="chal-icon" style="background: #e6f9ed; color: #26c95e;">
+                            <i class="fa-solid fa-truck-fast"></i>
+                        </div>
+                        <div class="chal-text">
+                            <h4>Compras Inteligentes y Fidelización</h4>
+                            <p>Premia a los maestros con monederos electrónicos y, cuando detectes falta de stock, genera órdenes de compra automáticas para enviarlas directo a tu distribuidor.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="control-visual">
+                <div class="report-card" style="border-left: 6px solid #195ed7;">
+                    <div class="report-header">
+                        <span><i class="fa-solid fa-receipt"></i> Ticket de Venta Mixto</span>
+                        <span class="status-badge" style="background: #e6f9ed; color: #26c95e;">Cobrado</span>
+                    </div>
+                    <div class="report-body">
+                        <div class="report-row"><span>1x Cuaderno Profesional</span> <strong>$35.00</strong></div>
+                        <div class="report-row"><span>3x Lápiz HB 2</span> <strong>$15.00</strong></div>
+                        <div class="report-divider"></div>
+                        <div class="report-row"><span style="color: #64748b;"><i class="fa-solid fa-copy"></i> 12x Copias B/N (Servicio)</span> <strong>$12.00</strong></div>
+                        <div class="report-divider"></div>
+                        <div class="report-row total">
+                            <span>Total a pagar:</span>
+                            <span class="total-amount" style="color: #195ed7;">$62.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="challenges-section" id="retos-papeleria" style="background-color: #f8fafc;">
+    <div class="container">
+        <div class="section-header text-center">
+            <span class="sub-title" style="color: #fa441f;">DETECCIÓN DE FUGAS</span>
+            <h2 class="section-title">Los dolores de cabeza en el mostrador papelero</h2>
+            <p class="section-desc">Gestionar miles de artículos minúsculos, servicios olvidados y el caos de agosto no es fácil. ¿Te identificas con estas situaciones?</p>
+        </div>
+
+        <div class="challenges-compact-grid">
+            <div class="challenge-row">
+                <div class="chal-icon" style="background: #fff1f0; color: #fa441f;">
+                    <i class="fa-solid fa-file-circle-minus"></i>
+                </div>
+                <div class="chal-text">
+                    <h4>Servicios no facturados</h4>
+                    <p>Entre sacar copias y editar documentos urgentes, los empleados olvidan sumar estos servicios a la cuenta final del cliente.</p>
+                </div>
+            </div>
+
+            <div class="challenge-row">
+                <div class="chal-icon" style="background: #fff1f0; color: #fa441f;">
+                    <i class="fa-solid fa-eraser"></i>
+                </div>
+                <div class="chal-text">
+                    <h4>Descontrol en piezas diminutas</h4>
+                    <p>La desaparición de gomas, sacapuntas y lápices por robo hormiga o mal cobro se come tu margen de ganancia mes a mes.</p>
+                </div>
+            </div>
+
+            <div class="challenge-row">
+                <div class="chal-icon" style="background: #e8f0fe; color: #195ed7;">
+                    <i class="fa-solid fa-list-ul"></i>
+                </div>
+                <div class="chal-text">
+                    <h4>Colapso en Temporada Escolar</h4>
+                    <p>Armar paquetes y listas en pleno regreso a clases colapsa tu mostrador si no cuentas con un sistema que descuente artículos en bloque.</p>
+                </div>
+            </div>
+
+            <div class="challenge-row">
+                <div class="chal-icon" style="background: #e8f0fe; color: #195ed7;">
+                    <i class="fa-solid fa-cart-arrow-down"></i>
+                </div>
+                <div class="chal-text">
+                    <h4>Pedidos a distribuidores "a ojo"</h4>
+                    <p>Hacer compras sin reportes reales provoca que te quedes sin el material más vendido y te sobren productos estancados.</p>
+                </div>
+            </div>
+
+            <div class="challenge-row chal-center">
+                <div class="chal-icon" style="background: #e8f0fe; color: #195ed7;">
+                    <i class="fa-solid fa-store-slash"></i>
+                </div>
+                <div class="chal-text">
+                    <h4>Pérdida de tráfico vecinal</h4>
+                    <p>Al no ofrecer servicios adicionales como recargas, los vecinos no tienen una excusa para visitar tu papelería todos los días.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="challenges-section" id="sistema-integral" style="background-color: #ffffff;">
+    <div class="container">
+        <div class="section-header text-center">
+            <span class="sub-title" style="color: #195ed7;">POTENCIA Y ORGANIZACIÓN</span>
+            <h2 class="section-title">El sistema integral que entiende lo que vendes</h2>
+            <p class="section-desc">EscalaPOS centraliza toda tu operación comercial. Desde despachar un solo borrador hasta gestionar el cobro de tu centro de copiado con total exactitud.</p>
+        </div>
+
+        <div class="challenges-compact-grid">
+            
+            <div class="challenge-row">
+                <div class="chal-icon" style="background: #d6e5fa; color: #195ed7;">
+                    <i class="fa-solid fa-print"></i>
+                </div>
+                <div class="chal-text">
+                    <h4>Módulo de Centro de Copiado</h4>
+                    <p>Registra y cobra servicios no tangibles como impresiones, uso de internet o engargolados con botones rápidos en la pantalla principal.</p>
+                </div>
+            </div>
+
+            <div class="challenge-row">
+                <div class="chal-icon" style="background: #e6f9ed; color: #26c95e;">
+                    <i class="fa-solid fa-boxes-packing"></i>
+                </div>
+                <div class="chal-text">
+                    <h4>Ensamblador de Listas Escolares</h4>
+                    <p>Crea "Kits" de temporada. Al vender un paquete escolar prearmado, el sistema descontará cada libreta, color y tijera de tu inventario automáticamente.</p>
+                </div>
+            </div>
+
+            <div class="challenge-row">
+                <div class="chal-icon" style="background: #d6e5fa; color: #195ed7;">
+                    <i class="fa-solid fa-envelope-open-text"></i>
+                </div>
+                <div class="chal-text">
+                    <h4>Automatización de Compras</h4>
+                    <p>Genera listados exactos de la mercancía faltante y envía las órdenes de compra a tus proveedores mayoristas directamente por correo o WhatsApp.</p>
+                </div>
+            </div>
+
+            <div class="challenge-row">
+                <div class="chal-icon" style="background: #d6e5fa; color: #195ed7;">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                </div>
+                <div class="chal-text">
+                    <h4>Atracción y Lealtad Comercial</h4>
+                    <p>Convierte tu local en una parada obligatoria ofreciendo pago de servicios, tiempo aire y monederos electrónicos para maestros y oficinistas.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="pos-importance" id="beneficios-papeleria" style="background-color: #f8fafc;">
+    <div class="container">
+        <div class="section-header text-center">
+            <span class="sub-title" style="color: #fa441f;">RENTABILIDAD MÁXIMA</span>
+            <h2 class="section-title">Beneficios de elegir EscalaPOS para tu mostrador</h2>
+            <p class="section-desc">Atrae más clientes todos los días y sobrevive a las temporadas altas con una administración impecable y ágil.</p>
+        </div>
+
+        <div class="importance-grid">
+            
+            <div class="importance-card">
+                <div class="card-icon-circle" style="background: #e8f0fe; color: #195ed7;">
+                    <i class="fa-solid fa-money-bill-trend-up"></i>
+                </div>
+                <h3>Diversificación de Ingresos</h3>
+                <p>Transforma tu local en el punto de encuentro de tu colonia. Integra el cobro de recargas, pago de luz o agua, y servicios de cibercafé directamente en un solo ticket de venta.</p>
+            </div>
+
+            <div class="importance-card">
+                <div class="card-icon-circle" style="background: #e6f9ed; color: #26c95e;">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+                <h3>Velocidad en Temporada Alta</h3>
+                <p>Configura "Listas Escolares" prearmadas en la plataforma. Despacha a los padres de familia en segundos, reduciendo las filas kilométricas y eliminando el estrés de agosto.</p>
+            </div>
+
+            <div class="importance-card">
+                <div class="card-icon-circle" style="background: #e8f0fe; color: #195ed7;">
+                    <i class="fa-solid fa-boxes-packing"></i>
+                </div>
+                <h3>Resurtido Inteligente</h3>
+                <p>Mantén un rastreo exacto de tus existencias. El sistema te ayuda a generar órdenes de compra basadas en datos reales de venta, optimizando tu capital con el distribuidor.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="challenges-section" id="catalogo-masivo" style="background-color: #ffffff;">
+    <div class="container">
+        <div class="grid-control">
+            
+            <div class="control-content">
+                <span class="sub-title" style="color: #195ed7;">MIGRACIÓN INMEDIATA</span>
+                <h2 class="section-title">Sube tu catálogo papelero masivo en minutos</h2>
+                <p class="section-desc">Comprendemos el reto de administrar miles de libretas, bolígrafos, cartulinas y materiales didácticos. Sube todo tu inventario en tiempo récord mediante nuestras herramientas de importación masiva.</p>
+                
+                <div class="importance-list">
+                    <div class="challenge-row" style="margin-bottom: 15px;">
+                        <div class="chal-icon" style="background: #d6e5fa; color: #195ed7;">
+                            <i class="fa-solid fa-file-excel"></i>
+                        </div>
+                        <div class="chal-text">
+                            <h4>Sincronización mediante Excel</h4>
+                            <p>Importa los inmensos listados de artículos de oficina y escolar desde hojas de cálculo, actualizando todos tus precios de venta al instante.</p>
+                        </div>
+                    </div>
+
+                    <div class="challenge-row" style="margin-bottom: 15px;">
+                        <div class="chal-icon" style="background: #d6e5fa; color: #195ed7;">
+                            <i class="fa-solid fa-object-group"></i>
+                        </div>
+                        <div class="chal-text">
+                            <h4>Ensamblador de Combos Escolares</h4>
+                            <p>Agrupa pegamento, tijeras y libretas bajo un solo código de "Kit Básico"; la plataforma se encargará de descontar las piezas individuales del anaquel.</p>
+                        </div>
+                    </div>
+
+                    <div class="challenge-row">
+                        <div class="chal-icon" style="background: #d6e5fa; color: #195ed7;">
+                            <i class="fa-solid fa-hand-pointer"></i>
+                        </div>
+                        <div class="chal-text">
+                            <h4>Accesos Rápidos para Servicios</h4>
+                            <p>Configura botones táctiles personalizados en tu pantalla para cobrar al instante impresiones, engargolados o escaneos sin depender de códigos de barras.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="control-visual">
+                <div class="image-placeholder-pharmacy" style="position: relative; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.1); border: 1px solid #e2e8f0;">
+                    <img src="assets/img/catalogo-papeleria-excel.png" alt="Importación masiva Excel EscalaPOS" style="width: 100%; display: block;">
+                    
+                    <div class="floating-badge" style="position: absolute; bottom: 20px; right: 20px; background: #26c95e; color: white; padding: 10px 15px; border-radius: 8px; font-weight: 700; font-size: 13px; display: flex; align-items: center; gap: 8px;">
+                        <i class="fa-solid fa-check-double"></i>
+                        <span>Precios Actualizados</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="challenges-section" id="control-mermas" style="background-color: #f8fafc;">
+    <div class="container">
+        <div class="grid-control">
+            
+            <div class="control-content">
+                <span class="sub-title" style="color: #fa441f;">PROTEGE TUS UTILIDADES</span>
+                <h2 class="section-title">Auditoría física y gestión total de mermas</h2>
+                <p class="section-desc">En el giro papelero, los productos diminutos son los más vulnerables a desaparecer. <strong>EscalaPOS</strong> te facilita ejecutar conciliaciones periódicas para comparar tu mercancía real con la base de datos, identificando descuadres de forma inmediata.</p>
+                <p class="section-desc">Además, la plataforma incorpora un módulo especializado para la merma operativa. Si un pliego de papel se maltrata, una monografía se rompe o un marcador se seca, regístralo como pérdida justificada para proteger la precisión de tus reportes financieros y mantener un almacén 100% sano.</p>
+                
+                <div class="cta-wrapper" style="margin-top: 30px;">
+                    <a href="#precios" class="btn-primary" style="background: #195ed7;">
+                        Comenzar a proteger mi negocio
+                    </a>
+                </div>
+            </div>
+
+            <div class="control-visual">
+                <div class="report-card" style="border-left: 6px solid #fa441f;">
+                    <div class="report-header">
+                        <span><i class="fa-solid fa-triangle-exclamation"></i> Registro de Merma</span>
+                        <span class="status-badge" style="background: #fff1f0; color: #fa441f;">Justificado</span>
+                    </div>
+                    <div class="report-body">
+                        <div class="report-row"><span>Producto:</span> <strong>Marcador Pizarrón Negro</strong></div>
+                        <div class="report-row"><span>Cantidad:</span> <strong>2 piezas</strong></div>
+                        <div class="report-divider"></div>
+                        <div class="report-row">
+                            <span>Motivo:</span>
+                            <span style="color: #64748b;">Tinta seca / Defecto de fábrica</span>
+                        </div>
+                        <div class="report-divider"></div>
+                        <div class="report-row total">
+                            <span>Impacto en almacén:</span>
+                            <span class="total-amount" style="color: #fa441f;">- $36.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="challenges-section" id="jerarquia-papeleria" style="background-color: #ffffff;">
+    <div class="container">
+        <div class="section-header text-center">
+            <span class="sub-title" style="color: #195ed7;">ORGANIZACIÓN COMERCIAL</span>
+            <h2 class="section-title">Lleva un registro de tus categorías y departamentos</h2>
+            <p class="section-desc">La estructura es tu mejor aliada para despachar con velocidad y saber con exactitud qué mercancía solicitar a tus distribuidores.</p>
+        </div>
+
+        <div class="challenges-compact-grid">
+            <div class="challenge-row">
+                <div class="chal-icon" style="background: #d6e5fa; color: #195ed7;">
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+                <div class="chal-text">
+                    <h4>Material Escolar y de Oficina</h4>
+                    <p>Agrupa cuadernos, carpetas y calculadoras. Facilita la extracción de reportes de venta para anticipar tus compras de cara a las temporadas altas.</p>
+                </div>
+            </div>
+
+            <div class="challenge-row">
+                <div class="chal-icon" style="background: #e6f9ed; color: #26c95e;">
+                    <i class="fa-solid fa-gift"></i>
+                </div>
+                <div class="chal-text">
+                    <h4>Novedades y Envolturas</h4>
+                    <p>Monitorea sectores de alto margen de ganancia. Separa las bolsas de regalo, moños y peluches en un departamento exclusivo para analizar su rentabilidad.</p>
+                </div>
+            </div>
+
+            <div class="challenge-row chal-center">
+                <div class="chal-icon" style="background: #d6e5fa; color: #195ed7;">
+                    <i class="fa-solid fa-desktop"></i>
+                </div>
+                <div class="chal-text">
+                    <h4>Centro de Servicios Digitales</h4>
+                    <p>Categoriza tus flujos de ingreso no tangibles: impresiones a color, renta de equipos de cómputo y servicios de captura o edición de documentos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="challenges-section" id="compatibilidad-hardware" style="background-color: #f8fafc;">
+    <div class="container">
+        <div class="grid-control">
+            
+            <div class="control-content">
+                <span class="sub-title" style="color: #195ed7;">CERO INVERSIÓN EXTRA</span>
+                <h2 class="section-title">Tecnología adaptable al equipo que ya tienes</h2>
+                <p class="section-desc">Renueva tu administración sin comprar hardware nuevo. <strong>EscalaPOS</strong> se vincula de manera transparente con tus periféricos actuales, otorgándote el control absoluto desde la configuración central.</p>
+                
+                <div class="importance-list">
+                    <div class="challenge-row" style="margin-bottom: 15px;">
+                        <div class="chal-icon" style="background: #d6e5fa; color: #195ed7;">
+                            <i class="fa-solid fa-print"></i>
+                        </div>
+                        <div class="chal-text">
+                            <h4>Conexión de Impresoras Térmicas</h4>
+                            <p>Enlaza tus miniprinters existentes. El software manda la orden instantánea para emitir tickets de venta, comprobantes de recargas y notas de mostrador.</p>
+                        </div>
+                    </div>
+
+                    <div class="challenge-row" style="margin-bottom: 15px;">
+                        <div class="chal-icon" style="background: #d6e5fa; color: #195ed7;">
+                            <i class="fa-solid fa-file-invoice"></i>
+                        </div>
+                        <div class="chal-text">
+                            <h4>Personalización de Comprobantes</h4>
+                            <p>Edita el diseño de tus recibos (58mm u 80mm) añadiendo el logotipo de tu papelería, dirección y mensajes de agradecimiento para tus clientes.</p>
+                        </div>
+                    </div>
+
+                    <div class="challenge-row" style="margin-bottom: 15px;">
+                        <div class="chal-icon" style="background: #d6e5fa; color: #195ed7;">
+                            <i class="fa-solid fa-barcode"></i>
+                        </div>
+                        <div class="chal-text">
+                            <h4>Lectura Veloz de Códigos</h4>
+                            <p>El sistema reconoce escáneres genéricos y de marca para registrar rápidamente bolígrafos o libretas, pulverizando las filas en temporada de clases.</p>
+                        </div>
+                    </div>
+
+                    <div class="challenge-row">
+                        <div class="chal-icon" style="background: #fff1f0; color: #fa441f;">
+                            <i class="fa-solid fa-cash-register"></i>
+                        </div>
+                        <div class="chal-text">
+                            <h4>Apertura Segura de Gaveta</h4>
+                            <p>Protege tu efectivo. La plataforma envía la señal electrónica para abrir el cajón de dinero única y exclusivamente cuando se concreta un cobro.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="control-visual">
+                <div class="image-placeholder-papeleria" style="position: relative; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.1); border: 1px solid #e2e8f0;">
+                    <img src="assets/img/hardware-papeleria-escalapos.png" alt="Compatibilidad de hardware EscalaPOS" style="width: 100%; display: block;">
+                    
+                    <div class="floating-badge" style="position: absolute; top: 20px; right: 20px; background: #195ed7; color: white; padding: 10px 15px; border-radius: 8px; font-weight: 700; font-size: 13px; display: flex; align-items: center; gap: 8px;">
+                        <i class="fa-solid fa-plug"></i>
+                        <span>Instalación Rápida</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="challenges-section" id="analisis-marcas-papeleria" style="background-color: #ffffff;">
+    <div class="container">
+        <div class="section-header text-center">
+            <span class="sub-title" style="color: #195ed7;">INTELIGENCIA DE MERCADO</span>
+            <h2 class="section-title">Mide el rendimiento de las grandes marcas</h2>
+            <p class="section-desc">Scribe, Norma, Bic, Pelikan o Pritt... Auditar la rotación de tus marcas te revela las preferencias de tus compradores y guía tus decisiones de abastecimiento.</p>
+        </div>
+
+        <div class="challenges-compact-grid">
+            <div class="challenge-row">
+                <div class="chal-icon" style="background: #e6f9ed; color: #26c95e;">
+                    <i class="fa-solid fa-cart-flatbed"></i>
+                </div>
+                <div class="chal-text">
+                    <h4>Abastecimiento Estratégico</h4>
+                    <p>Filtra tu inventario por fabricante, genera un listado preciso de faltantes y envíalo directamente por WhatsApp a tu distribuidor mayorista.</p>
+                </div>
+            </div>
+
+            <div class="challenge-row">
+                <div class="chal-icon" style="background: #d6e5fa; color: #195ed7;">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <div class="chal-text">
+                    <h4>Análisis de Desplazamiento</h4>
+                    <p>Descubre patrones de consumo críticos: evalúa si durante agosto rotan con mayor velocidad las libretas económicas o las líneas de diseño premium.</p>
+                </div>
+            </div>
+
+            <div class="challenge-row chal-center">
+                <div class="chal-icon" style="background: #d6e5fa; color: #195ed7;">
+                    <i class="fa-solid fa-tag"></i>
+                </div>
+                <div class="chal-text">
+                    <h4>Campañas y Ofertas Directas</h4>
+                    <p>Configura descuentos específicos por marca utilizando el módulo de marketing interno, incentivando la venta de artículos estancados o de temporada.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="pos-importance" id="comparativa-papelera" style="background-color: #ffffff;">
+    <div class="container">
+        <div class="section-header text-center">
+            <span class="sub-title" style="color: #fa441f;">LA EVOLUCIÓN DE TU MOSTRADOR</span>
+            <h2 class="section-title">¿Por qué dejar atrás la libreta y la calculadora?</h2>
+            <p class="section-desc">Descubre cómo EscalaPOS elimina las fugas de dinero y transforma el estrés de las temporadas altas en ganancias netas.</p>
+        </div>
+
+        <div class="table-responsive">
+            <table class="escala-table">
+                <thead>
+                    <tr>
+                        <th>Característica</th>
+                        <th>Libreta / Calculadora</th>
+                        <th>Sistemas Genéricos</th>
+                        <th class="highlight-col">EscalaPOS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="feature-name"><i class="fa-solid fa-list-check"></i> Listas Escolares</td>
+                        <td>Sumas a mano lentas y propensas a errores de cobro.</td>
+                        <td>Cobro artículo por artículo, generando filas enormes.</td>
+                        <td class="highlight-col"><strong>Armado de "Kits" en un clic. Descuenta todo el inventario en segundos.</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name"><i class="fa-solid fa-print"></i> Cobro de Servicios</td>
+                        <td>Se olvidan anotar las copias y el internet.</td>
+                        <td>Descuadran el inventario al mezclarse con productos físicos.</td>
+                        <td class="highlight-col"><strong>Botones rápidos para servicios, separando la ganancia del stock.</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name"><i class="fa-solid fa-eraser"></i> Control de Mermas</td>
+                        <td>Robo hormiga invisible hasta fin de año.</td>
+                        <td>Difícil rastreo de productos sin código de barras.</td>
+                        <td class="highlight-col"><strong>Búsqueda ágil, generación de etiquetas y registro de mermas justificado.</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<section class="faq-section" id="faq-papelerias">
+    <div class="container">
+        <div class="section-header text-center">
+            <span class="sub-title" style="color: #195ed7;">RESPUESTAS CLARAS</span>
+            <h2 class="section-title">Preguntas Frecuentes del Sector Papelero</h2>
+            <p class="section-desc">Aclaramos las dudas más comunes antes de que comiences a modernizar tu negocio.</p>
+        </div>
+
+        <div class="faq-grid">
+            <details class="faq-item">
+                <summary>
+                    <span>¿Qué hago con los lápices o gomas que no traen código de barras?</span>
+                    <i class="fa-solid fa-plus"></i>
+                </summary>
+                <div class="faq-answer">
+                    <p>Tienes dos opciones: puedes usar nuestro buscador inteligente en la pantalla de caja (tecleando "goma" aparecerá al instante), o utilizar el generador integrado de EscalaPOS para imprimir tus propias etiquetas con códigos pequeños y pegarlas en tus exhibidores.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>
+                    <span>¿Puedo cobrar impresiones y recargas en el mismo ticket que los cuadernos?</span>
+                    <i class="fa-solid fa-plus"></i>
+                </summary>
+                <div class="faq-answer">
+                    <p>¡Por supuesto! El sistema permite combinar productos físicos (que descuentan inventario) con servicios intangibles (copias, engargolados, recargas) en una sola cuenta. Esto agiliza el cobro y le da un comprobante profesional a tu cliente.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>
+                    <span>En agosto tengo mucha gente, ¿puedo usar varias computadoras cobrando a la vez?</span>
+                    <i class="fa-solid fa-plus"></i>
+                </summary>
+                <div class="faq-answer">
+                    <p>Sí. EscalaPOS está diseñado para escalar contigo. Puedes tener dos, tres o más cajas cobrando simultáneamente en la misma sucursal. Todas descontarán del mismo inventario central en tiempo real, evitando que vendas productos agotados.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>
+                    <span>¿Cómo evito que los empleados cancelen ventas sin mi permiso?</span>
+                    <i class="fa-solid fa-plus"></i>
+                </summary>
+                <div class="faq-answer">
+                    <p>Asignando roles. Al perfil de "Cajero" le puedes bloquear la opción de cancelar tickets, aplicar descuentos o ver cuánto dinero hay en la caja. Si necesitan hacer una devolución, el sistema pedirá tu contraseña de Administrador para autorizar la acción.</p>
+                </div>
+            </details>
+        </div>
+    </div>
+</section>
+        <div class="summary-widget" id="summaryWidget">
+        <button class="widget-toggle" id="toggleWidget">
+            <i class="fa-solid fa-chevron-left"></i>
+            <span class="toggle-text">Guardar</span>
+        </button>
+        <div class="widget-content">
+            <div class="widget-header">
+                <span class="label">MI CONFIGURACIÓN</span>
+                <h3 id="widget-plan-name">Comercial</h3>
+                <p id="widget-addons-count">0 add-ons</p>
+            </div>
+            <div class="widget-body">
+                <div class="widget-addons-list" id="widget-addons-list">
+                    <p class="empty-msg">No has agregado complementos</p>
+                </div>
+            </div>
+            <div class="widget-footer">
+                <div class="widget-total">
+                    <span>Total:</span>
+                    <h2 id="widget-total-price">$299.00</h2>
+                </div>
+                <button class="btn-primary-widget">Crear mi trial</button>
+            </div>
+        </div>
+    </div>
+
+     <footer class="footer-seo">
+    <div class="container grid-footer">
+        <div class="footer-col brand-col">
+            <a href="#" class="logo">Escala<span>POS</span></a>
+            <p>El punto de venta modular que se adapta al ritmo de tu negocio. Sin contratos forzosos ni datos fiscales al iniciar.</p>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h4>Soluciones POS</h4>
+            <ul>
+                <li><a href="#">Punto de venta para Abarrotes</a></li>
+                <li><a href="#">Sistema para Carnicerías</a></li>
+                <li><a href="#">Software para Farmacias</a></li>
+                <li><a href="#">Control de Ferreterías</a></li>
+                <li><a href="#">POS para Papelerías</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Módulos Escala</h4>
+            <ul>
+                <li><a href="#">Facturación Electrónica 4.0</a></li>
+                <li><a href="#">CRM y Cobranza</a></li>
+                <li><a href="#">Monedero y Lealtad</a></li>
+                <li><a href="#">Control de Inventarios</a></li>
+                <li><a href="#">Analítica Gerencial</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>EscalaPOS México</h4>
+            <p><i class="fa-solid fa-location-dot"></i> Disponible en CDMX, Querétaro, Monterrey y todo México.</p>
+            <p><i class="fa-solid fa-phone"></i> +52 777 123 4567</p>
+            <p><i class="fa-solid fa-envelope"></i> ventas@escalapos.mx</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container bottom-flex">
+            <p>&copy; 2026 EscalaPOS. Todos los derechos reservados.</p>
+            <div class="legal-links">
+                <a href="#">Aviso de Privacidad</a>
+                <a href="#">Términos y Condiciones</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="scriptl.js"></script>
+
+</body>
+</html>

@@ -10,25 +10,30 @@
 </head>
 <body>
 
-    <header class="main-navbar">
-        <div class="container nav-container">
-            <a href="index.html" class="logo">Escala<span>POS</span></a>
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-            </div>
-            <nav class="nav-menu">
-                <ul class="nav-list">
-                    <li><a href="#beneficios" class="nav-link">Beneficios</a></li>
-                    <li><a href="#basculas" class="nav-link">Básculas</a></li>
-                    <li><a href="#precios" class="nav-link">Planes</a></li>
-                    <li class="nav-btns">
-                        <a href="#" class="btn-login">Ingresar</a>
-                        <a href="#" class="btn-trial-nav">Probar Gratis</a>
-                    </li>
-                </ul>
-            </nav>
+   <header class="main-navbar">
+    <div class="container nav-container">
+        <a href="#" class="logo">Escala<span>POS</span></a>
+        
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </div>
-    </header>
+
+        <nav class="nav-menu">
+            <ul class="nav-list">
+                <li><a href="#pasos" class="nav-link">Cómo funciona</a></li>
+                <li><a href="#precios" class="nav-link">Planes</a></li>
+                <li><a href="#modulos" class="nav-link">Add-ons</a></li>
+                <li><a href="#soluciones" class="nav-link">Soluciones</a></li>
+                <li class="nav-btns">
+                    <a href="#" class="btn-login">Ya tengo cuenta</a>
+                    <a href="#" class="btn-trial-nav">Crear mi trial</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
     <section class="hero-extension">
         <div class="container grid-hero">
@@ -422,8 +427,84 @@
     </section>
 
     <div class="summary-widget" id="summaryWidget">
+        <button class="widget-toggle" id="toggleWidget">
+            <i class="fa-solid fa-chevron-left"></i>
+            <span class="toggle-text">Guardar</span>
+        </button>
+        <div class="widget-content">
+            <div class="widget-header">
+                <span class="label">MI CONFIGURACIÓN</span>
+                <h3 id="widget-plan-name">Comercial</h3>
+                <p id="widget-addons-count">0 add-ons</p>
+            </div>
+            <div class="widget-body">
+                <div class="widget-addons-list" id="widget-addons-list">
+                    <p class="empty-msg">No has agregado complementos</p>
+                </div>
+            </div>
+            <div class="widget-footer">
+                <div class="widget-total">
+                    <span>Total:</span>
+                    <h2 id="widget-total-price">$299.00</h2>
+                </div>
+                <button class="btn-primary-widget">Crear mi trial</button>
+            </div>
+        </div>
+    </div>
+
+     <footer class="footer-seo">
+    <div class="container grid-footer">
+        <div class="footer-col brand-col">
+            <a href="#" class="logo">Escala<span>POS</span></a>
+            <p>El punto de venta modular que se adapta al ritmo de tu negocio. Sin contratos forzosos ni datos fiscales al iniciar.</p>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
         </div>
 
-    <script src="script.js"></script>
+        <div class="footer-col">
+            <h4>Soluciones POS</h4>
+            <ul>
+                <li><a href="#">Punto de venta para Abarrotes</a></li>
+                <li><a href="#">Sistema para Carnicerías</a></li>
+                <li><a href="#">Software para Farmacias</a></li>
+                <li><a href="#">Control de Ferreterías</a></li>
+                <li><a href="#">POS para Papelerías</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Módulos Escala</h4>
+            <ul>
+                <li><a href="#">Facturación Electrónica 4.0</a></li>
+                <li><a href="#">CRM y Cobranza</a></li>
+                <li><a href="#">Monedero y Lealtad</a></li>
+                <li><a href="#">Control de Inventarios</a></li>
+                <li><a href="#">Analítica Gerencial</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>EscalaPOS México</h4>
+            <p><i class="fa-solid fa-location-dot"></i> Disponible en CDMX, Querétaro, Monterrey y todo México.</p>
+            <p><i class="fa-solid fa-phone"></i> +52 777 123 4567</p>
+            <p><i class="fa-solid fa-envelope"></i> ventas@escalapos.mx</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container bottom-flex">
+            <p>&copy; 2026 EscalaPOS. Todos los derechos reservados.</p>
+            <div class="legal-links">
+                <a href="#">Aviso de Privacidad</a>
+                <a href="#">Términos y Condiciones</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="scriptl.js"></script>
 </body>
 </html>

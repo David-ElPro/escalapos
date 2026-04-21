@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo de Facturación 4.0 | EscalaPOS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="main-navbar">
+    <div class="container nav-container">
+        <a href="#" class="logo">Escala<span>POS</span></a>
+        
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <nav class="nav-menu">
+            <ul class="nav-list">
+                <li><a href="#pasos" class="nav-link">Cómo funciona</a></li>
+                <li><a href="#precios" class="nav-link">Planes</a></li>
+                <li><a href="#modulos" class="nav-link">Add-ons</a></li>
+                <li><a href="#soluciones" class="nav-link">Soluciones</a></li>
+                <li class="nav-btns">
+                    <a href="#" class="btn-login">Ya tengo cuenta</a>
+                    <a href="#" class="btn-trial-nav">Crear mi trial</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+    
+
+    <section class="hero-extension">
+        <div class="container grid-hero">
+            <div class="hero-text">
+                <span class="badge-trial" style="background-color: #d6e5fa; color: #195ed7;">OPERACIÓN COMERCIAL</span>
+                <h1>Facturación 4.0 <strong>sin complicaciones ni multas</strong> del SAT.</h1>
+                <p>Emite, consulta y administra tus comprobantes fiscales desde un solo lugar. Evita errores con nuestras vistas previas y mantén tu contabilidad al día sin tener que salir de tu punto de venta.</p>
+                
+                <ul class="hero-bullets">
+                    <li><i class="fa-solid fa-magnifying-glass-chart"></i> Búsqueda ágil por Ticket, RFC o UUID.</li>
+                    <li><i class="fa-solid fa-eye"></i> Generación de Previews antes del timbrado final.</li>
+                    <li><i class="fa-solid fa-file-arrow-down"></i> Descarga inmediata de expedientes XML y PDF.</li>
+                </ul>
+            </div>
+
+            <div class="preselection-container">
+                <div class="preselection-flex">
+                    <div class="preselection-image">
+                        <img src="https://via.placeholder.com/500x400/e8f0fe/195ed7?text=EscalaPOS+Facturacion" alt="Módulo de Facturación EscalaPOS">
+                    </div>
+                    <div class="preselection-card">
+                        <div class="pre-header">
+                            <h3>Cumplimiento Total</h3>
+                        </div>
+                        <div class="pre-body">
+                            <div class="pre-item">
+                                <span>Versión SAT:</span>
+                                <strong>CFDI 4.0</strong>
+                            </div>
+                            <div class="pre-item">
+                                <span>Trazabilidad:</span>
+                                <strong>En tiempo real</strong>
+                            </div>
+                            <div class="pre-item">
+                                <span>Soporte de folios:</span>
+                                <span class="text-muted">Ilimitados según plan</span>
+                            </div>
+                        </div>
+                        <div class="pre-footer">
+                            <p><i class="fa-solid fa-file-invoice-dollar"></i> Timbrado seguro y validado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="challenges-section" id="que-es-facturacion-40" style="background-color: #f8fafc;">
+    <div class="container">
+        <div class="section-header text-center">
+            <span class="sub-title" style="color: #fa441f;">NORMATIVA DEL SAT EXPLICADA</span>
+            <h2 class="section-title">¿Qué es la Facturación 4.0 en México?</h2>
+            <p class="section-desc">Es la versión obligatoria del comprobante fiscal (CFDI) exigida por la autoridad. Su objetivo es validar la identidad exacta de quien compra y quien vende. Cumplir con estas reglas es vital, pero con <strong>EscalaPOS</strong>, el proceso es completamente automático.</p>
+        </div>
+
+        <div class="challenges-compact-grid" style="justify-content: center;">
+            
+            <div class="challenge-row">
+                <div class="chal-icon" style="background: #d6e5fa; color: #195ed7;">
+                    <i class="fa-solid fa-id-card-clip"></i>
+                </div>
+                <div class="chal-text">
+                    <h4>Validación de Identidad Exacta</h4>
+                    <p>El nombre o razón social de tu cliente debe escribirse idéntico, letra por letra y en mayúsculas, tal como aparece en su Constancia de Situación Fiscal.</p>
+                </div>
+            </div>
+
+            <div class="challenge-row">
+                <div class="chal-icon" style="background: #e6f9ed; color: #26c95e;">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="chal-text">
+                    <h4>Código Postal del Domicilio Fiscal</h4>
+                    <p>Ya no basta con cualquier dirección. El comprobante exige llevar el código postal que el cliente tiene registrado oficialmente ante el SAT.</p>
+                </div>
+            </div>
+
+            <div class="challenge-row chal-center">
+                <div class="chal-icon" style="background: #d6e5fa; color: #195ed7;">
+                    <i class="fa-solid fa-building-columns"></i>
+                </div>
+                <div class="chal-text">
+                    <h4>Régimen Fiscal y Uso Correcto</h4>
+                    <p>Debes indicar bajo qué régimen tributa tu comprador y el uso que le dará a la mercancía adquirida (por ejemplo, Gastos en general o Adquisición de mercancías).</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <section class="cash-control-section" id="trazabilidad" style="background-color: #ffffff;">
+        <div class="container">
+            <div class="grid-control">
+                <div class="control-content">
+                    <span class="sub-title" style="color: #195ed7;">EXPEDIENTES FISCALES</span>
+                    <h2 class="section-title">Trazabilidad total antes y después del timbrado</h2>
+                    <p class="section-desc">Olvídate de perder horas buscando una factura vieja. El módulo de EscalaPOS está diseñado para darte visibilidad absoluta de cada documento fiscal emitido en tu negocio.</p>
+                    
+                    <div class="importance-list">
+                        <div class="challenge-row" style="margin-bottom: 15px;">
+                            <div class="chal-icon" style="background: #d6e5fa; color: #195ed7;">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <div class="chal-text">
+                                <h4>Buscador de Alta Precisión</h4>
+                                <p>Localiza cualquier factura en milisegundos filtrando por número de Ticket, RFC del cliente, nombre del receptor o el folio UUID directo del SAT.</p>
+                            </div>
+                        </div>
+
+                        <div class="challenge-row" style="margin-bottom: 15px;">
+                            <div class="chal-icon" style="background: #e6f9ed; color: #26c95e;">
+                                <i class="fa-solid fa-filter"></i>
+                            </div>
+                            <div class="chal-text">
+                                <h4>Gestión por Estatus Fiscal</h4>
+                                <p>Clasifica y audita tus documentos rápidamente utilizando el filtro de estatus: visualiza facturas en Preview, Timbradas, Canceladas o con Error de validación.</p>
+                            </div>
+                        </div>
+
+                        <div class="challenge-row">
+                            <div class="chal-icon" style="background: #d6e5fa; color: #195ed7;">
+                                <i class="fa-solid fa-download"></i>
+                            </div>
+                            <div class="chal-text">
+                                <h4>Detalle Fiscal a un Clic</h4>
+                                <p>Accede al panel de detalle para descargar inmediatamente los archivos obligatorios (XML y PDF) o la cadena original para enviarlos a tu cliente o contador.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="control-visual">
+                    <div class="image-placeholder-pharmacy" style="position: relative; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.1); border: 1px solid #e2e8f0;">
+                        <img src="assets/img/interfaz-facturacion-escalapos.png" alt="Interfaz de Facturación EscalaPOS" style="width: 100%; display: block;">
+                        
+                        <div class="floating-badge" style="position: absolute; bottom: 20px; right: 20px; background: #26c95e; color: white; padding: 10px 15px; border-radius: 8px; font-weight: 700; font-size: 13px; display: flex; align-items: center; gap: 8px;">
+                            <i class="fa-solid fa-check-double"></i>
+                            <span>Conexión directa al SAT</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="challenges-section" id="herramientas" style="background-color: #f8fafc;">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-title" style="color: #fa441f;">CERO ERRORES</span>
+                <h2 class="section-title">Herramientas contables que protegen tu negocio</h2>
+                <p class="section-desc">Facturar no tiene que ser un dolor de cabeza. Automatiza el proceso y dale a tu contador exactamente lo que necesita.</p>
+            </div>
+
+            <div class="challenges-compact-grid">
+                
+                <div class="challenge-row">
+                    <div class="chal-icon" style="background: #d6e5fa; color: #195ed7;">
+                        <i class="fa-solid fa-file-contract"></i>
+                    </div>
+                    <div class="chal-text">
+                        <h4>Vista Previa de Factura (Preview)</h4>
+                        <p>Evita desperdiciar folios. Revisa un borrador exacto de la factura con tu cliente antes de enviarla al SAT para asegurar que todos los datos sean correctos.</p>
+                    </div>
+                </div>
+
+                <div class="challenge-row">
+                    <div class="chal-icon" style="background: #e6f9ed; color: #26c95e;">
+                        <i class="fa-solid fa-receipt"></i>
+                    </div>
+                    <div class="chal-text">
+                        <h4>De Ticket a Factura en Segundos</h4>
+                        <p>Transforma cualquier venta de mostrador en un CFDI 4.0 válido. El sistema jala los datos del ticket automáticamente, evitando la doble captura manual.</p>
+                    </div>
+                </div>
+
+                <div class="challenge-row">
+                    <div class="chal-icon" style="background: #fff1f0; color: #fa441f;">
+                        <i class="fa-solid fa-ban"></i>
+                    </div>
+                    <div class="chal-text">
+                        <h4>Gestión de Cancelaciones Segura</h4>
+                        <p>Si ocurre un error, solicita la cancelación directamente desde el sistema bajo los motivos oficiales del SAT, manteniendo tu contabilidad cuadrada.</p>
+                    </div>
+                </div>
+
+                <div class="challenge-row">
+                    <div class="chal-icon" style="background: #d6e5fa; color: #195ed7;">
+                        <i class="fa-solid fa-book-bookmark"></i>
+                    </div>
+                    <div class="chal-text">
+                        <h4>Catálogos SAT Integrados</h4>
+                        <p>Asigna las claves de producto/servicio y unidades de medida oficiales directamente a tu inventario para que el sistema las incluya al timbrar.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="pos-importance" id="comparativa" style="background-color: #ffffff;">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-title" style="color: #195ed7;">LA MEJOR DECISIÓN</span>
+                <h2 class="section-title">¿Por qué facturar desde EscalaPOS?</h2>
+                <p class="section-desc">Compara el tiempo que pierdes en portales lentos contra la agilidad de tener todo integrado en tu punto de venta.</p>
+            </div>
+
+            <div class="table-responsive">
+                <table class="escala-table">
+                    <thead>
+                        <tr>
+                            <th>Proceso</th>
+                            <th>Portal del SAT Gratuito</th>
+                            <th>Sistemas Contables Externos</th>
+                            <th class="highlight-col">EscalaPOS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="feature-name"><i class="fa-solid fa-keyboard"></i> Creación de Factura</td>
+                            <td>Captura manual de cada concepto, precio e impuesto.</td>
+                            <td>Requiere exportar la venta y volver a teclear la información.</td>
+                            <td class="highlight-col"><strong>Automática. Vincula el ticket y extrae todos los conceptos al instante.</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name"><i class="fa-solid fa-shield-halved"></i> Prevención de Errores</td>
+                            <td>No permite vistas previas amigables antes de sellar.</td>
+                            <td>Validación lenta que a menudo requiere conocimientos técnicos.</td>
+                            <td class="highlight-col"><strong>Genera un "Preview" en PDF para revisión del cliente antes de timbrar.</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name"><i class="fa-solid fa-folder-tree"></i> Organización</td>
+                            <td>Búsqueda compleja entre cientos de archivos sueltos.</td>
+                            <td>Módulos pesados y difíciles de filtrar para dueños de negocio.</td>
+                            <td class="highlight-col"><strong>Filtros rápidos por estatus (Timbrada, Cancelada, Error) y descarga a un clic.</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section" id="faq-facturacion">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-title" style="color: #195ed7;">DUDAS FISCALES RESUELTAS</span>
+                <h2 class="section-title">Preguntas Frecuentes sobre Facturación</h2>
+                <p class="section-desc">Todo lo que necesitas saber sobre la emisión de comprobantes en nuestro sistema.</p>
+            </div>
+
+            <div class="faq-grid">
+                <details class="faq-item">
+                    <summary>
+                        <span>¿Tengo que pedir los datos fiscales de mi cliente cada vez que compra?</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>No. EscalaPOS cuenta con un directorio de clientes. Una vez que guardas su Constancia de Situación Fiscal (RFC, Nombre, Régimen y Código Postal), el sistema lo recordará para sus futuras compras, emitiendo la factura en segundos.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary>
+                        <span>¿Qué significa el estatus "Error" en la pantalla de facturación?</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>El estatus "Error" te protege. Significa que el SAT detectó una inconsistencia (como un código postal incorrecto o un régimen fiscal que no coincide) y detuvo el timbrado. El sistema te mostrará el motivo para que lo corrijas sin haber desperdiciado un folio fiscal.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary>
+                        <span>¿El sistema soporta la Factura Global para ventas al público en general?</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Sí, EscalaPOS te permite agrupar todos los tickets de ventas que no solicitaron factura individual para generar tu comprobante global (diario, semanal o mensual), cumpliendo con tus obligaciones ante el SAT de forma rápida.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-seo">
+    <div class="container grid-footer">
+        <div class="footer-col brand-col">
+            <a href="#" class="logo">Escala<span>POS</span></a>
+            <p>El punto de venta modular que se adapta al ritmo de tu negocio. Sin contratos forzosos ni datos fiscales al iniciar.</p>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h4>Soluciones POS</h4>
+            <ul>
+                <li><a href="#">Punto de venta para Abarrotes</a></li>
+                <li><a href="#">Sistema para Carnicerías</a></li>
+                <li><a href="#">Software para Farmacias</a></li>
+                <li><a href="#">Control de Ferreterías</a></li>
+                <li><a href="#">POS para Papelerías</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Módulos Escala</h4>
+            <ul>
+                <li><a href="#">Facturación Electrónica 4.0</a></li>
+                <li><a href="#">CRM y Cobranza</a></li>
+                <li><a href="#">Monedero y Lealtad</a></li>
+                <li><a href="#">Control de Inventarios</a></li>
+                <li><a href="#">Analítica Gerencial</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>EscalaPOS México</h4>
+            <p><i class="fa-solid fa-location-dot"></i> Disponible en CDMX, Querétaro, Monterrey y todo México.</p>
+            <p><i class="fa-solid fa-phone"></i> +52 777 123 4567</p>
+            <p><i class="fa-solid fa-envelope"></i> ventas@escalapos.mx</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container bottom-flex">
+            <p>&copy; 2026 EscalaPOS. Todos los derechos reservados.</p>
+            <div class="legal-links">
+                <a href="#">Aviso de Privacidad</a>
+                <a href="#">Términos y Condiciones</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="scriptl.js"></script>
+
+</body>
+</html>

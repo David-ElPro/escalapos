@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punto de Venta para Farmacias | EscalaPOS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+   <header class="main-navbar">
+    <div class="container nav-container">
+        <a href="#" class="logo">Escala<span>POS</span></a>
+        
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <nav class="nav-menu">
+            <ul class="nav-list">
+                <li><a href="#pasos" class="nav-link">Cómo funciona</a></li>
+                <li><a href="#precios" class="nav-link">Planes</a></li>
+                <li><a href="#modulos" class="nav-link">Add-ons</a></li>
+                <li><a href="#soluciones" class="nav-link">Soluciones</a></li>
+                <li class="nav-btns">
+                    <a href="#" class="btn-login">Ya tengo cuenta</a>
+                    <a href="#" class="btn-trial-nav">Crear mi trial</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <section class="hero-extension">
+        <div class="container grid-hero">
+            <div class="hero-text">
+                <span class="badge-trial">SOLUCIÓN PARA FARMACIAS</span>
+                <h1>El control total que tu <strong>Farmacia o Botica</strong> requiere.</h1>
+                <p>Gestiona miles de claves de medicamentos, monitorea caducidades y cumple con las normativas sanitarias vigentes. EscalaPOS es la herramienta que garantiza seguridad en cada receta.</p>
+                
+                <ul class="hero-bullets">
+                    <li><i class="fa-solid fa-pills"></i> Búsqueda inteligente por Sustancia Activa o Marca.</li>
+                    <li><i class="fa-solid fa-calendar-circle-exclamation"></i> Alertas automáticas de medicamentos próximos a vencer.</li>
+                    <li><i class="fa-solid fa-notes-medical"></i> Registro de antibióticos y control de recetas.</li>
+                </ul>
+            </div>
+
+            <div class="preselection-container">
+                <div class="preselection-flex">
+                    <div class="preselection-image">
+                        <img src="https://via.placeholder.com/500x400/e8f0fe/195ed7?text=EscalaPOS+Farmacias" alt="Software para Farmacias EscalaPOS">
+                    </div>
+                    <div class="preselection-card">
+                        <div class="pre-header">
+                            <h3>Preselección Sugerida</h3>
+                        </div>
+                        <div class="pre-body">
+                            <div class="pre-item">
+                                <span>Plan base:</span>
+                                <strong id="pre-plan-base">Comercial</strong>
+                            </div>
+                            <div class="pre-item">
+                                <span>Caja extra:</span>
+                                <strong>$99.00</strong>
+                            </div>
+                            <div class="pre-item">
+                                <span>Add-ons:</span>
+                                <span id="pre-addons-text" class="text-muted">Incluye: Facturación 4.0</span>
+                            </div>
+                            <div class="pre-total">
+                                <span>Total mensual estimado:</span>
+                                <span class="price-tag" id="pre-total-price">$299.00</span>
+                            </div>
+                        </div>
+                        <div class="pre-footer">
+                            <p><i class="fa-solid fa-file-medical"></i> Cumple con el SAT y Salud hoy mismo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cash-control-section" id="tecnologia-farmacia">
+    <div class="container">
+        <div class="grid-control">
+            
+            <div class="control-content">
+                <span class="sub-title">EFICIENCIA OPERATIVA</span>
+                <h2 class="section-title">Tecnología comercial inteligente para tu mostrador</h2>
+                <p class="section-desc">Gestionar una farmacia exige una precisión impecable en las finanzas y el stock. Mientras otros se complican, <strong>EscalaPOS</strong> se convierte en el núcleo de tus transacciones, ofreciendo herramientas comerciales de primer nivel para potenciar tu crecimiento.</p>
+                
+                <div class="importance-list">
+                    <div class="importance-item">
+                        <div class="item-icon"><i class="fa-solid fa-calendar-check"></i></div>
+                        <div class="item-text">
+                            <h4>Supervisión de Lotes y Vencimientos</h4>
+                            <p>Garantiza una rotación impecable de tu inventario. El sistema te ayuda a priorizar la salida de productos según su fecha de caducidad para proteger tu inversión.</p>
+                        </div>
+                    </div>
+                    <div class="importance-item">
+                        <div class="item-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                        <div class="item-text">
+                            <h4>Ingresos Extra: Servicios y Recargas</h4>
+                            <p>Convierte tu local en un centro de soluciones. Ofrece cobro de servicios y venta de tiempo aire, atrayendo más flujo de clientes a tu sucursal.</p>
+                        </div>
+                    </div>
+                    <div class="importance-item">
+                        <div class="item-icon"><i class="fa-solid fa-user-shield"></i></div>
+                        <div class="item-text">
+                            <h4>Jerarquía y Permisos de Cajeros</h4>
+                            <p>Mantén un control blindado sobre lo que ocurre en caja. Define niveles de acceso específicos para cada empleado, asegurando que tus datos financieros siempre estén protegidos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cta-wrapper" style="margin-top: 30px;">
+                    <a href="#precios" class="btn-primary" style="padding: 15px 35px; text-decoration: none; display: inline-block;">
+                        Comenzar mi prueba sin costo
+                    </a>
+                </div>
+            </div>
+
+            <div class="control-visual">
+                <div class="image-placeholder-pharmacy" style="position: relative; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+                    <img src="assets/img/farmacia-pos-comercial.png" alt="Tecnología para farmacias EscalaPOS" style="width: 100%; display: block;">
+                    
+                    <div class="floating-badge" style="position: absolute; bottom: 20px; left: 20px; background: #195ed7; color: white; padding: 12px 20px; border-radius: 10px; font-weight: 700; display: flex; align-items: center; gap: 10px;">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span>Control 100% Seguro</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="pos-importance" id="retos-mostrador" style="background-color: #f8fafc;">
+    <div class="container">
+        <div class="section-header text-center">
+            <span class="sub-title">DIAGNÓSTICO DE TU NEGOCIO</span>
+            <h2 class="section-title">Los verdaderos dolores de cabeza en tu mostrador</h2>
+            <p class="section-desc">Los dueños de boticas y farmacias en México pierden miles de pesos al mes por fugas invisibles y falta de control. ¿Te suenan familiares estos problemas?</p>
+        </div>
+
+        <div class="importance-grid" style="justify-content: center;">
+            
+            <div class="importance-card">
+                <div class="card-icon-circle" style="background: #fee2e2; color: #fa441f;">
+                    <i class="fa-solid fa-calendar-xmark"></i>
+                </div>
+                <h3>Pérdidas por Medicamento Caduco</h3>
+                <p>Dejar que el producto expire en el anaquel por no tener visibilidad automática de los lotes próximos a vencer es, literalmente, tirar dinero a la basura.</p>
+            </div>
+
+            <div class="importance-card">
+                <div class="card-icon-circle" style="background: #e8f0fe; color: #195ed7;">
+                    <i class="fa-solid fa-person-walking-arrow-right"></i>
+                </div>
+                <h3>Fuga de Clientes Potenciales</h3>
+                <p>Si tu farmacia no ofrece recargas de saldo o pago de servicios básicos, tus vecinos caminarán hasta la tienda de conveniencia de la esquina, llevándose sus compras extra.</p>
+            </div>
+
+            <div class="importance-card">
+                <div class="card-icon-circle" style="background: #e8f0fe; color: #195ed7;">
+                    <i class="fa-solid fa-truck-arrow-right"></i>
+                </div>
+                <h3>Caos en el Traspaso de Mercancía</h3>
+                <p>Mover cajas de medicina entre tus propias sucursales sin un rastro digital exacto genera inventarios fantasma y descuadres imposibles de rastrear en tus cortes.</p>
+            </div>
+
+            <div class="importance-card">
+                <div class="card-icon-circle" style="background: #fee2e2; color: #fa441f;">
+                    <i class="fa-solid fa-cash-register"></i>
+                </div>
+                <h3>Vulnerabilidad en el Cobro</h3>
+                <p>La falta de candados y permisos en tu sistema actual permite que los cajeros alteren tickets, apliquen descuentos o cancelen ventas sin tu autorización ni supervisión.</p>
+            </div>
+
+            <div class="importance-card">
+                <div class="card-icon-circle" style="background: #e8f0fe; color: #195ed7;">
+                    <i class="fa-solid fa-clipboard-user"></i>
+                </div>
+                <h3>Ventas a Medias sin Historial</h3>
+                <p>No registrar a tus pacientes crónicos te impide anticipar sus compras, armar cotizaciones rápidas o apartar tratamientos médicos largos, perdiendo fidelidad.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="challenges-section" id="retos-mostrador">
+    <div class="container">
+        <div class="section-header text-center">
+            <span class="sub-title">DIAGNÓSTICO DE TU NEGOCIO</span>
+            <h2 class="section-title">Los verdaderos dolores de cabeza en tu mostrador</h2>
+            <p class="section-desc">Los dueños de boticas en México pierden miles de pesos por fugas invisibles. ¿Te suenan familiares estos problemas?</p>
+        </div>
+
+        <div class="challenges-compact-grid">
+            
+            <div class="challenge-row">
+                <div class="chal-icon" style="background: #fee2e2; color: #fa441f;">
+                    <i class="fa-solid fa-calendar-xmark"></i>
+                </div>
+                <div class="chal-text">
+                    <h4>Pérdidas por Medicamento Caduco</h4>
+                    <p>Tirar dinero a la basura por dejar que el producto expire en el anaquel al no tener alertas automáticas de vencimiento.</p>
+                </div>
+            </div>
+
+            <div class="challenge-row">
+                <div class="chal-icon" style="background: #e8f0fe; color: #195ed7;">
+                    <i class="fa-solid fa-person-walking-arrow-right"></i>
+                </div>
+                <div class="chal-text">
+                    <h4>Fuga de Clientes Potenciales</h4>
+                    <p>Tus vecinos irán a la tienda de conveniencia si no ofreces pago de servicios básicos o recargas de saldo en tu misma caja.</p>
+                </div>
+            </div>
+
+            <div class="challenge-row">
+                <div class="chal-icon" style="background: #e8f0fe; color: #195ed7;">
+                    <i class="fa-solid fa-truck-arrow-right"></i>
+                </div>
+                <div class="chal-text">
+                    <h4>Caos en el Traspaso de Mercancía</h4>
+                    <p>Mover medicinas entre tus propias sucursales sin un rastro digital exacto genera inventarios fantasma y descuadres.</p>
+                </div>
+            </div>
+
+            <div class="challenge-row">
+                <div class="chal-icon" style="background: #fee2e2; color: #fa441f;">
+                    <i class="fa-solid fa-cash-register"></i>
+                </div>
+                <div class="chal-text">
+                    <h4>Vulnerabilidad en el Cobro</h4>
+                    <p>La falta de permisos en el sistema permite que los cajeros alteren tickets o cancelen ventas sin tu supervisión.</p>
+                </div>
+            </div>
+
+            <div class="challenge-row chal-center">
+                <div class="chal-icon" style="background: #e8f0fe; color: #195ed7;">
+                    <i class="fa-solid fa-clipboard-user"></i>
+                </div>
+                <div class="chal-text">
+                    <h4>Ventas a Medias sin Historial</h4>
+                    <p>No registrar a tus pacientes crónicos te impide anticipar compras y apartar tratamientos médicos largos.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="challenges-section" id="funciones-administracion" style="background-color: #ffffff;">
+    <div class="container">
+        <div class="section-header text-center">
+            <span class="sub-title" style="color: #195ed7;">OPERACIÓN SIN FALLAS</span>
+            <h2 class="section-title">Funciones clave para la administración de tu local</h2>
+            <p class="section-desc">Mantén tu farmacia operando como un reloj suizo. EscalaPOS te da las herramientas exactas para que nada se salga de control en tu día a día.</p>
+        </div>
+
+        <div class="challenges-compact-grid">
+            
+            <div class="challenge-row">
+                <div class="chal-icon" style="background: #d6e5fa; color: #195ed7;">
+                    <i class="fa-solid fa-arrows-rotate"></i>
+                </div>
+                <div class="chal-text">
+                    <h4>Rotación Inteligente</h4>
+                    <p>Monitorea lotes y fechas de vencimiento automáticamente. El sistema asegura que despaches primero el medicamento más antiguo, cuidando tu rentabilidad.</p>
+                </div>
+            </div>
+
+            <div class="challenge-row">
+                <div class="chal-icon" style="background: #d6e5fa; color: #195ed7;">
+                    <i class="fa-solid fa-boxes-packing"></i>
+                </div>
+                <div class="chal-text">
+                    <h4>Control de Entradas y Salidas</h4>
+                    <p>Lleva un rastreo milimétrico de tu mercancía. Registra con exactitud cada ingreso de proveedores y justifica toda salida por venta, ajuste de inventario o merma.</p>
+                </div>
+            </div>
+
+            <div class="challenge-row">
+                <div class="chal-icon" style="background: #fff1f0; color: #fa441f;">
+                    <i class="fa-solid fa-user-lock"></i>
+                </div>
+                <div class="chal-text">
+                    <h4>Supervisión de Cajeros</h4>
+                    <p>Evita sorpresas al final del turno. Asigna permisos estrictos para que únicamente tú o el gerente puedan aplicar descuentos, hacer devoluciones o abrir el cajón.</p>
+                </div>
+            </div>
+
+            <div class="challenge-row">
+                <div class="chal-icon" style="background: #e6f9ed; color: #26c95e;">
+                    <i class="fa-solid fa-file-prescription"></i>
+                </div>
+                <div class="chal-text">
+                    <h4>Cotizaciones y Tratamientos</h4>
+                    <p>Arma presupuestos rápidos para recetas largas. Guárdalos en el historial de tu paciente y procésalos en segundos cuando decida llevarse todo el tratamiento.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="challenges-section" id="beneficios-mostrador" style="background-color: #ffffff;">
+    <div class="container">
+        <div class="section-header text-center">
+            <span class="sub-title" style="color: #195ed7;">VALOR AGREGADO</span>
+            <h2 class="section-title">Beneficios de elegir EscalaPOS para tu mostrador</h2>
+            <p class="section-desc">Más que un punto de venta, somos el aliado que impulsa la rentabilidad y el crecimiento de tu farmacia.</p>
+        </div>
+
+        <div class="challenges-compact-grid">
+            
+            <div class="challenge-row">
+                <div class="chal-icon" style="background: #e8f0fe; color: #195ed7;">
+                    <i class="fa-solid fa-users-line"></i>
+                </div>
+                <div class="chal-text">
+                    <h4>Impulso de Tráfico y Ventas Cruzadas</h4>
+                    <p>Atrae a más personas ofreciendo pago de servicios y recargas de saldo. Convierte visitas rápidas en ventas de vitaminas o productos de cuidado personal.</p>
+                </div>
+            </div>
+
+            <div class="challenge-row">
+                <div class="chal-icon" style="background: #e6f9ed; color: #26c95e;">
+                    <i class="fa-solid fa-calendar-check"></i>
+                </div>
+                <div class="chal-text">
+                    <h4>Garantía de Frescura y Cero Merma</h4>
+                    <p>Gracias a la auditoría inteligente de lotes, siempre sabrás qué productos deben tener prioridad de exhibición antes de que pierdan su valor comercial.</p>
+                </div>
+            </div>
+
+            <div class="challenge-row chal-center">
+                <div class="chal-icon" style="background: #e8f0fe; color: #195ed7;">
+                    <i class="fa-solid fa-diagram-project"></i>
+                </div>
+                <div class="chal-text">
+                    <h4>Escalabilidad y Crecimiento Ordenado</h4>
+                    <p>Mueve mercancía entre tus farmacias con total seguridad. Registra cada traspaso y asigna responsables para mantener el control en todas tus sucursales.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="challenges-section" id="auditoria-caja" style="background-color: #ffffff;">
+    <div class="container">
+        <div class="grid-control">
+            
+            <div class="control-content">
+                <span class="sub-title" style="color: #195ed7;">TRANSPARENCIA TOTAL</span>
+                <h2 class="section-title">Auditoría de inventario y arqueos de caja precisos</h2>
+                <p class="section-desc">El flujo de efectivo y productos en una farmacia requiere un orden impecable. <strong>EscalaPOS</strong> te facilita realizar conciliaciones físicas para cuadrar tus existencias contra el sistema, detectando variaciones de forma preventiva.</p>
+                
+                <div class="importance-list">
+                    <div class="challenge-row" style="margin-bottom: 15px;">
+                        <div class="chal-icon" style="background: #e8f0fe; color: #195ed7;">
+                            <i class="fa-solid fa-list-check"></i>
+                        </div>
+                        <div class="chal-text">
+                            <h4>Conciliación de Stock Físico</h4>
+                            <p>Realiza conteos rápidos por anaquel y ajusta tus existencias para que lo que ves en sistema sea exactamente lo que tienes en estante.</p>
+                        </div>
+                    </div>
+
+                    <div class="challenge-row">
+                        <div class="chal-icon" style="background: #e6f9ed; color: #26c95e;">
+                            <i class="fa-solid fa-file-invoice-dollar"></i>
+                        </div>
+                        <div class="chal-text">
+                            <h4>Reporte Detallado por Cajero</h4>
+                            <p>Al finalizar cada turno, obtén un desglose exacto de ventas, cobro de servicios, tiempo aire y el efectivo esperado. Seguridad absoluta para tu patrimonio.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="control-visual">
+                <div class="report-card" style="border-left: 6px solid #195ed7;">
+                    <div class="report-header">
+                        <span><i class="fa-solid fa-clock-rotate-left"></i> Informe de Cierre</span>
+                        <span class="status-badge" style="background: #e6f9ed; color: #26c95e;">Cuadrado</span>
+                    </div>
+                    <div class="report-body">
+                        <div class="report-row"><span>Recargas emitidas:</span> <strong>$1,450.00</strong></div>
+                        <div class="report-row"><span>Servicios cobrados:</span> <strong>$890.00</strong></div>
+                        <div class="report-divider"></div>
+                        <div class="report-row total">
+                            <span>Efectivo en Caja:</span>
+                            <span class="total-amount" style="color: #195ed7;">$4,215.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="challenges-section" id="familias-productos" style="background-color: #f8fafc;">
+    <div class="container">
+        <div class="section-header text-center">
+            <span class="sub-title" style="color: #195ed7;">ESTRUCTURA COMERCIAL</span>
+            <h2 class="section-title">Organiza tus departamentos y líneas de productos</h2>
+            <p class="section-desc">Una farmacia estructurada agiliza el despacho y simplifica la relación con tus proveedores para una gestión de compras más inteligente.</p>
+        </div>
+
+        <div class="challenges-compact-grid">
+            
+            <div class="challenge-row">
+                <div class="chal-icon" style="background: #d6e5fa; color: #195ed7;">
+                    <i class="fa-solid fa-pills"></i>
+                </div>
+                <div class="chal-text">
+                    <h4>Genéricos y de Patente</h4>
+                    <p>Segmenta tus fármacos para identificar mediante reportes gerenciales qué sector te ofrece los mejores márgenes de beneficio.</p>
+                </div>
+            </div>
+
+            <div class="challenge-row">
+                <div class="chal-icon" style="background: #d6e5fa; color: #195ed7;">
+                    <i class="fa-solid fa-pump-soap"></i>
+                </div>
+                <div class="chal-text">
+                    <h4>Estética y Cuidado Personal</h4>
+                    <p>Supervisa áreas de movimiento constante como higiene y belleza, gestionando sus caducidades que suelen ser más prolongadas.</p>
+                </div>
+            </div>
+
+            <div class="challenge-row chal-center">
+                <div class="chal-icon" style="background: #d6e5fa; color: #195ed7;">
+                    <i class="fa-solid fa-bottle-water"></i>
+                </div>
+                <div class="chal-text">
+                    <h4>Conveniencia: Abarrotes y Bebidas</h4>
+                    <p>Administra el rendimiento de snacks y bebidas frías sin mezclar sus resultados financieros con la operación farmacéutica principal.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="challenges-section" id="analitica-marcas" style="background-color: #ffffff;">
+    <div class="container">
+        <div class="grid-control">
+            
+            <div class="control-content">
+                <span class="sub-title" style="color: #195ed7;">INTELIGENCIA DE NEGOCIO</span>
+                <h2 class="section-title">Analítica Estratégica: Marcas y Laboratorios</h2>
+                <p class="section-desc">Registrar el fabricante de cada fármaco y artículo de higiene te permite visualizar qué laboratorios o distribuidores impulsan realmente la rentabilidad de tu farmacia.</p>
+                
+                <div class="importance-list">
+                    <div class="challenge-row" style="margin-bottom: 15px;">
+                        <div class="chal-icon" style="background: #e8f0fe; color: #195ed7;">
+                            <i class="fa-solid fa-flask-vial"></i>
+                        </div>
+                        <div class="chal-text">
+                            <h4>Evaluación de Rentabilidad por Fabricante</h4>
+                            <p>Analiza el margen real de marcas como Bayer, Pfizer o Genomma Lab. Descubre qué laboratorios son los que más aportan a tu utilidad neta.</p>
+                        </div>
+                    </div>
+
+                    <div class="challenge-row" style="margin-bottom: 15px;">
+                        <div class="chal-icon" style="background: #e6f9ed; color: #26c95e;">
+                            <i class="fa-solid fa-handshake"></i>
+                        </div>
+                        <div class="chal-text">
+                            <h4>Ventaja Competitiva ante Mayoristas</h4>
+                            <p>Utiliza reportes de volumen de venta por marca para negociar mejores precios, descuentos o condiciones de crédito con tus distribuidores.</p>
+                        </div>
+                    </div>
+
+                    <div class="challenge-row" style="margin-bottom: 15px;">
+                        <div class="chal-icon" style="background: #e8f0fe; color: #195ed7;">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <div class="chal-text">
+                            <h4>Monitoreo de Desplazamiento de Stock</h4>
+                            <p>Compara si tus vitamínicos de patente rotan con mayor rapidez que tus genéricos propios para optimizar tus decisiones de compra.</p>
+                        </div>
+                    </div>
+
+                    <div class="challenge-row">
+                        <div class="chal-icon" style="background: #fff1f0; color: #fa441f;">
+                            <i class="fa-solid fa-tags"></i>
+                        </div>
+                        <div class="chal-text">
+                            <h4>Auditoría de Caducidades por Laboratorio</h4>
+                            <p>Simplifica tus procesos de revisión sanitaria agrupando el control de lotes y fechas de vencimiento por cada laboratorio fabricante.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="control-visual">
+                <div class="image-placeholder-pharmacy" style="position: relative; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.1); border: 1px solid #e2e8f0;">
+                    <img src="assets/img/reporte-marcas-escalapos.png" alt="Reportes de Laboratorios EscalaPOS" style="width: 100%; display: block;">
+                    
+                    <div class="floating-badge" style="position: absolute; top: 20px; right: 20px; background: #195ed7; color: white; padding: 10px 15px; border-radius: 8px; font-weight: 700; font-size: 12px;">
+                        <i class="fa-solid fa-magnifying-glass-chart"></i>
+                        <span>Datos en tiempo real</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+    
+
+    <section class="pos-importance" id="control">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-title">SEGURIDAD ANTE TODO</span>
+                <h2 class="section-title">¿Por qué usar EscalaPOS en tu farmacia?</h2>
+                <p class="section-desc">El manejo de fármacos no permite errores. La automatización protege la salud de tus clientes y la rentabilidad de tu patrimonio.</p>
+            </div>
+
+            <div class="importance-grid">
+                <div class="importance-card">
+                    <div class="card-icon-circle">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                    </div>
+                    <h3>Rotación de Caducidades</h3>
+                    <p>El sistema prioriza la salida de los productos con vencimiento más próximo, evitando mermas costosas y riesgos sanitarios.</p>
+                </div>
+                <div class="importance-card">
+                    <div class="card-icon-circle">
+                        <i class="fa-solid fa-microscope"></i>
+                    </div>
+                    <h3>Buscador por Genéricos</h3>
+                    <p>Encuentra alternativas rápidamente buscando por sustancia activa. Ofrece opciones a tus clientes sin perder la venta.</p>
+                </div>
+                <div class="importance-card">
+                    <div class="card-icon-circle">
+                        <i class="fa-solid fa-book-medical"></i>
+                    </div>
+                    <h3>Control de Antibióticos</h3>
+                    <p>Lleva el registro obligatorio de recetas de forma digital, cumpliendo con los protocolos de control sanitario sin complicaciones.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cash-control-section" id="inventarios">
+        <div class="container">
+            <div class="grid-control">
+                <div class="control-content">
+                    <span class="sub-title">ORDEN ESTRATÉGICO</span>
+                    <h2 class="section-title">Inventarios inteligentes para tu botica</h2>
+                    <p class="section-desc">Mantén el stock ideal de los medicamentos más solicitados y gestiona el surtido de tus anaqueles de forma profesional.</p>
+                    
+                    <div class="importance-list">
+                        <div class="importance-item">
+                            <div class="item-icon"><i class="fa-solid fa-boxes-stacked"></i></div>
+                            <div class="item-text">
+                                <h4>Alertas de Stock Crítico</h4>
+                                <p>Recibe notificaciones automáticas cuando un medicamento esté por terminarse para que nunca le digas "no hay" a un paciente.</p>
+                            </div>
+                        </div>
+                        <div class="importance-item">
+                            <div class="item-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+                            <div class="item-text">
+                                <h4>Gestión de Proveedores</h4>
+                                <p>Carga tus facturas de compra y actualiza tus precios de costo para conocer tu margen de utilidad en cada venta.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="control-visual">
+                    <div class="report-card">
+                        <div class="report-header">
+                            <span><i class="fa-solid fa-flask"></i> Alerta de Inventario</span>
+                            <span class="status-badge" style="background: #fee2e2; color: #fa441f;">Reordenar</span>
+                        </div>
+                        <div class="report-body">
+                            <div class="report-row">
+                                <span>Producto:</span>
+                                <strong>Paracetamol 500mg</strong>
+                            </div>
+                            <div class="report-row">
+                                <span>Sustancia:</span>
+                                <strong>Paracetamol</strong>
+                            </div>
+                            <div class="report-divider"></div>
+                            <div class="report-row">
+                                <span>Existencia:</span>
+                                <span style="color: #fa441f;">5 cajas</span>
+                            </div>
+                            <div class="report-row">
+                                <span>Punto de reorden:</span>
+                                <strong>10 cajas</strong>
+                            </div>
+                        </div>
+                        <div class="report-footer">
+                            <p><i class="fa-solid fa-truck-medical"></i> Sugerencia: Generar pedido a distribuidor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="faq-section" id="faq-farmacias">
+    <div class="container">
+        <div class="section-header text-center">
+            <span class="sub-title" style="color: #195ed7;">RESOLVEMOS TUS DUDAS</span>
+            <h2 class="section-title">Preguntas Frecuentes sobre EscalaPOS</h2>
+            <p class="section-desc">Todo lo que necesitas saber sobre la transición digital de tu botica o farmacia.</p>
+        </div>
+
+        <div class="faq-grid">
+            <details class="faq-item">
+                <summary>
+                    <span>¿Cómo me ayuda el sistema a no perder dinero por caducidades?</span>
+                    <i class="fa-solid fa-plus"></i>
+                </summary>
+                <div class="faq-answer">
+                    <p>EscalaPOS monitorea los números de lote y fechas de vencimiento de todo tu inventario. El sistema te avisa qué medicamentos están próximos a expirar para que los exhibas o liquides antes de que se conviertan en una merma total (aplicando la regla de Primeras Entradas, Primeras Salidas).</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>
+                    <span>¿Puedo buscar medicinas por sustancia activa en lugar de marca?</span>
+                    <i class="fa-solid fa-plus"></i>
+                </summary>
+                <div class="faq-answer">
+                    <p>Sí. Nuestro buscador inteligente te permite teclear la sustancia activa y te mostrará al instante todas las alternativas genéricas y de patente que tienes en stock. Así, si no tienes la marca que el paciente pide, le ofreces una opción al momento y no pierdes la venta.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>
+                    <span>¿Necesito una terminal extra para vender recargas o cobrar la luz?</span>
+                    <i class="fa-solid fa-plus"></i>
+                </summary>
+                <div class="faq-answer">
+                    <p>Para nada. El cobro de servicios (luz, agua, internet) y la venta de tiempo aire están integrados directamente en la pantalla de cobro de EscalaPOS. Todo se suma al mismo ticket del cliente y se refleja en tu corte de caja final.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>
+                    <span>¿Cómo evito que mis empleados alteren las cuentas?</span>
+                    <i class="fa-solid fa-plus"></i>
+                </summary>
+                <div class="faq-answer">
+                    <p>Tú tienes el control total. Puedes configurar niveles de acceso para que los cajeros solo puedan cobrar, mientras que acciones críticas como cancelar tickets, aplicar descuentos, abrir el cajón o ajustar el inventario requieran una contraseña de gerente o dueño.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>
+                    <span>¿Funciona con mi escáner de códigos de barras actual?</span>
+                    <i class="fa-solid fa-plus"></i>
+                </summary>
+                <div class="faq-answer">
+                    <p>Es altamente probable que sí. EscalaPOS es compatible con el 99% de los lectores de códigos de barras, impresoras de tickets térmicas y gavetas de dinero (conexión USB o Bluetooth) que ya se comercializan en México.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>
+                    <span>Si abro otra sucursal, ¿puedo mover inventario entre ellas?</span>
+                    <i class="fa-solid fa-plus"></i>
+                </summary>
+                <div class="faq-answer">
+                    <p>Por supuesto. Contamos con un módulo de traspasos que te permite enviar cajas de medicamento de la Sucursal A a la Sucursal B. El sistema registra quién envió, quién recibió y ajusta los inventarios de ambas tiendas automáticamente sin descuidar tu auditoría.</p>
+                </div>
+            </details>
+        </div>
+    </div>
+</section>
+    <div class="summary-widget" id="summaryWidget">
+        <button class="widget-toggle" id="toggleWidget">
+            <i class="fa-solid fa-chevron-left"></i>
+            <span class="toggle-text">Guardar</span>
+        </button>
+        <div class="widget-content">
+            <div class="widget-header">
+                <span class="label">MI CONFIGURACIÓN</span>
+                <h3 id="widget-plan-name">Comercial</h3>
+                <p id="widget-addons-count">0 add-ons</p>
+            </div>
+            <div class="widget-body">
+                <div class="widget-addons-list" id="widget-addons-list">
+                    <p class="empty-msg">No has agregado complementos</p>
+                </div>
+            </div>
+            <div class="widget-footer">
+                <div class="widget-total">
+                    <span>Total:</span>
+                    <h2 id="widget-total-price">$299.00</h2>
+                </div>
+                <button class="btn-primary-widget">Crear mi trial</button>
+            </div>
+        </div>
+    </div>
+
+     <footer class="footer-seo">
+    <div class="container grid-footer">
+        <div class="footer-col brand-col">
+            <a href="#" class="logo">Escala<span>POS</span></a>
+            <p>El punto de venta modular que se adapta al ritmo de tu negocio. Sin contratos forzosos ni datos fiscales al iniciar.</p>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h4>Soluciones POS</h4>
+            <ul>
+                <li><a href="#">Punto de venta para Abarrotes</a></li>
+                <li><a href="#">Sistema para Carnicerías</a></li>
+                <li><a href="#">Software para Farmacias</a></li>
+                <li><a href="#">Control de Ferreterías</a></li>
+                <li><a href="#">POS para Papelerías</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Módulos Escala</h4>
+            <ul>
+                <li><a href="#">Facturación Electrónica 4.0</a></li>
+                <li><a href="#">CRM y Cobranza</a></li>
+                <li><a href="#">Monedero y Lealtad</a></li>
+                <li><a href="#">Control de Inventarios</a></li>
+                <li><a href="#">Analítica Gerencial</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>EscalaPOS México</h4>
+            <p><i class="fa-solid fa-location-dot"></i> Disponible en CDMX, Querétaro, Monterrey y todo México.</p>
+            <p><i class="fa-solid fa-phone"></i> +52 777 123 4567</p>
+            <p><i class="fa-solid fa-envelope"></i> ventas@escalapos.mx</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container bottom-flex">
+            <p>&copy; 2026 EscalaPOS. Todos los derechos reservados.</p>
+            <div class="legal-links">
+                <a href="#">Aviso de Privacidad</a>
+                <a href="#">Términos y Condiciones</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="scriptl.js"></script>
+</body>
+</html>

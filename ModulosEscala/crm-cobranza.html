@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM y Cobranza | EscalaPOS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+ <header class="main-navbar">
+    <div class="container nav-container">
+        <a href="#" class="logo">Escala<span>POS</span></a>
+        
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <nav class="nav-menu">
+            <ul class="nav-list">
+                <li><a href="#pasos" class="nav-link">Cómo funciona</a></li>
+                <li><a href="#precios" class="nav-link">Planes</a></li>
+                <li><a href="#modulos" class="nav-link">Add-ons</a></li>
+                <li><a href="#soluciones" class="nav-link">Soluciones</a></li>
+                <li class="nav-btns">
+                    <a href="#" class="btn-login">Ya tengo cuenta</a>
+                    <a href="#" class="btn-trial-nav">Crear mi trial</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <section class="hero-extension">
+        <div class="container grid-hero">
+            <div class="hero-text">
+                <span class="badge-trial" style="background-color: #d6e5fa; color: #195ed7;">MÓDULO DE CLIENTES</span>
+                <h1>Despídete de la libreta de fiados y <strong>profesionaliza tu cobranza</strong>.</h1>
+                <p>El CRM de EscalaPOS te permite construir un directorio exacto de tus compradores, establecer límites de crédito seguros y tener sus datos del SAT listos para facturar en segundos. Todo el historial de tus clientes en la palma de tu mano.</p>
+                
+                <ul class="hero-bullets">
+                    <li><i class="fa-solid fa-address-book"></i> Expedientes completos con datos de contacto y direcciones.</li>
+                    <li><i class="fa-solid fa-hand-holding-dollar"></i> Asignación de límites de crédito por cliente.</li>
+                    <li><i class="fa-solid fa-file-invoice"></i> Configuración fiscal guardada (RFC, Régimen, Uso CFDI).</li>
+                </ul>
+            </div>
+
+            <div class="preselection-container">
+                <div class="preselection-flex">
+                    <div class="preselection-image">
+                        <img src="https://via.placeholder.com/500x400/e8f0fe/195ed7?text=EscalaPOS+CRM" alt="Módulo CRM EscalaPOS">
+                    </div>
+                    <div class="preselection-card">
+                        <div class="pre-header">
+                            <h3>Gestión de Cartera</h3>
+                        </div>
+                        <div class="pre-body">
+                            <div class="pre-item">
+                                <span>Directorio:</span>
+                                <strong>Ilimitado</strong>
+                            </div>
+                            <div class="pre-item">
+                                <span>Facturación rápida:</span>
+                                <strong>Integrada</strong>
+                            </div>
+                            <div class="pre-item">
+                                <span>Bloqueo de morosos:</span>
+                                <span class="text-muted">Automático</span>
+                            </div>
+                        </div>
+                        <div class="pre-footer">
+                            <p><i class="fa-solid fa-user-check"></i> Conoce a quién le vendes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="challenges-section" id="que-es-crm" style="background-color: #f8fafc;">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-title" style="color: #fa441f;">RELACIÓN COMERCIAL</span>
+                <h2 class="section-title">¿Para qué sirve el CRM en tu mostrador?</h2>
+                <p class="section-desc">No necesitas ser una corporación enorme para tratar a tus clientes como reyes. Nuestro gestor de clientes aterriza la tecnología a la realidad de tu local.</p>
+            </div>
+
+            <div class="challenges-compact-grid" style="justify-content: center;">
+                <div class="challenge-row">
+                    <div class="chal-icon" style="background: #d6e5fa; color: #195ed7;">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                    </div>
+                    <div class="chal-text">
+                        <h4>Memoria Comercial</h4>
+                        <p>Lleva un registro de quién te compra, cuándo te compran y qué se llevan, permitiéndote ofrecer un trato personalizado.</p>
+                    </div>
+                </div>
+
+                <div class="challenge-row">
+                    <div class="chal-icon" style="background: #e6f9ed; color: #26c95e;">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <div class="chal-text">
+                        <h4>Atención Ultra Rápida</h4>
+                        <p>Al guardar teléfonos y direcciones, podrás tomar pedidos a domicilio o agendar entregas en una fracción del tiempo normal.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cash-control-section" id="expediente" style="background-color: #ffffff;">
+        <div class="container">
+            <div class="grid-control">
+                <div class="control-content">
+                    <span class="sub-title" style="color: #195ed7;">INFORMACIÓN CENTRALIZADA</span>
+                    <h2 class="section-title">Un expediente maestro para cada comprador</h2>
+                    <p class="section-desc">Crea perfiles hiper-detallados o guarda solo lo esencial según la operación de tu negocio. Al dar de alta un nuevo cliente, <strong>EscalaPOS</strong> te permite registrar tres áreas críticas para tu seguridad administrativa:</p>
+                    
+                    <div class="importance-list">
+                        <div class="challenge-row" style="margin-bottom: 15px;">
+                            <div class="chal-icon" style="background: #d6e5fa; color: #195ed7;">
+                                <i class="fa-solid fa-address-card"></i>
+                            </div>
+                            <div class="chal-text">
+                                <h4>Datos Generales y de Contacto</h4>
+                                <p>Captura su nombre, teléfonos, correo electrónico y su dirección completa (Calle, Colonia, Municipio, Estado y Referencias) para facilitar entregas y comunicación.</p>
+                            </div>
+                        </div>
+
+                        <div class="challenge-row" style="margin-bottom: 15px;">
+                            <div class="chal-icon" style="background: #d6e5fa; color: #195ed7;">
+                                <i class="fa-solid fa-file-invoice-dollar"></i>
+                            </div>
+                            <div class="chal-text">
+                                <h4>Configuración de Facturación (SAT)</h4>
+                                <p>Guarda su RFC, Razón Social, Régimen Fiscal (ej. RESICO, Personas Morales) y su Uso de CFDI frecuente (ej. Gastos en general). ¡Captúralo una vez y factura con un clic para siempre!</p>
+                            </div>
+                        </div>
+
+                        <div class="challenge-row">
+                            <div class="chal-icon" style="background: #e6f9ed; color: #26c95e;">
+                                <i class="fa-solid fa-toggle-on"></i>
+                            </div>
+                            <div class="chal-text">
+                                <h4>Estatus Operativo</h4>
+                                <p>Mantén tu base de datos limpia activando o desactivando perfiles con el control de "Cliente Activo", ideal para pausar servicios a clientes inactivos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="control-visual">
+                    <div class="image-placeholder-pharmacy" style="position: relative; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.1); border: 1px solid #e2e8f0;">
+                        <img src="assets/img/crm-nuevo-cliente-escalapos.png" alt="Alta de cliente en CRM EscalaPOS" style="width: 100%; display: block;">
+                        
+                        <div class="floating-badge" style="position: absolute; bottom: 20px; right: 20px; background: #195ed7; color: white; padding: 10px 15px; border-radius: 8px; font-weight: 700; font-size: 13px; display: flex; align-items: center; gap: 8px;">
+                            <i class="fa-solid fa-database"></i>
+                            <span>Directorio Central</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pos-importance" id="creditos" style="background-color: #f8fafc;">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-title" style="color: #fa441f;">PROTEGE TU DINERO</span>
+                <h2 class="section-title">Créditos seguros y cobranza transparente</h2>
+                <p class="section-desc">Prestar mercancía siempre es un riesgo. Nuestro módulo de cobranza funciona como un candado para que nunca prestes más de lo que tu negocio puede soportar.</p>
+            </div>
+
+            <div class="importance-grid">
+                
+                <div class="importance-card">
+                    <div class="card-icon-circle" style="background: #e8f0fe; color: #195ed7;">
+                        <i class="fa-solid fa-stopwatch-20"></i>
+                    </div>
+                    <h3>Topes de Endeudamiento</h3>
+                    <p>Al crear al cliente, asígnale un "Límite de Crédito" exacto. El sistema impedirá que tus cajeros le vendan a crédito si su deuda acumulada supera la cantidad que tú autorizaste.</p>
+                </div>
+
+                <div class="importance-card">
+                    <div class="card-icon-circle" style="background: #fff1f0; color: #fa441f;">
+                        <i class="fa-solid fa-book-journal-whills"></i>
+                    </div>
+                    <h3>Adiós a la Libreta Perdida</h3>
+                    <p>Olvida los cuadernos con tachaduras. El sistema registra cada venta a crédito, mostrando exactamente cuánto debe el cliente, las fechas de sus compras y sus abonos recientes.</p>
+                </div>
+
+                <div class="importance-card">
+                    <div class="card-icon-circle" style="background: #e6f9ed; color: #26c95e;">
+                        <i class="fa-solid fa-money-bill-wave"></i>
+                    </div>
+                    <h3>Recepción de Abonos</h3>
+                    <p>Registra pagos parciales o liquidaciones totales directamente en la caja. El límite de crédito del cliente se liberará automáticamente para que pueda seguir comprando.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="pos-importance" id="comparativa" style="background-color: #ffffff;">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-title" style="color: #195ed7;">EL CAMBIO ES AHORA</span>
+                <h2 class="section-title">¿Por qué sistematizar tu gestión de clientes?</h2>
+            </div>
+
+            <div class="table-responsive">
+                <table class="escala-table">
+                    <thead>
+                        <tr>
+                            <th>Herramienta</th>
+                            <th>Libreta Física / Memoria</th>
+                            <th class="highlight-col">CRM EscalaPOS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="feature-name"><i class="fa-solid fa-address-book"></i> Directorio de Contactos</td>
+                            <td>Desorganizado, difícil de leer o perdido en un celular.</td>
+                            <td class="highlight-col"><strong>Digital, siempre respaldado y disponible en todas tus sucursales.</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name"><i class="fa-solid fa-file-invoice"></i> Datos para Facturar</td>
+                            <td>Pedirle el RFC y Constancia al cliente en cada compra.</td>
+                            <td class="highlight-col"><strong>Guardados en su expediente maestro. Se jalan solos al momento del cobro.</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name"><i class="fa-solid fa-sack-dollar"></i> Control de Fiados</td>
+                            <td>Riesgo total. Se depende de la honestidad y no hay topes claros.</td>
+                            <td class="highlight-col"><strong>Bloqueo automático si el cliente alcanza el límite de crédito configurado.</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section" id="faq-crm">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-title" style="color: #195ed7;">RESOLVEMOS TUS DUDAS</span>
+                <h2 class="section-title">Preguntas Frecuentes sobre el CRM</h2>
+            </div>
+
+            <div class="faq-grid">
+                <details class="faq-item">
+                    <summary>
+                        <span>¿Es obligatorio llenar todos los campos para crear un cliente?</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>No. El sistema es flexible. Los campos obligatorios están marcados con un asterisco (*), como el Nombre. Puedes omitir la dirección completa o los datos de facturación si el comprador aún no los proporciona, y editarlos más adelante.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary>
+                        <span>¿Qué pasa si un cliente tiene un límite de crédito de $1,000 y quiere llevarse $1,200?</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>El sistema protegerá tu negocio. La caja emitirá una alerta indicando que la operación supera el tope autorizado para ese comprador, impidiendo que la venta a crédito se finalice hasta que liquide parte de su deuda o un administrador aumente su límite.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary>
+                        <span>¿Puedo suspenderle la cuenta a un cliente problemático?</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Sí, dentro de su expediente puedes apagar el interruptor de "Cliente Activo". Al hacerlo, el sistema lo bloqueará, evitando que tus cajeros puedan procesarle nuevas ventas a su nombre o autorizarle más créditos.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+     <footer class="footer-seo">
+    <div class="container grid-footer">
+        <div class="footer-col brand-col">
+            <a href="#" class="logo">Escala<span>POS</span></a>
+            <p>El punto de venta modular que se adapta al ritmo de tu negocio. Sin contratos forzosos ni datos fiscales al iniciar.</p>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h4>Soluciones POS</h4>
+            <ul>
+                <li><a href="#">Punto de venta para Abarrotes</a></li>
+                <li><a href="#">Sistema para Carnicerías</a></li>
+                <li><a href="#">Software para Farmacias</a></li>
+                <li><a href="#">Control de Ferreterías</a></li>
+                <li><a href="#">POS para Papelerías</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Módulos Escala</h4>
+            <ul>
+                <li><a href="#">Facturación Electrónica 4.0</a></li>
+                <li><a href="#">CRM y Cobranza</a></li>
+                <li><a href="#">Monedero y Lealtad</a></li>
+                <li><a href="#">Control de Inventarios</a></li>
+                <li><a href="#">Analítica Gerencial</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>EscalaPOS México</h4>
+            <p><i class="fa-solid fa-location-dot"></i> Disponible en CDMX, Querétaro, Monterrey y todo México.</p>
+            <p><i class="fa-solid fa-phone"></i> +52 777 123 4567</p>
+            <p><i class="fa-solid fa-envelope"></i> ventas@escalapos.mx</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container bottom-flex">
+            <p>&copy; 2026 EscalaPOS. Todos los derechos reservados.</p>
+            <div class="legal-links">
+                <a href="#">Aviso de Privacidad</a>
+                <a href="#">Términos y Condiciones</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="scriptl.js"></script>
+
+</body>
+</html>
