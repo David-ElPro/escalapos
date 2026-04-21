@@ -1,32 +1,101 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EscalaPOS | El PDV Modular que crece contigo</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="EscalaPOS es el punto de venta modular en la nube para negocios en Mexico. Comienza con un plan base y escala con modulos segun tu operacion.">
+    <meta name="keywords" content="punto de venta, software POS, EscalaPOS, sistema de ventas, negocio en Mexico, punto de venta en la nube">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://escalapos.mx/">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="EscalaPOS">
+    <meta property="og:title" content="EscalaPOS | El PDV Modular que crece contigo">
+    <meta property="og:description" content="EscalaPOS es el punto de venta modular en la nube para negocios en Mexico. Comienza con un plan base y escala con modulos segun tu operacion.">
+    <meta property="og:url" content="https://escalapos.mx/">
+    <meta property="og:image" content="https://escalapos.mx/media/escalapos.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="EscalaPOS | El PDV Modular que crece contigo">
+    <meta name="twitter:description" content="EscalaPOS es el punto de venta modular en la nube para negocios en Mexico. Comienza con un plan base y escala con modulos segun tu operacion.">
+    <meta name="twitter:image" content="https://escalapos.mx/media/escalapos.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
-    
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="application/ld+json">
+{
+    "@context":  "https://schema.org",
+    "@type":  "Organization",
+    "name":  "EscalaPOS",
+    "url":  "https://escalapos.mx",
+    "logo":  "https://escalapos.mx/media/escalapos.png",
+    "contactPoint":  {
+                         "telephone":  "+52-777-123-4567",
+                         "areaServed":  "MX",
+                         "contactType":  "sales",
+                         "@type":  "ContactPoint",
+                         "availableLanguage":  [
+                                                   "es"
+                                               ]
+                     }
+}
+    </script>
+    <script type="application/ld+json">
+{
+    "@context":  "https://schema.org",
+    "@type":  "WebPage",
+    "name":  "EscalaPOS | El PDV Modular que crece contigo",
+    "description":  "EscalaPOS es el punto de venta modular en la nube para negocios en Mexico. Comienza con un plan base y escala con modulos segun tu operacion.",
+    "url":  "https://escalapos.mx/",
+    "inLanguage":  "es-MX",
+    "isPartOf":  {
+                     "url":  "https://escalapos.mx/",
+                     "name":  "EscalaPOS",
+                     "@type":  "WebSite"
+                 }
+}
+    </script>
 </head>
-<body>
+<body class="page-index">
 
     <header class="main-navbar">
     <div class="container nav-container">
-        <a href="#" class="logo">Escala<span>POS</span></a>
-        
-        <div class="menu-toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
+        <a href="index.html" class="logo">Escala<span>POS</span></a>
 
-        <nav class="nav-menu">
+        <button class="menu-toggle" id="mobile-menu" aria-label="Abrir menu" aria-expanded="false" type="button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <nav class="nav-menu" aria-label="Navegacion principal">
             <ul class="nav-list">
-                <li><a href="#pasos" class="nav-link">Cómo funciona</a></li>
-                <li><a href="#precios" class="nav-link">Planes</a></li>
-                <li><a href="#modulos" class="nav-link">Add-ons</a></li>
-                <li><a href="#soluciones" class="nav-link">Soluciones</a></li>
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="index.html#precios" class="nav-link">Planes</a></li>
+                <li class="has-dropdown">
+                    <button class="nav-link dropdown-toggle" type="button" aria-expanded="false">
+                        Soluciones EscalaPOS <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="Solucionespos/abarrotes-punto-de-venta.html">Abarrotes</a></li>
+                            <li><a href="Solucionespos/sistema-para-carnicerias.html">Carnicerias</a></li>
+                            <li><a href="Solucionespos/software-para-farmacias.html">Farmacias</a></li>
+                            <li><a href="Solucionespos/software-para-ferreterias.html">Ferreterias</a></li>
+                            <li><a href="Solucionespos/punto-de-venta-papelerias.html">Papelerias</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <button class="nav-link dropdown-toggle" type="button" aria-expanded="false">
+                        Modulos POS <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="ModulosEscala/facturacion-4.html">Facturacion 4.0</a></li>
+                            <li><a href="ModulosEscala/crm-cobranza.html">CRM y Cobranza</a></li>
+                            <li><a href="ModulosEscala/monedero-electronico.html">Monedero y Lealtad</a></li>
+                            <li><a href="ModulosEscala/control-inventario.html">Control de Inventarios</a></li>
+                            <li><a href="ModulosEscala/software-analitica.html">Analitica Gerencial</a></li>
+                    </ul>
+                </li>
                 <li class="nav-btns">
                     <a href="#" class="btn-login">Ya tengo cuenta</a>
                     <a href="#" class="btn-trial-nav">Crear mi trial</a>
@@ -68,7 +137,7 @@
                     <div class="window-bar">
                         <span></span><span></span><span></span>
                     </div>
-                    <img src="escalapos.png" alt="EscalaPOS Dashboard">
+                    <img src="media/escalapos.png" alt="EscalaPOS Dashboard">
                 </div>
             </div>
         </div>
@@ -602,113 +671,66 @@
         </div>
     </div>
 </div>
+<a href="https://wa.me/527771234567?text=Hola%2C%20quiero%20informacion%20de%20EscalaPOS." target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Abrir WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
 <footer class="footer-seo">
     <div class="container grid-footer">
         <div class="footer-col brand-col">
-            <a href="#" class="logo">Escala<span>POS</span></a>
+            <a href="index.html" class="logo">Escala<span>POS</span></a>
             <p>El punto de venta modular que se adapta al ritmo de tu negocio. Sin contratos forzosos ni datos fiscales al iniciar.</p>
             <div class="social-links">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
             </div>
         </div>
-
         <div class="footer-col">
             <h4>Soluciones POS</h4>
             <ul>
-                <li><a href="#">Punto de venta para Abarrotes</a></li>
-                <li><a href="#">Sistema para Carnicerías</a></li>
-                <li><a href="#">Software para Farmacias</a></li>
-                <li><a href="#">Control de Ferreterías</a></li>
-                <li><a href="#">POS para Papelerías</a></li>
+                <li><a href="Solucionespos/abarrotes-punto-de-venta.html">Abarrotes</a></li>
+                <li><a href="Solucionespos/sistema-para-carnicerias.html">Carnicerias</a></li>
+                <li><a href="Solucionespos/software-para-farmacias.html">Farmacias</a></li>
+                <li><a href="Solucionespos/software-para-ferreterias.html">Ferreterias</a></li>
+                <li><a href="Solucionespos/punto-de-venta-papelerias.html">Papelerias</a></li>
             </ul>
         </div>
-
         <div class="footer-col">
-            <h4>Módulos Escala</h4>
+            <h4>Modulos Escala</h4>
             <ul>
-                <li><a href="#">Facturación Electrónica 4.0</a></li>
-                <li><a href="#">CRM y Cobranza</a></li>
-                <li><a href="#">Monedero y Lealtad</a></li>
-                <li><a href="#">Control de Inventarios</a></li>
-                <li><a href="#">Analítica Gerencial</a></li>
+                <li><a href="ModulosEscala/facturacion-4.html">Facturacion 4.0</a></li>
+                <li><a href="ModulosEscala/crm-cobranza.html">CRM y Cobranza</a></li>
+                <li><a href="ModulosEscala/monedero-electronico.html">Monedero y Lealtad</a></li>
+                <li><a href="ModulosEscala/control-inventario.html">Control de Inventarios</a></li>
+                <li><a href="ModulosEscala/software-analitica.html">Analitica Gerencial</a></li>
             </ul>
         </div>
-
         <div class="footer-col">
-            <h4>EscalaPOS México</h4>
-            <p><i class="fa-solid fa-location-dot"></i> Disponible en CDMX, Querétaro, Monterrey y todo México.</p>
+            <h4>EscalaPOS Mexico</h4>
+            <p><i class="fa-solid fa-location-dot"></i> Disponible en todo Mexico.</p>
             <p><i class="fa-solid fa-phone"></i> +52 777 123 4567</p>
             <p><i class="fa-solid fa-envelope"></i> ventas@escalapos.mx</p>
         </div>
     </div>
-
     <div class="footer-bottom">
         <div class="container bottom-flex">
             <p>&copy; 2026 EscalaPOS. Todos los derechos reservados.</p>
             <div class="legal-links">
                 <a href="#">Aviso de Privacidad</a>
-                <a href="#">Términos y Condiciones</a>
+                <a href="#">Terminos y Condiciones</a>
             </div>
         </div>
     </div>
 </footer>
 
-<script>
-function toggleAddon(btn, price) {
-    btn.classList.toggle('selected');
-    if (btn.classList.contains('selected')) {
-        btn.innerHTML = '<i class="fa-solid fa-check"></i> Agregado al trial';
-        btn.style.backgroundColor = '#195ed7';
-        btn.style.color = '#fff';
-        btn.style.borderColor = '#195ed7';
-    } else {
-        btn.innerHTML = 'Agregar al trial';
-        btn.style.backgroundColor = '#fff';
-        btn.style.color = '#475569';
-        btn.style.borderColor = '#cbd5e1';
-    }
-}
-</script>
 
-<script>
-    document.querySelectorAll('.btn-plan').forEach(button => {
-        button.addEventListener('click', function(e) {
-            e.preventDefault(); // Evita que salte al hero o recargue
 
-            // 1. Buscamos el contenedor del card padre
-            const currentCard = this.closest('.price-card');
-            
-            // 2. Quitamos la selección de todos los demás
-            document.querySelectorAll('.price-card').forEach(card => {
-                card.classList.remove('selected');
-                const btn = card.querySelector('.btn-plan');
-                btn.classList.remove('is-active');
-                btn.innerText = btn.getAttribute('data-default-text') || "Elegir Plan";
-                
-                // Removemos la leyenda si existe
-                const msg = card.querySelector('.selection-msg');
-                if(msg) msg.remove();
-            });
 
-            // 3. Marcamos el actual como seleccionado
-            currentCard.classList.add('selected');
-            this.classList.add('is-active');
-            this.innerText = "Plan seleccionado";
-
-            // 4. Agregamos la leyenda dinámicamente
-            const footer = currentCard.querySelector('.card-action');
-            const legend = document.createElement('p');
-            legend.className = 'selection-msg';
-            legend.innerText = 'Este plan ya está listo para enviarse a tu trial';
-            footer.appendChild(legend);
-        });
-
-        // Guardamos el texto original para cuando se deseleccione
-        button.setAttribute('data-default-text', button.innerText);
-    });
-</script>
-<script src="scriptl.js"></script>
+<script src="js/scriptl.js"></script>
 </body>
 </html>
+
+
+
+
+
